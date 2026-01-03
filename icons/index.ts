@@ -4,7 +4,7 @@ import { AdjustmentsVerticalIcon } from "./adjustments-vertical";
 import { ArchiveBoxIcon } from "./archive-box";
 import { ArchiveBoxArrowDownIcon } from "./archive-box-arrow-down";
 import { ArchiveBoxXMarkIcon } from "./archive-box-x-mark";
-import { HeroiconsArrowDownIcon } from "./arrow-down";
+import { ArrowDownIcon } from "./arrow-down";
 import { ArrowDownCircleIcon } from "./arrow-down-circle";
 import { ArrowDownLeftIcon } from "./arrow-down-left";
 import { ArrowDownOnSquareIcon } from "./arrow-down-on-square";
@@ -399,7 +399,7 @@ const ICON_LIST: IconListItem[] = [
   },
   {
     name: "arrow-down",
-    icon: HeroiconsArrowDownIcon,
+    icon: ArrowDownIcon,
     keywords: ["arrow", "down", "arrow down"],
   },
   {
