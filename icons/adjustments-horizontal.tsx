@@ -79,7 +79,7 @@ const AdjustmentsHorizontalIcon = forwardRef<
 
   return (
     <div
-      className={cn(className, "bg-zinc-100")}
+      className={cn(className)}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       {...props}
