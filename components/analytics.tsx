@@ -1,24 +1,24 @@
-// import { OpenPanelComponent } from "@openpanel/nextjs";
+import Script from "next/script";
 
-// const ANALYTIC_EVENT = {
-//   HEADER_GITHUB: "header-github",
-//   ICON_COPY: "icon-copy",
-//   ICON_COPY_TERMINAL: "icon-copy-terminal",
-//   ICON_OPEN_IN_V0: "icon-open-in-v0",
-//   COMMENT_ANIMATION_DEV_LINK: "comment-link-click",
-//   COMMENT_BUTTON_CLICK: "comment-button-click",
-// } as const;
+const ANALYTIC_EVENT = {
+  HEADER_GITHUB: "header-github",
+  ICON_COPY: "icon-copy",
+  ICON_COPY_TERMINAL: "icon-copy-terminal",
+  ICON_OPEN_IN_V0: "icon-open-in-v0",
+  COMMENT_ANIMATION_DEV_LINK: "comment-link-click",
+  COMMENT_BUTTON_CLICK: "comment-button-click",
+} as const;
 
-// const Analytics = () => {
-//   if (process.env.NODE_ENV !== "production") return null;
+const Analytics = () => {
+  if (process.env.NODE_ENV !== "production") return null;
 
-//   return (
-//     <OpenPanelComponent
-//       clientId={process.env.CLIENT_ID ?? ""}
-//       clientSecret={process.env.SECRET_KEY ?? ""}
-//       trackScreenViews
-//     />
-//   );
-// };
+  return (
+    <Script
+      data-website-id="44fee883-c580-4bb0-a818-5df02b4b4005"
+      src="https://cloud.umami.is/script.js"
+      strategy="afterInteractive"
+    />
+  );
+};
 
-// export { Analytics, ANALYTIC_EVENT };
+export { Analytics, ANALYTIC_EVENT };

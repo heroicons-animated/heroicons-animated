@@ -12,6 +12,7 @@ import { toast } from "sonner";
 import { getIconContent } from "@/actions/get-icon-content";
 import type { Icon } from "@/actions/get-icons";
 import { openInV0Action } from "@/actions/open-in-v0";
+import { ANALYTIC_EVENT } from "@/components/analytics";
 import type { IconStatus } from "@/components/ui/icon-state";
 import { IconState } from "@/components/ui/icon-state";
 import {
@@ -135,7 +136,11 @@ const CopyCLIAction = ({ name }: Pick<Icon, "name">) => {
     if (state !== "idle") return;
 
     try {
-      // op.track(ANALYTIC_EVENT.ICON_COPY_TERMINAL, { icon: `${name}.tsx` });
+      if (typeof window !== "undefined" && window.umami) {
+        window.umami.track(ANALYTIC_EVENT.ICON_COPY_TERMINAL, {
+          icon: `${name}.tsx`,
+        });
+      }
       await navigator.clipboard.writeText(
         `${getPackageManagerPrefix(packageName)} shadcn@latest add "${SITE.URL}/r/${name}.json"`
       );
@@ -186,7 +191,11 @@ const CopyCodeAction = ({ name }: Pick<Icon, "name">) => {
 
     try {
       setState("loading");
-      // op.track(ANALYTIC_EVENT.ICON_COPY, { icon: `${name}.tsx` });
+      if (typeof window !== "undefined" && window.umami) {
+        window.umami.track(ANALYTIC_EVENT.ICON_COPY, {
+          icon: `${name}.tsx`,
+        });
+      }
 
       const content = await getIconContent(name);
 
@@ -237,7 +246,11 @@ const OpenInV0Action = ({ name }: Pick<Icon, "name">) => {
     if (state !== "idle") return;
     try {
       setState("loading");
-      // op.track(ANALYTIC_EVENT.ICON_OPEN_IN_V0, { icon: `${name}.tsx` });
+      if (typeof window !== "undefined" && window.umami) {
+        window.umami.track(ANALYTIC_EVENT.ICON_OPEN_IN_V0, {
+          icon: `${name}.tsx`,
+        });
+      }
       const data = await openInV0Action(name);
 
       if (data.url) {

@@ -1,6 +1,5 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { unstable_cache } from "next/cache";
-
 import { LINK } from "@/constants";
 
 const DEFAULT_STARS = 1;

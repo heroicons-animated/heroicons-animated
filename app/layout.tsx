@@ -9,7 +9,7 @@ import {
 import { Geist, Geist_Mono } from "next/font/google";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { Toaster } from "sonner";
-
+import { Analytics } from "@/components/analytics";
 import { Header } from "@/components/header";
 import { PackageNameProvider } from "@/providers/package-name";
 import { ThemeProvider } from "@/providers/theme";
@@ -94,6 +94,7 @@ export default function RootLayout({
                 />
               </NuqsAdapter>
             </PackageNameProvider>
+            <Analytics />
           </ThemeProvider>
         </div>
       </body>
