@@ -16,24 +16,14 @@ interface ArrowUturnLeftIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const VARIANTS: Variants = {
-  normal: {
-    opacity: 1,
-    pathLength: 1,
-    pathOffset: 0,
-    transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
-    },
-  },
+const STRETCH_VARIANTS: Variants = {
+  normal: { scaleX: 1, x: 0, opacity: 1 },
   animate: {
-    opacity: [0, 1],
-    pathLength: [0, 1],
-    pathOffset: [1, 0],
+    scaleX: [1, 1.15, 1],
+    x: [0, -1.5, 0],
     transition: {
-      duration: 0.6,
-      ease: "linear",
-      opacity: { duration: 0.1 },
+      duration: 0.45,
+      ease: "easeInOut",
     },
   },
 };
@@ -94,12 +84,10 @@ const ArrowUturnLeftIcon = forwardRef<
         width={size}
         xmlns="http://www.w3.org/2000/svg"
       >
-        <motion.path
-          animate={controls}
-          d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"
-          initial="normal"
-          variants={VARIANTS}
-        />
+        <path d="M3 9h12a6 6 0 0 1 0 12h-3" />
+        <motion.g animate={controls} variants={STRETCH_VARIANTS}>
+          <path d="M9 15 3 9m0 0 6-6" />
+        </motion.g>
       </svg>
     </div>
   );
