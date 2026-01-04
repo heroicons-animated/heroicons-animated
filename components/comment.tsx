@@ -1,5 +1,6 @@
 import {
   CommentAnimationsDevLinkClient,
+  CommentAuthorLinkClient,
   CommentButtonClient,
   CommentLucideAnimatedLinkClient,
 } from "./comment.client";
@@ -26,7 +27,7 @@ const CommentBlock = () => {
             </AvatarFallback>
           </Avatar>
           <p className="text-[13px] text-neutral-600 tracking-[0.01em] dark:text-neutral-400">
-            aniket, creator of heroicons-animated
+            <CommentAuthorLinkClient />, creator of heroicons-animated
           </p>
         </div>
         <CommentButtonClient />
