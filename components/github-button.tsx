@@ -44,7 +44,7 @@ const GithubStartsButton = async () => {
   return (
     <a
       aria-label={`Star on GitHub (${stars.toLocaleString()} stars)`}
-      className="group/github-stars flex items-center gap-2 bg-white px-2.5 py-2 focus-within:outline-offset-2 focus-visible:outline-1 focus-visible:outline-primary dark:bg-white/10"
+      className="group/github-stars supports-[corner-shape:squircle]:corner-squircle flex items-center gap-2 rounded-[14px] bg-white px-2.5 py-2 focus-within:outline-offset-2 focus-visible:outline-1 focus-visible:outline-primary supports-[corner-shape:squircle]:rounded-[20px] dark:bg-white/10"
       href={LINK.GITHUB}
       rel="noopener noreferrer"
       tabIndex={0}

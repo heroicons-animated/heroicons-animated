@@ -32,7 +32,7 @@ const ThemeToggle = () => {
     <button
       aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
       aria-pressed={isDark}
-      className="flex size-9 cursor-pointer items-center justify-center bg-white focus-within:outline-offset-2 focus-visible:outline-1 focus-visible:outline-primary dark:bg-white/10"
+      className="supports-[corner-shape:squircle]:corner-squircle flex size-9 cursor-pointer items-center justify-center rounded-[14px] bg-white focus-within:outline-offset-2 focus-visible:outline-1 focus-visible:outline-primary supports-[corner-shape:squircle]:rounded-[20px] dark:bg-white/10"
       onClick={() => handleChangeTheme(nextTheme)}
       suppressHydrationWarning
       tabIndex={0}
