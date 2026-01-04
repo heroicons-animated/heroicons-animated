@@ -29,7 +29,7 @@ const ARROW_HEAD_VARIANTS: Variants = {
 const LINE_VARIANTS: Variants = {
   normal: { d: "M12 21V3" },
   animate: {
-    d: ["M12 21V3", "M12 21V9", "M12 21V3"],
+    d: ["M12 21V3", "M12 18V3", "M12 21V3"],
     transition: {
       duration: 0.4,
     },
@@ -90,9 +90,11 @@ const ArrowDownIcon = forwardRef<ArrowDownIconHandle, ArrowDownIconProps>(
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
-          <motion.g animate={controls} variants={ARROW_HEAD_VARIANTS}>
-            <path d="M19.5 13.5 12 21m0 0-7.5-7.5" />
-          </motion.g>
+          <motion.path
+            animate={controls}
+            d="M19.5 13.5 12 21m0 0-7.5-7.5"
+            variants={ARROW_HEAD_VARIANTS}
+          />
           <motion.path
             animate={controls}
             d="M12 21V3"
