@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { getIcons } from "@/actions/get-icons";
 import { CliBlock } from "@/components/cli-block";
 import { CommentBlock } from "@/components/comment";
@@ -57,7 +58,9 @@ const Home = () => {
         <CommentBlock />
       </section>
       <section className="mb-20" id="icons">
-        <IconsList icons={icons} />
+        <Suspense fallback={null}>
+          <IconsList icons={icons} />
+        </Suspense>
       </section>
     </>
   );
