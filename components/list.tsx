@@ -50,7 +50,6 @@ const IconItem = ({
 
 const IconsList = ({ icons }: Props) => {
   const [searchValue, setSearchValue] = useState("");
-  const [searchOpen, setSearchOpen] = useState(false);
   const deferredSearchValue = useDeferredValue(searchValue);
 
   const fuse = useMemo(
@@ -75,14 +74,9 @@ const IconsList = ({ icons }: Props) => {
   }, [fuse, icons, deferredSearchValue]);
 
   return (
-    <div className="view-container mb-20">
-      <SearchInput
-        searchOpen={searchOpen}
-        searchValue={searchValue}
-        setSearchOpen={setSearchOpen}
-        setSearchValue={setSearchValue}
-      />
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-[3px]">
+    <div className="mb-20">
+      <SearchInput searchValue={searchValue} setSearchValue={setSearchValue} />
+      <div className="view-container grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-[3px]">
         {filteredIcons.length === 0 && (
           <div className="col-span-full pt-10 text-center text-neutral-500 text-sm">
             No icons found
