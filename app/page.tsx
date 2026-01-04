@@ -56,7 +56,7 @@ const Home = () => {
         <CliBlock icons={icons.filter((icon) => icon.name.length <= 20)} />
         <CommentBlock />
       </section>
-      <section id="icons">
+      <section className="mb-20" id="icons">
         <IconsList icons={icons} />
       </section>
     </>

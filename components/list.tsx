@@ -79,7 +79,7 @@ const IconsList = ({ icons }: Props) => {
   }, [fuse, icons, deferredSearchValue]);
 
   return (
-    <div className="mb-20">
+    <>
       <SearchInput searchValue={searchValue} setSearchValue={setSearchValue} />
       <div className="view-container grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-[3px]">
         {filteredIcons.length === 0 && (
@@ -95,7 +95,7 @@ const IconsList = ({ icons }: Props) => {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

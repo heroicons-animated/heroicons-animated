@@ -68,11 +68,16 @@ const SearchInput = ({ searchValue, setSearchValue }: SearchInputProps) => {
           role="search"
           spellCheck="false"
           trailingIcon={
-            <div className="hidden items-center gap-0.5 md:flex">
-              <kbd className="h-5 min-w-7 font-sans text-neutral-400 text-xs">
-                ⌘K
+            searchValue.length > 0 ? (
+              <kbd className="min-w-8 font-sans text-neutral-400 text-xs">
+                ESC
               </kbd>
-            </div>
+            ) : (
+              <div className="hidden items-center gap-0.5 md:flex">
+                <kbd className="font-sans text-neutral-400 text-xs">⌘</kbd>
+                <kbd className="font-sans text-neutral-400 text-xs">K</kbd>
+              </div>
+            )
           }
           value={searchValue}
         />
