@@ -16,7 +16,7 @@ interface AtSymbolIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const VARIANTS: Variants = {
+const CIRCLE_VARIANTS: Variants = {
   normal: {
     opacity: 1,
     pathLength: 1,
@@ -31,9 +31,29 @@ const VARIANTS: Variants = {
     pathLength: [0, 1],
     pathOffset: [1, 0],
     transition: {
-      duration: 0.6,
-      ease: "linear",
+      duration: 0.3,
       opacity: { duration: 0.1 },
+    },
+  },
+};
+
+const PATH_VARIANTS: Variants = {
+  normal: {
+    opacity: 1,
+    pathLength: 1,
+    transition: {
+      delay: 0.3,
+      duration: 0.3,
+      opacity: { duration: 0.1, delay: 0.3 },
+    },
+  },
+  animate: {
+    opacity: [0, 1],
+    pathLength: [0, 1],
+    transition: {
+      delay: 0.3,
+      duration: 0.3,
+      opacity: { duration: 0.1, delay: 0.3 },
     },
   },
 };
@@ -92,11 +112,17 @@ const AtSymbolIcon = forwardRef<AtSymbolIconHandle, AtSymbolIconProps>(
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
+          <motion.circle
+            animate={controls}
+            cx="12"
+            cy="12"
+            r="4.5"
+            variants={CIRCLE_VARIANTS}
+          />
           <motion.path
             animate={controls}
-            d="M16.5 12a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"
-            initial="normal"
-            variants={VARIANTS}
+            d="M16.5 12c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"
+            variants={PATH_VARIANTS}
           />
         </svg>
       </div>
