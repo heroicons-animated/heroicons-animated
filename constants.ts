@@ -1,6 +1,6 @@
 const SITE = {
   NAME: "heroicons-animated",
-  URL: "https://heroicons-animated.vercel.app",
+  URL: "https://www.heroicons-animated.com",
   OG_IMAGE: "/og.png",
   AUTHOR: {
     NAME: "Aniket Pawar",
