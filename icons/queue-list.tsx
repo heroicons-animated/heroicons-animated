@@ -20,7 +20,7 @@ const ITEM_DURATION = 0.2;
 const INITIAL_DELAY = 0.1;
 const STAGGER_DELAY = 0.15;
 
-const createItemVariants = (delay: number): Variants => ({
+const CREATE_ITEM_VARIANTS = (delay: number): Variants => ({
   normal: {
     opacity: 1,
   },
@@ -104,7 +104,7 @@ const QueueListIcon = forwardRef<QueueListIconHandle, QueueListIconProps>(
                 d={item.path}
                 initial="normal"
                 key={item.y}
-                variants={createItemVariants(delay)}
+                variants={CREATE_ITEM_VARIANTS(delay)}
               />
             );
           })}

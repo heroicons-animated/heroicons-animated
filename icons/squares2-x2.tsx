@@ -19,23 +19,19 @@ interface Squares2X2IconProps extends HTMLAttributes<HTMLDivElement> {
 const VARIANTS: Variants = {
   normal: {
     opacity: 1,
-    pathLength: 1,
-    pathOffset: 0,
-    transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
-    },
+    scale: 1,
   },
-  animate: {
+  animate: (index: number) => ({
     opacity: [0, 1],
-    pathLength: [0, 1],
-    pathOffset: [1, 0],
+    scale: [0.6, 1],
     transition: {
-      duration: 0.6,
-      ease: "linear",
-      opacity: { duration: 0.1 },
+      duration: 0.35,
+      delay: index * 0.08,
+      type: "spring",
+      stiffness: 260,
+      damping: 20,
     },
-  },
+  }),
 };
 
 const Squares2X2Icon = forwardRef<Squares2X2IconHandle, Squares2X2IconProps>(
@@ -94,7 +90,29 @@ const Squares2X2Icon = forwardRef<Squares2X2IconHandle, Squares2X2IconProps>(
         >
           <motion.path
             animate={controls}
-            d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"
+            custom={0}
+            d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6Z"
+            initial="normal"
+            variants={VARIANTS}
+          />
+          <motion.path
+            animate={controls}
+            custom={1}
+            d="M13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6Z"
+            initial="normal"
+            variants={VARIANTS}
+          />
+          <motion.path
+            animate={controls}
+            custom={3}
+            d="M13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"
+            initial="normal"
+            variants={VARIANTS}
+          />
+          <motion.path
+            animate={controls}
+            custom={4}
+            d="M3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25Z"
             initial="normal"
             variants={VARIANTS}
           />

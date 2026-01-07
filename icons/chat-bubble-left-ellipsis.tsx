@@ -98,15 +98,24 @@ const ChatBubbleLeftEllipsisIcon = forwardRef<
         xmlns="http://www.w3.org/2000/svg"
       >
         {[
-          { d: "M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0", index: 0 },
-          { d: "M12.75 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0", index: 1 },
-          { d: "M16.875 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0", index: 2 },
+          {
+            d: "M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0",
+            index: 0,
+          },
+          {
+            d: "M12.75 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0",
+            index: 1,
+          },
+          {
+            d: "M16.875 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0",
+            index: 2,
+          },
         ].map((dot) => (
           <motion.path
-            key={dot.index}
             animate={controls}
             custom={dot.index}
             d={dot.d}
+            key={dot.index}
             variants={DOT_VARIANTS}
           />
         ))}

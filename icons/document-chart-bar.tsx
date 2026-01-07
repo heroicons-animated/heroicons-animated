@@ -16,7 +16,7 @@ interface DocumentChartBarIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const createBarVariants = (delay: number): Variants => ({
+const CREATE_BAR_VARIANTS = (delay: number): Variants => ({
   normal: {
     opacity: 1,
     pathLength: 1,
@@ -100,19 +100,19 @@ const DocumentChartBarIcon = forwardRef<
           animate={controls}
           d="M9 16.5v.75"
           initial="normal"
-          variants={createBarVariants(0)}
+          variants={CREATE_BAR_VARIANTS(0)}
         />
         <motion.path
           animate={controls}
           d="M12 14.25v3"
           initial="normal"
-          variants={createBarVariants(0.15)}
+          variants={CREATE_BAR_VARIANTS(0.15)}
         />
         <motion.path
           animate={controls}
           d="M15 12v5.25"
           initial="normal"
-          variants={createBarVariants(0.3)}
+          variants={CREATE_BAR_VARIANTS(0.3)}
         />
       </svg>
     </div>

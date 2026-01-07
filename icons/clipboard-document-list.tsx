@@ -20,7 +20,7 @@ interface ClipboardDocumentListIconProps
 const DOT_DURATION = 0.1;
 const LINE_DURATION = 0.3;
 
-const createDotVariants = (delay: number): Variants => ({
+const CREATE_DOT_VARIANTS = (delay: number): Variants => ({
   normal: {
     opacity: 1,
   },
@@ -34,7 +34,7 @@ const createDotVariants = (delay: number): Variants => ({
   },
 });
 
-const createLineVariants = (delay: number): Variants => ({
+const CREATE_LINE_VARIANTS = (delay: number): Variants => ({
   normal: {
     pathLength: 1,
     opacity: 1,
@@ -122,13 +122,13 @@ const ClipboardDocumentListIcon = forwardRef<
                 animate={controls}
                 d={item.dotPath}
                 initial="normal"
-                variants={createDotVariants(dotDelay)}
+                variants={CREATE_DOT_VARIANTS(dotDelay)}
               />
               <motion.path
                 animate={controls}
                 d={item.linePath}
                 initial="normal"
-                variants={createLineVariants(lineDelay)}
+                variants={CREATE_LINE_VARIANTS(lineDelay)}
               />
             </g>
           );

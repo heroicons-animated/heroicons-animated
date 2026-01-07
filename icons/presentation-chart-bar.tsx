@@ -16,7 +16,7 @@ interface PresentationChartBarIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const createBarVariants = (delay: number): Variants => ({
+const CREATE_BAR_VARIANTS = (delay: number): Variants => ({
   normal: {
     opacity: 1,
     pathLength: 1,
@@ -100,19 +100,19 @@ const PresentationChartBarIcon = forwardRef<
           animate={controls}
           d="M9 11.25v1.5"
           initial="normal"
-          variants={createBarVariants(0)}
+          variants={CREATE_BAR_VARIANTS(0)}
         />
         <motion.path
           animate={controls}
           d="M12 9v3.75"
           initial="normal"
-          variants={createBarVariants(0.15)}
+          variants={CREATE_BAR_VARIANTS(0.15)}
         />
         <motion.path
           animate={controls}
           d="M15 6.75v6"
           initial="normal"
-          variants={createBarVariants(0.3)}
+          variants={CREATE_BAR_VARIANTS(0.3)}
         />
       </svg>
     </div>

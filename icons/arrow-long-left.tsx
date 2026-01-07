@@ -92,16 +92,12 @@ const ArrowLongLeftIcon = forwardRef<
         width={size}
         xmlns="http://www.w3.org/2000/svg"
       >
-          <motion.path
-            animate={controls}
-            d="M6.75 15.75 3 12m0 0 3.75-3.75"
-            variants={ARROW_HEAD_VARIANTS}
-          />
-          <motion.path
-            animate={controls}
-            d="M3 12h18"
-            variants={LINE_VARIANTS}
-          />
+        <motion.path
+          animate={controls}
+          d="M6.75 15.75 3 12m0 0 3.75-3.75"
+          variants={ARROW_HEAD_VARIANTS}
+        />
+        <motion.path animate={controls} d="M3 12h18" variants={LINE_VARIANTS} />
       </svg>
     </div>
   );

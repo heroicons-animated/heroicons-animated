@@ -19,7 +19,7 @@ interface NumberedListIconProps extends HTMLAttributes<HTMLDivElement> {
 const NUMBER_DURATION = 0.2;
 const LINE_DURATION = 0.3;
 
-const createNumberVariants = (delay: number): Variants => ({
+const CREATE_NUMBER_VARIANTS = (delay: number): Variants => ({
   normal: {
     pathLength: 1,
     opacity: 1,
@@ -34,7 +34,7 @@ const createNumberVariants = (delay: number): Variants => ({
   },
 });
 
-const createLineVariants = (delay: number): Variants => ({
+const CREATE_LINE_VARIANTS = (delay: number): Variants => ({
   normal: {
     pathLength: 1,
     opacity: 1,
@@ -136,13 +136,13 @@ const NumberedListIcon = forwardRef<
                 animate={controls}
                 d={item.numberPath}
                 initial="normal"
-                variants={createNumberVariants(numberDelay)}
+                variants={CREATE_NUMBER_VARIANTS(numberDelay)}
               />
               <motion.path
                 animate={controls}
                 d={item.linePath}
                 initial="normal"
-                variants={createLineVariants(lineDelay)}
+                variants={CREATE_LINE_VARIANTS(lineDelay)}
               />
             </g>
           );

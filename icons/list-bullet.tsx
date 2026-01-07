@@ -19,7 +19,7 @@ interface ListBulletIconProps extends HTMLAttributes<HTMLDivElement> {
 const DOT_DURATION = 0.1;
 const LINE_DURATION = 0.3;
 
-const createBulletVariants = (delay: number): Variants => ({
+const CREATE_BULLET_VARIANTS = (delay: number): Variants => ({
   normal: {
     opacity: 1,
   },
@@ -33,7 +33,7 @@ const createBulletVariants = (delay: number): Variants => ({
   },
 });
 
-const createLineVariants = (delay: number): Variants => ({
+const CREATE_LINE_VARIANTS = (delay: number): Variants => ({
   normal: {
     pathLength: 1,
     opacity: 1,
@@ -133,13 +133,13 @@ const ListBulletIcon = forwardRef<ListBulletIconHandle, ListBulletIconProps>(
                   animate={controls}
                   d={item.bulletPath}
                   initial="normal"
-                  variants={createBulletVariants(bulletDelay)}
+                  variants={CREATE_BULLET_VARIANTS(bulletDelay)}
                 />
                 <motion.path
                   animate={controls}
                   d={item.linePath}
                   initial="normal"
-                  variants={createLineVariants(lineDelay)}
+                  variants={CREATE_LINE_VARIANTS(lineDelay)}
                 />
               </g>
             );

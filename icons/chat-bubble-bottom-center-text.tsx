@@ -103,11 +103,11 @@ const ChatBubbleBottomCenterTextIcon = forwardRef<
           { d: "M7.5 11.25H12", index: 1 },
         ].map((line) => (
           <motion.path
-            key={line.index}
             animate={controls}
             custom={line.index}
             d={line.d}
             initial="visible"
+            key={line.index}
             variants={LINE_VARIANTS}
           />
         ))}

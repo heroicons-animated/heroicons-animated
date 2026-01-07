@@ -18,22 +18,13 @@ interface StopCircleIconProps extends HTMLAttributes<HTMLDivElement> {
 
 const VARIANTS: Variants = {
   normal: {
-    opacity: 1,
-    pathLength: 1,
-    pathOffset: 0,
-    transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
-    },
+    scale: 1,
   },
   animate: {
-    opacity: [0, 1],
-    pathLength: [0, 1],
-    pathOffset: [1, 0],
+    scale: [1, 0.9, 1],
     transition: {
-      duration: 0.6,
-      ease: "linear",
-      opacity: { duration: 0.1 },
+      duration: 0.2,
+      ease: "easeInOut",
     },
   },
 };
@@ -81,31 +72,24 @@ const StopCircleIcon = forwardRef<StopCircleIconHandle, StopCircleIconProps>(
         onMouseLeave={handleMouseLeave}
         {...props}
       >
-        <svg
+        <motion.svg
+          animate={controls}
           fill="none"
           height={size}
+          initial="normal"
           stroke="currentColor"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"
+          style={{ transformBox: "fill-box", transformOrigin: "center" }}
+          variants={VARIANTS}
           viewBox="0 0 24 24"
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
-          <motion.path
-            animate={controls}
-            d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-            initial="normal"
-            variants={VARIANTS}
-          />
-          <motion.path
-            animate={controls}
-            d="M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 0 1 9 14.437V9.564Z"
-            initial="normal"
-            transition={{ delay: 0.1 }}
-            variants={VARIANTS}
-          />
-        </svg>
+          <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          <path d="M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 0 1 9 14.437V9.564Z" />
+        </motion.svg>
       </div>
     );
   }

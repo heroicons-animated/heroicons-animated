@@ -16,27 +16,26 @@ interface ViewColumnsIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const VARIANTS: Variants = {
+const LINE_VARIANTS: Variants = {
   normal: {
-    opacity: 1,
     pathLength: 1,
-    pathOffset: 0,
-    transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
-    },
+    opacity: 1,
   },
-  animate: {
-    opacity: [0, 1],
+  animate: (custom: number) => ({
     pathLength: [0, 1],
-    pathOffset: [1, 0],
+    opacity: [0, 1],
     transition: {
-      duration: 0.6,
+      delay: 0.2 + custom * 0.15,
+      duration: 0.3,
       ease: "linear",
-      opacity: { duration: 0.1 },
     },
-  },
+  }),
 };
+
+const LINES = [
+  { d: "M9 4.5v15", index: 0 },
+  { d: "M15 4.5v15", index: 1 },
+] as const;
 
 const ViewColumnsIcon = forwardRef<ViewColumnsIconHandle, ViewColumnsIconProps>(
   ({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
@@ -92,12 +91,17 @@ const ViewColumnsIcon = forwardRef<ViewColumnsIconHandle, ViewColumnsIconProps>(
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
-          <motion.path
-            animate={controls}
-            d="M9 4.5v15m6-15v15m-10.875 0h15.75c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H4.125C3.504 4.5 3 5.004 3 5.625v12.75c0 .621.504 1.125 1.125 1.125Z"
-            initial="normal"
-            variants={VARIANTS}
-          />
+          <path d="M4.125 19.5h15.75c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H4.125C3.504 4.5 3 5.004 3 5.625v12.75c0 .621.504 1.125 1.125 1.125Z" />
+          {LINES.map((line) => (
+            <motion.path
+              animate={controls}
+              custom={line.index}
+              d={line.d}
+              initial="normal"
+              key={line.index}
+              variants={LINE_VARIANTS}
+            />
+          ))}
         </svg>
       </div>
     );
