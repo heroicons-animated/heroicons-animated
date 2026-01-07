@@ -5,7 +5,9 @@ const ANALYTIC_EVENT = {
   ICON_COPY: "icon-copy",
   ICON_COPY_TERMINAL: "icon-copy-terminal",
   ICON_OPEN_IN_V0: "icon-open-in-v0",
-  COMMENT_ANIMATION_DEV_LINK: "comment-link-click",
+  COMMENT_AUTHOR_LINK: "comment-author-link",
+  COMMENT_LUCIDE_ANIMATED_LINK: "comment-lucide-animated-link",
+  COMMENT_SVG_GUIDE_LINK: "comment-svg-guide-link",
   COMMENT_BUTTON_CLICK: "comment-button-click",
 } as const;
 

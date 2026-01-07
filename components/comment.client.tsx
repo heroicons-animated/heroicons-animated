@@ -8,6 +8,11 @@ const CommentAuthorLinkClient = () => {
     <a
       className="inline-block underline underline-offset-3 transition-[decoration-color,color] duration-100 focus-within:outline-offset-0 hover:text-primary hover:decoration-primary focus-visible:text-primary focus-visible:outline-1 focus-visible:outline-primary"
       href="https://aniketpawar.com/"
+      onClick={() => {
+        if (typeof window !== "undefined" && window.umami) {
+          window.umami.track(ANALYTIC_EVENT.COMMENT_AUTHOR_LINK);
+        }
+      }}
       rel="noopener external"
       tabIndex={0}
       target="_blank"
@@ -22,6 +27,11 @@ const CommentLucideAnimatedLinkClient = () => {
     <a
       className="inline-block underline underline-offset-3 transition-[decoration-color,color] duration-100 focus-within:outline-offset-0 hover:text-primary hover:decoration-primary focus-visible:text-primary focus-visible:outline-1 focus-visible:outline-primary"
       href="https://lucide-animated.com/"
+      onClick={() => {
+        if (typeof window !== "undefined" && window.umami) {
+          window.umami.track(ANALYTIC_EVENT.COMMENT_LUCIDE_ANIMATED_LINK);
+        }
+      }}
       rel="noopener external"
       tabIndex={0}
       target="_blank"
@@ -38,7 +48,7 @@ const CommentAnimationsDevLinkClient = () => {
       href="https://www.svg.guide/"
       onClick={() => {
         if (typeof window !== "undefined" && window.umami) {
-          window.umami.track(ANALYTIC_EVENT.COMMENT_ANIMATION_DEV_LINK);
+          window.umami.track(ANALYTIC_EVENT.COMMENT_SVG_GUIDE_LINK);
         }
       }}
       rel="noopener external"
