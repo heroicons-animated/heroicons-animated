@@ -100,7 +100,6 @@ const CpuChipIcon = forwardRef<CpuChipIconHandle, CpuChipIconProps>(
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Top pins */}
           <motion.path
             animate={controls}
             d="M8.25 3V4.5"
@@ -119,7 +118,6 @@ const CpuChipIcon = forwardRef<CpuChipIconHandle, CpuChipIconProps>(
             transition={TRANSITION}
             variants={Y_VARIANTS}
           />
-          {/* Left pins */}
           <motion.path
             animate={controls}
             d="M4.5 8.25H3"
@@ -138,7 +136,6 @@ const CpuChipIcon = forwardRef<CpuChipIconHandle, CpuChipIconProps>(
             transition={TRANSITION}
             variants={X_VARIANTS}
           />
-          {/* Right pins */}
           <motion.path
             animate={controls}
             d="M21 8.25H19.5"
@@ -157,7 +154,6 @@ const CpuChipIcon = forwardRef<CpuChipIconHandle, CpuChipIconProps>(
             transition={TRANSITION}
             variants={X_VARIANTS}
           />
-          {/* Bottom pins */}
           <motion.path
             animate={controls}
             d="M8.25 19.5V21"
@@ -176,7 +172,6 @@ const CpuChipIcon = forwardRef<CpuChipIconHandle, CpuChipIconProps>(
             transition={TRANSITION}
             variants={Y_VARIANTS}
           />
-          {/* Main chip body */}
           <path d="M6.75 19.5H17.25C18.4926 19.5 19.5 18.4926 19.5 17.25V6.75C19.5 5.50736 18.4926 4.5 17.25 4.5H6.75C5.50736 4.5 4.5 5.50736 4.5 6.75V17.25C4.5 18.4926 5.50736 19.5 6.75 19.5ZM7.5 7.5H16.5V16.5H7.5V7.5Z" />
         </svg>
       </div>

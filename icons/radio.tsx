@@ -98,7 +98,6 @@ const RadioIcon = forwardRef<RadioIconHandle, RadioIconProps>(
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Antenna */}
           <motion.path
             animate={controls}
             d="M3.75 7.5L20.25 3.375"
@@ -106,11 +105,8 @@ const RadioIcon = forwardRef<RadioIconHandle, RadioIconProps>(
             style={{ originX: "3.75px", originY: "7.5px" }}
             variants={ANTENNA_VARIANTS}
           />
-          {/* Radio body frame */}
           <path d="M12 6.75C9.29246 6.75 6.63727 6.97417 4.05199 7.40497C2.99912 7.58042 2.25 8.50663 2.25 9.57402V18.75C2.25 19.9926 3.25736 21 4.5 21H19.5C20.7426 21 21.75 19.9926 21.75 18.75V9.57402C21.75 8.50663 21.0009 7.58042 19.948 7.40497C17.3627 6.97417 14.7075 6.75 12 6.75Z" />
-          {/* Buttons */}
           <path d="M17.25 12.75C16.8358 12.75 16.5 12.4142 16.5 12C16.5 11.5858 16.8358 11.25 17.25 11.25C17.6642 11.25 18 11.5858 18 12C18 12.4142 17.6642 12.75 17.25 12.75ZM17.25 17.25C16.8358 17.25 16.5 16.9142 16.5 16.5C16.5 16.0858 16.8358 15.75 17.25 15.75C17.6642 15.75 18 16.0858 18 16.5C18 16.9142 17.6642 17.25 17.25 17.25Z" />
-          {/* Speaker grille - animated */}
           <motion.g
             animate={controls}
             initial="normal"
