@@ -16,24 +16,15 @@ interface CurrencyEuroIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const VARIANTS: Variants = {
+const ROTATE_VARIANTS: Variants = {
   normal: {
-    opacity: 1,
-    pathLength: 1,
-    pathOffset: 0,
-    transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
-    },
+    scaleX: 1,
   },
   animate: {
-    opacity: [0, 1],
-    pathLength: [0, 1],
-    pathOffset: [1, 0],
+    scaleX: [1, -1, 1],
     transition: {
       duration: 0.6,
-      ease: "linear",
-      opacity: { duration: 0.1 },
+      ease: "easeInOut",
     },
   },
 };
@@ -83,25 +74,23 @@ const CurrencyEuroIcon = forwardRef<
       onMouseLeave={handleMouseLeave}
       {...props}
     >
-      <svg
+      <motion.svg
+        animate={controls}
         fill="none"
         height={size}
+        initial="normal"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1.5"
+        style={{ originX: "50%", originY: "50%" }}
+        variants={ROTATE_VARIANTS}
         viewBox="0 0 24 24"
         width={size}
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-        <motion.path
-          animate={controls}
-          d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25"
-          initial="normal"
-          variants={VARIANTS}
-        />
-      </svg>
+        <path d="M14.25 7.75625C12.667 7.19798 10.8341 7.5519 9.56802 8.81802C7.81066 10.5754 7.81066 13.4246 9.56802 15.182C10.8341 16.4481 12.667 16.802 14.25 16.2437M7.5 10.5H12.75M7.5 13.5H12.75M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" />
+      </motion.svg>
     </div>
   );
 });

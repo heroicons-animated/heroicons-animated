@@ -1,6 +1,6 @@
 "use client";
 
-import type { Variants } from "motion/react";
+import type { Transition } from "motion/react";
 import { motion, useAnimation } from "motion/react";
 import type { HTMLAttributes } from "react";
 import { forwardRef, useCallback, useImperativeHandle, useRef } from "react";
@@ -17,26 +17,11 @@ interface AdjustmentsHorizontalIconProps
   size?: number;
 }
 
-const VARIANTS: Variants = {
-  normal: {
-    opacity: 1,
-    pathLength: 1,
-    pathOffset: 0,
-    transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
-    },
-  },
-  animate: {
-    opacity: [0, 1],
-    pathLength: [0, 1],
-    pathOffset: [1, 0],
-    transition: {
-      duration: 0.6,
-      ease: "linear",
-      opacity: { duration: 0.1 },
-    },
-  },
+const DEFAULT_TRANSITION: Transition = {
+  type: "spring",
+  stiffness: 100,
+  damping: 12,
+  mass: 0.4,
 };
 
 const AdjustmentsHorizontalIcon = forwardRef<
@@ -95,11 +80,115 @@ const AdjustmentsHorizontalIcon = forwardRef<
         width={size}
         xmlns="http://www.w3.org/2000/svg"
       >
-        <motion.path
+        <motion.line
           animate={controls}
-          d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
-          initial="normal"
-          variants={VARIANTS}
+          transition={DEFAULT_TRANSITION}
+          variants={{
+            normal: { x1: 10.5 },
+            animate: { x1: 13.5 },
+          }}
+          x1="10.5"
+          x2="20.25"
+          y1="6"
+          y2="6"
+        />
+        <motion.line
+          animate={controls}
+          transition={DEFAULT_TRANSITION}
+          variants={{
+            normal: { x2: 7.5 },
+            animate: { x2: 10.5 },
+          }}
+          x1="3.75"
+          x2="7.5"
+          y1="6"
+          y2="6"
+        />
+        <motion.circle
+          animate={controls}
+          cx="9"
+          cy="6"
+          fill="none"
+          r="1.5"
+          transition={DEFAULT_TRANSITION}
+          variants={{
+            normal: { cx: 9 },
+            animate: { cx: 12 },
+          }}
+        />
+
+        <motion.line
+          animate={controls}
+          transition={DEFAULT_TRANSITION}
+          variants={{
+            normal: { x1: 16.5 },
+            animate: { x1: 13.5 },
+          }}
+          x1="16.5"
+          x2="20.25"
+          y1="12"
+          y2="12"
+        />
+        <motion.line
+          animate={controls}
+          transition={DEFAULT_TRANSITION}
+          variants={{
+            normal: { x2: 13.5 },
+            animate: { x2: 10.5 },
+          }}
+          x1="3.75"
+          x2="13.5"
+          y1="12"
+          y2="12"
+        />
+        <motion.circle
+          animate={controls}
+          cx="15"
+          cy="12"
+          fill="none"
+          r="1.5"
+          transition={DEFAULT_TRANSITION}
+          variants={{
+            normal: { cx: 15 },
+            animate: { cx: 12 },
+          }}
+        />
+
+        <motion.line
+          animate={controls}
+          transition={DEFAULT_TRANSITION}
+          variants={{
+            normal: { x1: 10.5 },
+            animate: { x1: 13.5 },
+          }}
+          x1="10.5"
+          x2="20.25"
+          y1="18"
+          y2="18"
+        />
+        <motion.line
+          animate={controls}
+          transition={DEFAULT_TRANSITION}
+          variants={{
+            normal: { x2: 7.5 },
+            animate: { x2: 10.5 },
+          }}
+          x1="3.75"
+          x2="7.5"
+          y1="18"
+          y2="18"
+        />
+        <motion.circle
+          animate={controls}
+          cx="9"
+          cy="18"
+          fill="none"
+          r="1.5"
+          transition={DEFAULT_TRANSITION}
+          variants={{
+            normal: { cx: 9 },
+            animate: { cx: 12 },
+          }}
         />
       </svg>
     </div>

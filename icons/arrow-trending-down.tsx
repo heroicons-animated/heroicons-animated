@@ -16,24 +16,46 @@ interface ArrowTrendingDownIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const VARIANTS: Variants = {
+const SVG_VARIANTS: Variants = {
+  normal: {
+    translateX: 0,
+    translateY: 0,
+  },
+  animate: {
+    translateX: [0, 2, 0],
+    translateY: [0, 2, 0],
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+const PATH_VARIANTS: Variants = {
   normal: {
     opacity: 1,
-    pathLength: 1,
-    pathOffset: 0,
+  },
+  animate: {
+    opacity: [0, 1],
+    pathLength: [0, 1],
     transition: {
       duration: 0.4,
       opacity: { duration: 0.1 },
     },
   },
+};
+
+const ARROW_VARIANTS: Variants = {
+  normal: {
+    opacity: 1,
+  },
   animate: {
     opacity: [0, 1],
     pathLength: [0, 1],
-    pathOffset: [1, 0],
+    pathOffset: [0.5, 0],
     transition: {
-      duration: 0.6,
-      ease: "linear",
-      opacity: { duration: 0.1 },
+      delay: 0.3,
+      duration: 0.3,
+      opacity: { duration: 0.1, delay: 0.3 },
     },
   },
 };
@@ -83,24 +105,33 @@ const ArrowTrendingDownIcon = forwardRef<
       onMouseLeave={handleMouseLeave}
       {...props}
     >
-      <svg
+      <motion.svg
+        animate={controls}
         fill="none"
         height={size}
+        initial="normal"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="1.5"
+        variants={SVG_VARIANTS}
         viewBox="0 0 24 24"
         width={size}
         xmlns="http://www.w3.org/2000/svg"
       >
         <motion.path
           animate={controls}
-          d="M2.25 6 9 12.75l4.286-4.286a11.948 11.948 0 0 1 4.306 6.43l.776 2.898m0 0 3.182-5.511m-3.182 5.51-5.511-3.181"
+          d="M2.25 6L9 12.75L13.2862 8.46383C15.3217 10.0166 16.8781 12.23 17.5919 14.8941L18.3684 17.7919"
           initial="normal"
-          variants={VARIANTS}
+          variants={PATH_VARIANTS}
         />
-      </svg>
+        <motion.path
+          animate={controls}
+          d="M18.3684 17.7919L21.5504 12.2806M18.3684 17.7919L12.857 14.6099"
+          initial="normal"
+          variants={ARROW_VARIANTS}
+        />
+      </motion.svg>
     </div>
   );
 });

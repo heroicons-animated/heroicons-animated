@@ -16,24 +16,15 @@ interface CurrencyYenIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const VARIANTS: Variants = {
+const ROTATE_VARIANTS: Variants = {
   normal: {
-    opacity: 1,
-    pathLength: 1,
-    pathOffset: 0,
-    transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
-    },
+    scaleX: 1,
   },
   animate: {
-    opacity: [0, 1],
-    pathLength: [0, 1],
-    pathOffset: [1, 0],
+    scaleX: [1, -1, 1],
     transition: {
       duration: 0.6,
-      ease: "linear",
-      opacity: { duration: 0.1 },
+      ease: "easeInOut",
     },
   },
 };
@@ -81,25 +72,23 @@ const CurrencyYenIcon = forwardRef<CurrencyYenIconHandle, CurrencyYenIconProps>(
         onMouseLeave={handleMouseLeave}
         {...props}
       >
-        <svg
+        <motion.svg
+          animate={controls}
           fill="none"
           height={size}
+          initial="normal"
           stroke="currentColor"
           strokeLinecap="round"
           strokeLinejoin="round"
           strokeWidth="1.5"
+          style={{ originX: "50%", originY: "50%" }}
+          variants={ROTATE_VARIANTS}
           viewBox="0 0 24 24"
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-          <motion.path
-            animate={controls}
-            d="m9 7.5 3 4.5m0 0 3-4.5M12 12v5.25M15 12H9m6 3H9"
-            initial="normal"
-            variants={VARIANTS}
-          />
-        </svg>
+          <path d="M9 7.5L12 12M12 12L15 7.5M12 12V17.25M15 12H9M15 15H9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" />
+        </motion.svg>
       </div>
     );
   }

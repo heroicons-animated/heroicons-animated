@@ -16,26 +16,20 @@ interface CreditCardIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const VARIANTS: Variants = {
+const LINE_VARIANTS: Variants = {
   normal: {
     opacity: 1,
-    pathLength: 1,
-    pathOffset: 0,
-    transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
-    },
   },
-  animate: {
+  animate: (custom: number) => ({
     opacity: [0, 1],
     pathLength: [0, 1],
-    pathOffset: [1, 0],
     transition: {
-      duration: 0.6,
+      delay: custom * 0.15,
+      duration: 0.3,
       ease: "linear",
-      opacity: { duration: 0.1 },
+      opacity: { duration: 0.1, delay: custom * 0.15 },
     },
-  },
+  }),
 };
 
 const CreditCardIcon = forwardRef<CreditCardIconHandle, CreditCardIconProps>(
@@ -92,11 +86,20 @@ const CreditCardIcon = forwardRef<CreditCardIconHandle, CreditCardIconProps>(
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
+          <path d="M2.25 8.25h19.5M2.25 9h19.5M4.5 19.5h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z" />
           <motion.path
             animate={controls}
-            d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"
+            custom={0}
+            d="M5.25 14.25h6"
             initial="normal"
-            variants={VARIANTS}
+            variants={LINE_VARIANTS}
+          />
+          <motion.path
+            animate={controls}
+            custom={1}
+            d="M5.25 16.5h3"
+            initial="normal"
+            variants={LINE_VARIANTS}
           />
         </svg>
       </div>
