@@ -70,11 +70,11 @@ const ThemeToggle = () => {
       <AnimatePresence initial={false} mode="popLayout">
         {mounted && (
           <motion.span
-            key={isDark ? "moon" : "sun"}
             animate="animate"
             className="flex items-center justify-center"
             exit="exit"
             initial="initial"
+            key={isDark ? "moon" : "sun"}
             transition={{
               duration: 0.15,
               ease: "easeOut",
@@ -82,9 +82,9 @@ const ThemeToggle = () => {
             variants={ICON_VARIANTS}
           >
             {isDark ? (
-              <MoonIcon ref={moonRef} aria-hidden="true" size={16} />
+              <MoonIcon aria-hidden="true" ref={moonRef} size={16} />
             ) : (
-              <SunIcon ref={sunRef} aria-hidden="true" size={16} />
+              <SunIcon aria-hidden="true" ref={sunRef} size={16} />
             )}
           </motion.span>
         )}
