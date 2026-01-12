@@ -1,7 +1,12 @@
 "use client";
 
-import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { useRef } from "react";
+
 import { ANALYTIC_EVENT } from "@/components/analytics";
+import {
+  ArrowTopRightOnSquareIcon,
+  type ArrowTopRightOnSquareIconHandle,
+} from "@/icons/arrow-top-right-on-square";
 
 const CommentAuthorLinkClient = () => {
   return (
@@ -61,6 +66,8 @@ const CommentAnimationsDevLinkClient = () => {
 };
 
 const CommentButtonClient = () => {
+  const arrowRef = useRef<ArrowTopRightOnSquareIconHandle>(null);
+
   return (
     <a
       className="supports-[corner-shape:squircle]:corner-squircle flex w-fit cursor-pointer items-center justify-center gap-1 rounded-[8px] bg-primary px-[12px] py-[4px] font-sans text-sm text-white transition-[background-color] duration-100 hover:bg-[color-mix(in_oklab,var(--color-primary),black_10%)] focus-visible:outline-1 focus-visible:outline-primary focus-visible:outline-offset-1 supports-[corner-shape:squircle]:rounded-[12px] max-[445px]:w-full"
@@ -70,12 +77,14 @@ const CommentButtonClient = () => {
           window.umami.track(ANALYTIC_EVENT.COMMENT_BUTTON_CLICK);
         }
       }}
+      onMouseEnter={() => arrowRef.current?.startAnimation()}
+      onMouseLeave={() => arrowRef.current?.stopAnimation()}
       rel="noopener external"
       tabIndex={0}
       target="_blank"
     >
       Take the course
-      <ArrowTopRightOnSquareIcon className="size-3" strokeWidth={2.5} />
+      <ArrowTopRightOnSquareIcon ref={arrowRef} size={14} />
     </a>
   );
 };
