@@ -16,24 +16,40 @@ interface Bars3CenterLeftIconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const VARIANTS: Variants = {
+const CREATE_SLIDE_VARIANTS = (delay: number): Variants => ({
   normal: {
-    opacity: 1,
-    pathLength: 1,
-    pathOffset: 0,
+    translateX: 0,
     transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
+      duration: 0.3,
+      ease: "easeOut",
     },
   },
   animate: {
-    opacity: [0, 1],
-    pathLength: [0, 1],
-    pathOffset: [1, 0],
+    translateX: [0, -3, 0],
     transition: {
-      duration: 0.6,
-      ease: "linear",
-      opacity: { duration: 0.1 },
+      duration: 0.4,
+      ease: "easeInOut",
+      delay,
+    },
+  },
+});
+
+const CENTER_BAR_VARIANTS: Variants = {
+  normal: {
+    translateX: 0,
+    pathLength: 1,
+    transition: {
+      duration: 0.3,
+      ease: "easeOut",
+    },
+  },
+  animate: {
+    translateX: [0, -2, 0],
+    pathLength: [1, 0.5, 1],
+    transition: {
+      duration: 0.5,
+      ease: "easeInOut",
+      delay: 0.05,
     },
   },
 };
@@ -96,9 +112,21 @@ const Bars3CenterLeftIcon = forwardRef<
       >
         <motion.path
           animate={controls}
-          d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5"
+          d="M3.75 6.75h16.5"
           initial="normal"
-          variants={VARIANTS}
+          variants={CREATE_SLIDE_VARIANTS(0)}
+        />
+        <motion.path
+          animate={controls}
+          d="M3.75 12H12"
+          initial="normal"
+          variants={CENTER_BAR_VARIANTS}
+        />
+        <motion.path
+          animate={controls}
+          d="M3.75 17.25h16.5"
+          initial="normal"
+          variants={CREATE_SLIDE_VARIANTS(0.1)}
         />
       </svg>
     </div>

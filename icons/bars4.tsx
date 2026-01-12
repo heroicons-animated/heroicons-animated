@@ -1,6 +1,6 @@
 "use client";
 
-import type { Variants } from "motion/react";
+import type { Transition, Variants } from "motion/react";
 import { motion, useAnimation } from "motion/react";
 import type { HTMLAttributes } from "react";
 import { forwardRef, useCallback, useImperativeHandle, useRef } from "react";
@@ -16,27 +16,31 @@ interface Bars4IconProps extends HTMLAttributes<HTMLDivElement> {
   size?: number;
 }
 
-const VARIANTS: Variants = {
+const TRANSITION: Transition = {
+  duration: 0.3,
+  ease: "easeInOut",
+};
+
+const CREATE_BAR_VARIANTS = (delay: number): Variants => ({
   normal: {
-    opacity: 1,
-    pathLength: 1,
-    pathOffset: 0,
-    transition: {
-      duration: 0.4,
-      opacity: { duration: 0.1 },
-    },
+    scaleX: 1,
+    transition: TRANSITION,
   },
   animate: {
-    opacity: [0, 1],
-    pathLength: [0, 1],
-    pathOffset: [1, 0],
+    scaleX: [1, 0.6, 1],
     transition: {
-      duration: 0.6,
-      ease: "linear",
-      opacity: { duration: 0.1 },
+      ...TRANSITION,
+      delay,
     },
   },
-};
+});
+
+const BARS = [
+  { d: "M3.75 5.25h16.5", delay: 0 },
+  { d: "M3.75 9.75h16.5", delay: 0.1 },
+  { d: "M3.75 14.25h16.5", delay: 0.2 },
+  { d: "M3.75 18.75h16.5", delay: 0.3 },
+];
 
 const Bars4Icon = forwardRef<Bars4IconHandle, Bars4IconProps>(
   ({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
@@ -92,12 +96,16 @@ const Bars4Icon = forwardRef<Bars4IconHandle, Bars4IconProps>(
           width={size}
           xmlns="http://www.w3.org/2000/svg"
         >
-          <motion.path
-            animate={controls}
-            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-            initial="normal"
-            variants={VARIANTS}
-          />
+          {BARS.map((bar) => (
+            <motion.path
+              animate={controls}
+              d={bar.d}
+              initial="normal"
+              key={bar.d}
+              style={{ transformOrigin: "center" }}
+              variants={CREATE_BAR_VARIANTS(bar.delay)}
+            />
+          ))}
         </svg>
       </div>
     );
