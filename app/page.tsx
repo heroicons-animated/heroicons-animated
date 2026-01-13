@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <section
-        className="mx-auto mt-[60px] flex w-full flex-col items-center justify-center"
+        className="view-container flex flex-col items-center justify-center border-neutral-200 pt-[60px] xl:border-x dark:border-neutral-800"
         id="hero"
       >
         <h1 className="px-4 text-center font-sans text-[32px] min-[640px]:text-[42px]">
@@ -57,7 +57,7 @@ const Home = () => {
         <CliBlock icons={icons.filter((icon) => icon.name.length <= 20)} />
         <CommentBlock />
       </section>
-      <section className="mb-20" id="icons">
+      <section id="icons">
         <Suspense fallback={null}>
           <IconsList icons={icons} />
         </Suspense>

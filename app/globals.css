@@ -85,6 +85,6 @@
   }
 
   .view-container {
-    @apply mx-auto w-full max-w-[1292px] px-4;
+    @apply mx-auto w-full max-w-[1292px] px-2;
   }
 }

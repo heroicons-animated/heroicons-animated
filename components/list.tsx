@@ -84,8 +84,13 @@ const IconsList = ({ icons }: Props) => {
 
   return (
     <>
-      <SearchInput searchValue={searchValue} setSearchValue={setSearchValue} />
-      <div className="view-container grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-[3px]">
+      <SearchInput
+        resultCount={filteredIcons.length}
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}
+        totalCount={icons.length}
+      />
+      <div className="view-container grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-2 border-neutral-200 pt-2 pb-[60px] xl:border-x dark:border-neutral-800">
         {filteredIcons.length === 0 && (
           <div className="col-span-full pt-10 text-center text-neutral-500 text-sm">
             No icons found

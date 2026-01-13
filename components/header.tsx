@@ -71,8 +71,8 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="view-container mt-[25px] font-mono">
-      <div className="flex h-full w-full justify-between gap-4">
+    <header className="border-neutral-200 xl:border-b dark:border-neutral-800">
+      <div className="view-container flex justify-between gap-4 border-neutral-200 py-4 xl:border-x dark:border-neutral-800">
         <Link
           aria-label="Heroicons Animated - Home"
           className="mr-auto flex h-[42px] items-center gap-2 font-sans text-base focus-within:outline-offset-4 focus-visible:outline-1 focus-visible:outline-primary max-[524px]:translate-y-[-2px] min-[395px]:text-xl"

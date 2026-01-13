@@ -122,7 +122,7 @@ const IconPage = async ({ params }: Props) => {
       />
       <IconJsonLd icon={icon} />
 
-      <section className="view-container mt-12 flex flex-col items-start min-[880px]:my-[60px]">
+      <section className="view-container flex flex-col items-start border-neutral-200 py-12 xl:border-x min-[880px]:pt-[60px] dark:border-neutral-800">
         <Link
           className="mb-8 flex items-center gap-2 font-sans text-secondary text-sm transition-[color] duration-100 hover:text-primary focus-visible:outline-1 focus-visible:outline-primary focus-visible:outline-offset-2"
           href="/"
@@ -152,23 +152,23 @@ const IconPage = async ({ params }: Props) => {
           className="mt-8 flex px-0 min-[880px]:hidden"
           staticIconName={slug}
         />
-
-        <div className="mt-12">
-          <h2 className="mb-3 font-sans text-xl">Keywords</h2>
-          <div className="flex flex-wrap gap-2">
-            {icon.keywords.map((keyword, index) => (
-              <span
-                className="supports-[corner-shape:squircle]:corner-squircle rounded-[12px] bg-neutral-200 px-3 py-1 font-mono text-secondary text-sm supports-[corner-shape:squircle]:rounded-[20px] dark:bg-[#262626]"
-                key={`${keyword}-${index}`}
-              >
-                {keyword}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <SimilarIcons currentIcon={icon} />
       </section>
+
+      <section className="view-container border-neutral-200 py-4 xl:border dark:border-neutral-800">
+        <h2 className="mb-3 font-sans text-xl">Keywords</h2>
+        <div className="flex flex-wrap gap-2">
+          {icon.keywords.map((keyword, index) => (
+            <span
+              className="supports-[corner-shape:squircle]:corner-squircle rounded-[12px] bg-neutral-200 px-3 py-1 font-mono text-secondary text-sm supports-[corner-shape:squircle]:rounded-[20px] dark:bg-[#262626]"
+              key={`${keyword}-${index}`}
+            >
+              {keyword}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      <SimilarIcons currentIcon={icon} />
     </>
   );
 };

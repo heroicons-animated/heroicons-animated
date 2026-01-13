@@ -73,9 +73,9 @@ const SimilarIcons = ({ currentIcon }: Props) => {
   }
 
   return (
-    <div className="mt-12 w-full">
+    <section className="view-container border-neutral-200 pt-12 pb-[60px] xl:border-x xl:pt-4 dark:border-neutral-800">
       <h2 className="mb-4 font-sans text-xl">Similar Icons</h2>
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-[3px]">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-2">
         {similarIcons.map((icon) => (
           <SimilarIconItem
             Icon={ICON_MAP.get(icon.name) ?? undefined}
@@ -84,7 +84,7 @@ const SimilarIcons = ({ currentIcon }: Props) => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
