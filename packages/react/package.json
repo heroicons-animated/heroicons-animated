@@ -36,14 +36,14 @@
   },
   "dependencies": {
     "@heroicons-animated/shared": "workspace:*",
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^3.4.0"
+    "clsx": "catalog:",
+    "tailwind-merge": "catalog:"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/react": "^19.2.7",
+    "@types/react": "catalog:",
     "react": "^19.2.1",
-    "tsup": "^8.3.5",
-    "typescript": "^5.9.3"
+    "tsup": "catalog:",
+    "typescript": "catalog:"
   }
 }

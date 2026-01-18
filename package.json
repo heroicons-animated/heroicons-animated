@@ -11,9 +11,9 @@
     "type-check": "turbo run type-check"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.10",
+    "@biomejs/biome": "catalog:",
     "turbo": "^2.3.3",
-    "ultracite": "7.0.5"
+    "ultracite": "catalog:"
   },
-  "packageManager": "pnpm@9.15.4"
+  "packageManager": "pnpm@10.28.0"
 }

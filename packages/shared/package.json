@@ -12,11 +12,11 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "clsx": "^2.1.1",
-    "tailwind-merge": "^3.4.0"
+    "clsx": "catalog:",
+    "tailwind-merge": "catalog:"
   },
   "devDependencies": {
-    "tsup": "^8.4.1",
-    "typescript": "^5.9.3"
+    "tsup": "catalog:",
+    "typescript": "catalog:"
   }
 }

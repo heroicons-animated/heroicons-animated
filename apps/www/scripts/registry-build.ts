@@ -19,11 +19,12 @@ interface FrameworkConfig {
 
 const getFrameworkConfig = (framework: Framework): FrameworkConfig => {
   const basePublicPath = path.join(__dirname, "../public/r");
+  const basePackagesPath = path.join(__dirname, "../../../packages");
 
   const configs: Record<Framework, FrameworkConfig> = {
     react: {
       name: "React",
-      iconsDir: path.join(__dirname, "../../../packages/react/src/icons"),
+      iconsDir: path.join(basePackagesPath, "react/src/icons"),
       extension: ".tsx",
       registryPath: basePublicPath,
       registryIndexPath: path.join(basePublicPath, "registry.json"),
@@ -34,7 +35,7 @@ const getFrameworkConfig = (framework: Framework): FrameworkConfig => {
     },
     vue: {
       name: "Vue",
-      iconsDir: path.join(__dirname, "../../../packages/vue/src/icons"),
+      iconsDir: path.join(basePackagesPath, "vue/src/icons"),
       extension: ".vue",
       registryPath: path.join(basePublicPath, "vue"),
       registryIndexPath: path.join(basePublicPath, "vue/registry.json"),
@@ -44,7 +45,7 @@ const getFrameworkConfig = (framework: Framework): FrameworkConfig => {
     },
     svelte: {
       name: "Svelte",
-      iconsDir: path.join(__dirname, "../../../packages/svelte/src/lib/icons"),
+      iconsDir: path.join(basePackagesPath, "svelte/src/lib/icons"),
       extension: ".svelte",
       registryPath: path.join(basePublicPath, "svelte"),
       registryIndexPath: path.join(basePublicPath, "svelte/registry.json"),
