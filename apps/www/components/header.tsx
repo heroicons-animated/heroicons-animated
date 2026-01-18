@@ -8,7 +8,7 @@ import { forwardRef, useCallback, useImperativeHandle, useRef } from "react";
 import { GithubStarsButton } from "@/components/github-button";
 import { Logo } from "@/components/logo";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import { useFramework } from "@/providers/framework";
+import { LINK } from "@/constants";
 
 interface FilledHeartIconHandle {
   startAnimation: () => void;
