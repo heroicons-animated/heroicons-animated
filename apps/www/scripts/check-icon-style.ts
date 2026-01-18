@@ -83,7 +83,7 @@ const fixFile = (filePath: string, issues: Issue[]): boolean => {
 
 const run = () => {
   const shouldFix = process.argv.includes("--fix");
-  const iconsDir = join(process.cwd(), "icons");
+  const iconsDir = join(process.cwd(), "..", "..", "packages", "react", "src", "icons");
   const files = readdirSync(iconsDir).filter((f) => f.endsWith(".tsx"));
 
   console.log("🔍 Checking icon style (UPPER_CASE constants)...\n");
@@ -97,7 +97,7 @@ const run = () => {
     if (issues.length > 0) {
       if (shouldFix) {
         fixFile(filePath, issues);
-        console.log(`  ✅ Fixed: icons/${file}`);
+        console.log(`  ✅ Fixed: packages/react/src/icons/${file}`);
         for (const issue of issues) {
           console.log(`     ${issue.name} → ${issue.suggestion}`);
         }
@@ -111,7 +111,7 @@ const run = () => {
     console.log("❌ Found non-UPPER_CASE constants:\n");
     for (const issue of allIssues) {
       console.log(
-        `  icons/${issue.file}:${issue.line} - "${issue.name}" should be "${issue.suggestion}"`
+        `  packages/react/src/icons/${issue.file}:${issue.line} - "${issue.name}" should be "${issue.suggestion}"`
       );
     }
     console.log("\n💡 Run with --fix to auto-fix these issues.\n");
