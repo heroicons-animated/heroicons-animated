@@ -2,7 +2,7 @@
 
 import { ScrollArea as BaseScrollArea } from "@base-ui/react/scroll-area";
 import { ClipboardDocumentIcon } from "@heroicons/react/24/outline";
-import { cn, PACKAGE_MANAGER } from "@heroicons-animated/shared";
+import { cn, PACKAGE_MANAGER, SITE } from "@heroicons-animated/shared";
 import { useRef, useState, useTransition } from "react";
 import { toast } from "sonner";
 import type { Icon } from "@/actions/get-icons";
@@ -10,7 +10,9 @@ import type { IconStatus } from "@/components/ui/icon-state";
 import { IconState } from "@/components/ui/icon-state";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { TextLoop } from "@/components/ui/text-loop";
+import { getCLICommand, getRegistryPathPrefix, getShadcnCLI } from "@/lib/cli";
 import { getPackageManagerPrefix } from "@/lib/get-package-manager-prefix";
+import { useFramework } from "@/providers/framework";
 import { usePackageNameContext } from "@/providers/package-name";
 
 type CliBlockProps = {
@@ -23,6 +25,7 @@ const CliBlock = ({ icons, staticIconName, className }: CliBlockProps) => {
   const [state, setState] = useState<IconStatus>("idle");
   const [_, startTransition] = useTransition();
   const currentIconName = useRef(staticIconName || "");
+  const { framework } = useFramework();
 
   const { packageName, setPackageName } = usePackageNameContext();
 
@@ -35,7 +38,7 @@ const CliBlock = ({ icons, staticIconName, className }: CliBlockProps) => {
 
       try {
         await navigator.clipboard.writeText(
-          `${getPackageManagerPrefix(packageName)} shadcn add @heroicons-animated/${iconName}`
+          getCLICommand(packageName, framework, iconName)
         );
 
         setState("done");
@@ -93,8 +96,8 @@ const CliBlock = ({ icons, staticIconName, className }: CliBlockProps) => {
                 )}
               >
                 <span className="sr-only">
-                  {getPackageManagerPrefix(pm)} shadcn add @heroicons-animated/
-                  {staticIconName || currentIconName.current}
+                  {getPackageManagerPrefix(pm)} {getShadcnCLI(framework)} add @
+                  {SITE.NAME}/{staticIconName || currentIconName.current}
                 </span>
                 <span
                   aria-hidden="true"
@@ -103,7 +106,8 @@ const CliBlock = ({ icons, staticIconName, className }: CliBlockProps) => {
                   {getPackageManagerPrefix(pm)}
                 </span>{" "}
                 <span aria-hidden="true" className="text-black dark:text-white">
-                  shadcn add @heroicons-animated/
+                  {getShadcnCLI(framework)} add @{SITE.NAME}
+                  {getRegistryPathPrefix(framework)}
                 </span>
                 {isStatic ? (
                   <span className="shrink-0 text-primary">

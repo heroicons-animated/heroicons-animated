@@ -4,7 +4,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CliBlock } from "@/components/cli-block";
+import { getFrameworkName } from "@/lib/cli";
 import { kebabToPascalCase } from "@/lib/kebab-to-pascal";
+import { useFramework } from "@/providers/framework";
 import { BreadcrumbJsonLd } from "@/seo/json-ld";
 import { baseMetadata } from "@/seo/metadata";
 import { IconCard } from "./icon-card";
@@ -40,8 +42,8 @@ export const generateMetadata = async ({
   const pascalName = kebabToPascalCase(slug);
   const [keyword] = pascalName.split("Icon");
 
-  const title = `${keyword} Icon - Animated React Icon`;
-  const description = `Free animated ${icon.name} icon for React. Smooth Motion-powered animation, copy-paste ready. Keywords: ${icon.keywords.slice(0, 5).join(", ")}.`;
+  const title = `${keyword} Icon - Animated Icon for React, Vue & Svelte`;
+  const description = `Free animated ${icon.name} icon for React, Vue, and Svelte. Smooth animations, copy-paste ready. Keywords: ${icon.keywords.slice(0, 5).join(", ")}.`;
 
   return {
     title,
@@ -65,9 +67,13 @@ export const generateMetadata = async ({
       ...icon.keywords,
       "animated icon",
       "react icon",
+      "vue icon",
+      "svelte icon",
       "motion icon",
       `${icon.name} animation`,
       `${icon.name} react`,
+      `${icon.name} vue`,
+      `${icon.name} svelte`,
     ],
   };
 };
@@ -79,9 +85,9 @@ const IconJsonLd = ({ icon }: { icon: (typeof ICON_MANIFEST)[number] }) => {
     "@context": "https://schema.org",
     "@type": "SoftwareSourceCode",
     name: pascalName,
-    description: `Animated ${icon.name} icon component for React`,
+    description: `Animated ${icon.name} icon component for React, Vue, and Svelte`,
     codeRepository: LINK.GITHUB,
-    programmingLanguage: ["TypeScript", "React"],
+    programmingLanguage: ["TypeScript", "React", "Vue", "Svelte"],
     license: LINK.LICENSE,
     isPartOf: {
       "@type": "SoftwareSourceCode",
@@ -100,10 +106,9 @@ const IconJsonLd = ({ icon }: { icon: (typeof ICON_MANIFEST)[number] }) => {
   );
 };
 
-const IconPage = async ({ params, searchParams }: Props) => {
+const IconPage = async ({ params }: Props) => {
+  const { framework } = useFramework();
   const { slug } = await params;
-  const searchParamsResolved = await searchParams;
-  const framework = searchParamsResolved.framework;
   const icon = getIconBySlug(slug);
 
   if (!icon) {
@@ -130,7 +135,7 @@ const IconPage = async ({ params, searchParams }: Props) => {
         <div className="view-container flex flex-col items-start border-neutral-200 py-12 xl:border-x xl:pb-4 min-[880px]:pt-[60px] dark:border-neutral-800">
           <Link
             className="mb-8 flex items-center gap-2 font-sans text-secondary text-sm transition-[color] duration-100 hover:text-primary focus-visible:outline-1 focus-visible:outline-primary focus-visible:outline-offset-2"
-            href="/"
+            href={backHref}
           >
             <ArrowLeftIcon className="size-4" />
             Back to all icons
@@ -144,7 +149,8 @@ const IconPage = async ({ params, searchParams }: Props) => {
                 {pascalName}
               </h1>
               <p className="font-mono text-secondary text-sm">
-                Animated {icon.name.replace(/-/g, " ")} icon for React
+                Animated {icon.name.replace(/-/g, " ")} icon for{" "}
+                {getFrameworkName(framework)}
               </p>
               <CliBlock
                 className="mt-7 hidden px-0 min-[880px]:flex"
