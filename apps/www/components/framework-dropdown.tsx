@@ -76,7 +76,7 @@ export function FrameworkDropdown() {
         className={cn(
           "flex h-10 items-center gap-2 bg-white px-3 py-2 text-sm ring-1 ring-neutral-200 transition-all hover:bg-neutral-50 focus:outline-none focus:ring-primary data-[state=open]:ring-primary dark:bg-[#0A0A0A] dark:ring-neutral-800 dark:hover:bg-neutral-900",
           "supports-[corner-shape:squircle]:corner-squircle rounded-[14px] supports-[corner-shape:squircle]:rounded-[24px]",
-          "focus:ring-1 data-[state=open]:ring-1"
+          "focus:ring-1 data-[state=open]:ring-1 dark:data-[state=open]:ring-primary dark:focus:ring-primary"
         )}
       >
         <activeFramework.Icon className="size-4" />

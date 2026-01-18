@@ -2,6 +2,23 @@
   "name": "@heroicons-animated/vue",
   "version": "0.1.0",
   "description": "Animated Vue icons built with @vueuse/motion",
+  "author": "Aniket-508",
+  "license": "MIT",
+  "homepage": "https://heroicons-animated.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aniket-508/heroicons-animated",
+    "directory": "packages/vue"
+  },
+  "keywords": [
+    "heroicons",
+    "vue",
+    "vue3",
+    "icons",
+    "animated",
+    "vueuse",
+    "motion"
+  ],
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -17,7 +34,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "vite build",

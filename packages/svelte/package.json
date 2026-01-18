@@ -2,6 +2,22 @@
   "name": "@heroicons-animated/svelte",
   "version": "0.1.0",
   "description": "Animated Svelte icons built with CSS animations",
+  "author": "Aniket-508",
+  "license": "MIT",
+  "homepage": "https://heroicons-animated.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Aniket-508/heroicons-animated",
+    "directory": "packages/svelte"
+  },
+  "keywords": [
+    "heroicons",
+    "svelte",
+    "svelte5",
+    "icons",
+    "animated",
+    "css-animations"
+  ],
   "type": "module",
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -16,7 +32,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "svelte-package",
