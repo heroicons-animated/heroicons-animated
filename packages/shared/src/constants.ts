@@ -5,6 +5,7 @@ const SITE = {
   AUTHOR: {
     NAME: "Aniket Pawar",
     TWITTER: "@alaymanguy",
+    GITHUB: "Aniket-508",
   },
   DESCRIPTION: {
     LONG: "Free open-source library of 316 beautifully animated React icons. Built with Motion and Heroicons. Copy-paste ready, MIT licensed, fully customizable SVG icons with smooth animations.",

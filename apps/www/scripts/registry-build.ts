@@ -44,7 +44,7 @@ const getFrameworkConfig = (framework: Framework): FrameworkConfig => {
     },
     svelte: {
       name: "Svelte",
-      iconsDir: path.join(__dirname, "../../../packages/svelte/src/icons"),
+      iconsDir: path.join(__dirname, "../../../packages/svelte/src/lib/icons"),
       extension: ".svelte",
       registryPath: path.join(basePublicPath, "svelte"),
       registryIndexPath: path.join(basePublicPath, "svelte/registry.json"),

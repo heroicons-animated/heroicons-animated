@@ -192,24 +192,24 @@ import {
   type BarsArrowDownIconHandle,
 } from "./bars-arrow-down";
 import { BarsArrowUpIcon, type BarsArrowUpIconHandle } from "./bars-arrow-up";
-import { Bars2Icon, type Bars2IconHandle } from "./bars2";
-import { Bars3Icon, type Bars3IconHandle } from "./bars3";
+import { Bars2Icon, type Bars2IconHandle } from "./bars-2";
+import { Bars3Icon, type Bars3IconHandle } from "./bars-3";
 import {
   Bars3BottomLeftIcon,
   type Bars3BottomLeftIconHandle,
-} from "./bars3-bottom-left";
+} from "./bars-3-bottom-left";
 import {
   Bars3BottomRightIcon,
   type Bars3BottomRightIconHandle,
-} from "./bars3-bottom-right";
+} from "./bars-3-bottom-right";
 import {
   Bars3CenterLeftIcon,
   type Bars3CenterLeftIconHandle,
-} from "./bars3-center-left";
-import { Bars4Icon, type Bars4IconHandle } from "./bars4";
-import { Battery0Icon, type Battery0IconHandle } from "./battery0";
-import { Battery50Icon, type Battery50IconHandle } from "./battery50";
-import { Battery100Icon, type Battery100IconHandle } from "./battery100";
+} from "./bars-3-center-left";
+import { Bars4Icon, type Bars4IconHandle } from "./bars-4";
+import { Battery0Icon, type Battery0IconHandle } from "./battery-0";
+import { Battery50Icon, type Battery50IconHandle } from "./battery-50";
+import { Battery100Icon, type Battery100IconHandle } from "./battery-100";
 import { BeakerIcon, type BeakerIconHandle } from "./beaker";
 import { BellIcon, type BellIconHandle } from "./bell";
 import { BellAlertIcon, type BellAlertIconHandle } from "./bell-alert";
@@ -241,7 +241,7 @@ import {
 import {
   BuildingOffice2Icon,
   type BuildingOffice2IconHandle,
-} from "./building-office2";
+} from "./building-office-2";
 import {
   BuildingStorefrontIcon,
   type BuildingStorefrontIconHandle,
@@ -346,8 +346,8 @@ import {
   type CodeBracketSquareIconHandle,
 } from "./code-bracket-square";
 import { CogIcon, type CogIconHandle } from "./cog";
-import { Cog6ToothIcon, type Cog6ToothIconHandle } from "./cog6-tooth";
-import { Cog8ToothIcon, type Cog8ToothIconHandle } from "./cog8-tooth";
+import { Cog6ToothIcon, type Cog6ToothIconHandle } from "./cog-6-tooth";
+import { Cog8ToothIcon, type Cog8ToothIconHandle } from "./cog-8-tooth";
 import { CommandLineIcon, type CommandLineIconHandle } from "./command-line";
 import {
   ComputerDesktopIcon,
@@ -653,13 +653,13 @@ import {
   SpeakerXMarkIcon,
   type SpeakerXMarkIconHandle,
 } from "./speaker-x-mark";
-import { Square2StackIcon, type Square2StackIconHandle } from "./square2-stack";
+import { Square2StackIcon, type Square2StackIconHandle } from "./square-2-stack";
 import {
   Square3Stack3DIcon,
   type Square3Stack3DIconHandle,
-} from "./square3-stack3-d";
+} from "./square-3-stack-3d";
 import { SquaresPlusIcon, type SquaresPlusIconHandle } from "./squares-plus";
-import { Squares2X2Icon, type Squares2X2IconHandle } from "./squares2-x2";
+import { Squares2X2Icon, type Squares2X2IconHandle } from "./squares-2x2";
 import { StarIcon, type StarIconHandle } from "./star";
 import { StopIcon, type StopIconHandle } from "./stop";
 import { StopCircleIcon, type StopCircleIconHandle } from "./stop-circle";
@@ -771,15 +771,15 @@ const ICON_MAP: Record<string, ElementType> = {
   banknotes: BanknotesIcon,
   "bars-arrow-down": BarsArrowDownIcon,
   "bars-arrow-up": BarsArrowUpIcon,
-  bars2: Bars2Icon,
-  "bars3-bottom-left": Bars3BottomLeftIcon,
-  "bars3-bottom-right": Bars3BottomRightIcon,
-  "bars3-center-left": Bars3CenterLeftIcon,
-  bars3: Bars3Icon,
-  bars4: Bars4Icon,
-  battery0: Battery0Icon,
-  battery100: Battery100Icon,
-  battery50: Battery50Icon,
+  "bars-2": Bars2Icon,
+  "bars-3-bottom-left": Bars3BottomLeftIcon,
+  "bars-3-bottom-right": Bars3BottomRightIcon,
+  "bars-3-center-left": Bars3CenterLeftIcon,
+  "bars-3": Bars3Icon,
+  "bars-4": Bars4Icon,
+  "battery-0": Battery0Icon,
+  "battery-100": Battery100Icon,
+  "battery-50": Battery50Icon,
   beaker: BeakerIcon,
   "bell-alert": BellAlertIcon,
   "bell-slash": BellSlashIcon,
@@ -796,7 +796,7 @@ const ICON_MAP: Record<string, ElementType> = {
   "bug-ant": BugAntIcon,
   "building-library": BuildingLibraryIcon,
   "building-office": BuildingOfficeIcon,
-  "building-office2": BuildingOffice2Icon,
+  "building-office-2": BuildingOffice2Icon,
   "building-storefront": BuildingStorefrontIcon,
   cake: CakeIcon,
   calculator: CalculatorIcon,
@@ -838,8 +838,8 @@ const ICON_MAP: Record<string, ElementType> = {
   "code-bracket-square": CodeBracketSquareIcon,
   "code-bracket": CodeBracketIcon,
   cog: CogIcon,
-  "cog6-tooth": Cog6ToothIcon,
-  "cog8-tooth": Cog8ToothIcon,
+  "cog-6-tooth": Cog6ToothIcon,
+  "cog-8-tooth": Cog8ToothIcon,
   "command-line": CommandLineIcon,
   "computer-desktop": ComputerDesktopIcon,
   "cpu-chip": CpuChipIcon,
@@ -992,10 +992,10 @@ const ICON_MAP: Record<string, ElementType> = {
   sparkles: SparklesIcon,
   "speaker-wave": SpeakerWaveIcon,
   "speaker-x-mark": SpeakerXMarkIcon,
-  "square2-stack": Square2StackIcon,
-  "square3-stack3-d": Square3Stack3DIcon,
+  "square-2-stack": Square2StackIcon,
+  "square-3-stack-3d": Square3Stack3DIcon,
   "squares-plus": SquaresPlusIcon,
-  "squares2-x2": Squares2X2Icon,
+  "squares-2x2": Squares2X2Icon,
   star: StarIcon,
   "stop-circle": StopCircleIcon,
   stop: StopIcon,

@@ -296,40 +296,40 @@ export const ICON_MANIFEST: IconManifestItem[] = [
     keywords: ["bars", "arrow", "up", "bars arrow up"],
   },
   {
-    name: "bars2",
-    keywords: ["bars2"],
+    name: "bars-2",
+    keywords: ["bars-2", "bars 2"],
   },
   {
-    name: "bars3-bottom-left",
-    keywords: ["bars3", "bottom", "left", "bars3 bottom left"],
+    name: "bars-3-bottom-left",
+    keywords: ["bars-3", "bottom", "left", "bars-3 bottom left"],
   },
   {
-    name: "bars3-bottom-right",
-    keywords: ["bars3", "bottom", "right", "bars3 bottom right"],
+    name: "bars-3-bottom-right",
+    keywords: ["bars-3", "bottom", "right", "bars-3 bottom right"],
   },
   {
-    name: "bars3-center-left",
-    keywords: ["bars3", "center", "left", "bars3 center left"],
+    name: "bars-3-center-left",
+    keywords: ["bars-3", "center", "left", "bars-3 center left"],
   },
   {
-    name: "bars3",
-    keywords: ["bars3"],
+    name: "bars-3",
+    keywords: ["bars-3", "bars 3"],
   },
   {
-    name: "bars4",
-    keywords: ["bars4"],
+    name: "bars-4",
+    keywords: ["bars-4", "bars 4"],
   },
   {
-    name: "battery0",
-    keywords: ["battery0"],
+    name: "battery-0",
+    keywords: ["battery-0", "battery 0", "battery empty"],
   },
   {
-    name: "battery100",
-    keywords: ["battery100"],
+    name: "battery-100",
+    keywords: ["battery-100", "battery 100", "battery full"],
   },
   {
-    name: "battery50",
-    keywords: ["battery50"],
+    name: "battery-50",
+    keywords: ["battery-50", "battery 50", "battery half"],
   },
   {
     name: "beaker",
@@ -396,8 +396,8 @@ export const ICON_MANIFEST: IconManifestItem[] = [
     keywords: ["building", "office", "building office"],
   },
   {
-    name: "building-office2",
-    keywords: ["building", "office2", "building office2"],
+    name: "building-office-2",
+    keywords: ["building", "office", "2", "building office 2"],
   },
   {
     name: "building-storefront",
@@ -590,12 +590,12 @@ export const ICON_MANIFEST: IconManifestItem[] = [
     keywords: ["cog"],
   },
   {
-    name: "cog6-tooth",
-    keywords: ["cog6", "tooth", "cog6 tooth"],
+    name: "cog-6-tooth",
+    keywords: ["cog", "6", "tooth", "cog 6 tooth"],
   },
   {
-    name: "cog8-tooth",
-    keywords: ["cog8", "tooth", "cog8 tooth"],
+    name: "cog-8-tooth",
+    keywords: ["cog", "8", "tooth", "cog 8 tooth"],
   },
   {
     name: "command-line",
@@ -1200,16 +1200,16 @@ export const ICON_MANIFEST: IconManifestItem[] = [
     keywords: ["speaker", "x", "mark", "speaker x mark"],
   },
   {
-    name: "square2-stack",
+    name: "square-2-stack",
     keywords: ["square", "2", "stack", "square 2 stack"],
   },
   {
-    name: "square3-stack3-d",
+    name: "square-3-stack-3d",
     keywords: ["square", "3", "stack", "3d", "square 3 stack 3d"],
   },
   {
-    name: "squares2-x2",
-    keywords: ["squares", "2x2"],
+    name: "squares-2x2",
+    keywords: ["squares", "2x2", "grid"],
   },
   {
     name: "squares-plus",
