@@ -55,8 +55,8 @@ function handleMouseLeave() {
     class="icon-svg"
     class:power-animate={isAnimating}
   >
-    <path d="M5.636 5.636a9 9 0 1 0 12.728 0"/>
-    <path d="M12 3v9"/>
+    <path d="M5.636 5.636a9 9 0 1 0 12.728 0" />
+    <path d="M12 3v9" />
   </svg>
 </div>
 

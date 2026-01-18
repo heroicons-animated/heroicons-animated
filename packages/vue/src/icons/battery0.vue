@@ -97,5 +97,4 @@ defineExpose({
   stopAnimation,
   setControlled,
 });
-
 </script>

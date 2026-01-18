@@ -16,8 +16,8 @@
       stroke-linejoin="round"
     >
       <g v-for="(item, index) in LIST_ITEMS" :key="index">
-        <path :d="item.bulletPath" ref="bulletRefs"/>
-        <path :d="item.linePath" ref="lineRefs"/>
+        <path :d="item.bulletPath" ref="bulletRefs" />
+        <path :d="item.linePath" ref="lineRefs" />
       </g>
     </svg>
   </div>

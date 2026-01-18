@@ -55,8 +55,8 @@ function handleMouseLeave() {
     class="icon-svg"
     class:xmark-animate={isAnimating}
   >
-    <path d="M6 6l12 12"/>
-    <path d="M18 6l-12 12"/>
+    <path d="M6 6l12 12" />
+    <path d="M18 6l-12 12" />
   </svg>
 </div>
 

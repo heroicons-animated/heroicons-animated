@@ -55,7 +55,7 @@ function handleMouseLeave() {
     class="icon-svg"
     class:arrowdownright-animate={isAnimating}
   >
-    <path d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25"/>
+    <path d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
   </svg>
 </div>
 

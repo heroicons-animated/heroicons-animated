@@ -62,8 +62,7 @@ const BARS = [
     class:bars3-animate={isAnimating}
   >
     {#each BARS as bar}
-      <path
-              d={bar.d} />
+      <path d={bar.d} />
     {/each}
   </svg>
 </div>

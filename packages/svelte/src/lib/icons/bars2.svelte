@@ -58,8 +58,7 @@ const BARS = [{ d: "M3.75 9h16.5" }, { d: "M3.75 15.75h16.5" }];
     class:bars2-animate={isAnimating}
   >
     {#each BARS as bar}
-      <path
-              d={bar.d} />
+      <path d={bar.d} />
     {/each}
   </svg>
 </div>

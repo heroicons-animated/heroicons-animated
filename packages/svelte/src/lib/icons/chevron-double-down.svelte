@@ -55,7 +55,7 @@ function handleMouseLeave() {
     class="icon-svg"
     class:chevrondoubledown-animate={isAnimating}
   >
-    <path d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5"/>
+    <path d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
   </svg>
 </div>
 

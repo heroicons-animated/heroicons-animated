@@ -55,7 +55,7 @@ function handleMouseLeave() {
     class="icon-svg"
     class:facefrown-animate={isAnimating}
   >
-    <circle cx="12" cy="12" r="9"/>
+    <circle cx="12" cy="12" r="9" />
     <path
       d="M15.1823 16.3179C14.3075 15.4432 13.1623 15.0038 12.0158 14.9999C10.859 14.996 9.70095 15.4353 8.81834 16.3179"
     />

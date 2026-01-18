@@ -15,8 +15,8 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion is="path" ref="pathRef" d="M5.636 5.636a9 9 0 1 0 12.728 0"/>
-      <path d="M12 3v9"/>
+      <Motion is="path" ref="pathRef" d="M5.636 5.636a9 9 0 1 0 12.728 0" />
+      <path d="M12 3v9" />
     </svg>
   </div>
 </template>

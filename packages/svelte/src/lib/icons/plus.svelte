@@ -55,8 +55,8 @@ function handleMouseLeave() {
     class="icon-svg"
     class:plus-animate={isAnimating}
   >
-    <path d="M5 12h14"/>
-    <path d="M12 5v14"/>
+    <path d="M5 12h14" />
+    <path d="M12 5v14" />
   </svg>
 </div>
 

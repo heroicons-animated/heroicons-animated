@@ -15,7 +15,7 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <circle cx="12" cy="12" r="9"/>
+      <circle cx="12" cy="12" r="9" />
       <Motion
         is="path"
         ref="pathRef"
