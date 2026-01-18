@@ -56,16 +56,6 @@ export const getRegistryPathPrefix = (framework: Framework): string => {
   }
 };
 
-export const getRegistryUrl = (
-  framework: Framework,
-  iconName: string
-): string => {
-  const baseUrl = `${SITE.URL}/r`;
-  return framework === "react"
-    ? `${baseUrl}/${iconName}.json`
-    : `${baseUrl}/${framework}/${iconName}.json`;
-};
-
 export const getCLICommand = (
   packageManager: PackageManager,
   framework: Framework,
@@ -73,6 +63,5 @@ export const getCLICommand = (
 ): string => {
   const prefix = getPackageManagerPrefix(packageManager);
   const cli = getShadcnCLI(framework);
-  const registryUrl = getRegistryUrl(framework, iconName);
-  return `${prefix} ${cli} add "${registryUrl}"`;
+  return `${prefix} ${cli} add @${SITE.NAME}${getRegistryPathPrefix(framework)}${iconName}`;
 };
