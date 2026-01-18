@@ -71,40 +71,35 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="border-neutral-200 xl:border-b dark:border-neutral-800">
-      <div className="view-container flex flex-col gap-4 border-neutral-200 py-4 xl:border-x dark:border-neutral-800">
-        <div className="flex justify-between gap-4">
-          <Link
-            aria-label="Heroicons Animated - Home"
-            className="mr-auto flex h-[42px] items-center gap-2 font-sans text-base focus-within:outline-offset-4 focus-visible:outline-1 focus-visible:outline-primary max-[524px]:translate-y-[-2px] min-[395px]:text-xl"
-            href="/"
+    <header className="h-(--header-height) border-neutral-200 xl:border-b dark:border-neutral-800">
+      <div className="view-container flex h-full w-full justify-between gap-4 border-neutral-200 xl:border-x dark:border-neutral-800">
+        <Link
+          aria-label="Heroicons Animated - Home"
+          className="mr-auto flex items-center gap-2 font-sans text-base focus-within:outline-offset-4 focus-visible:outline-1 focus-visible:outline-primary max-[524px]:translate-y-[-2px] min-[395px]:text-xl"
+          href="/"
+          tabIndex={0}
+        >
+          <Logo className="w-6 text-primary min-[395px]:w-8" />
+          heroicons-animated
+        </Link>
+        <div className="ml-auto flex w-full flex-1 flex-wrap-reverse items-center justify-end gap-2">
+          <a
+            aria-label="Sponsor Project"
+            className="supports-[corner-shape:squircle]:corner-squircle flex size-9 items-center justify-center gap-1 rounded-[14px] bg-white font-sans text-[#3F3F47] text-sm underline-offset-4 focus-within:outline-offset-2 hover:underline focus-visible:outline-1 focus-visible:outline-primary supports-[corner-shape:squircle]:rounded-[20px] sm:size-auto sm:bg-transparent sm:pr-1 dark:bg-white/10 dark:text-[#FAFAFA] sm:dark:bg-transparent"
+            href={LINK.SPONSOR}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
             tabIndex={0}
           >
-            <Logo className="w-6 text-primary min-[395px]:w-8" />
-            heroicons-animated
-          </Link>
-          <div className="ml-auto flex w-full flex-1 flex-wrap-reverse items-center justify-end gap-3">
-            <a
-              aria-label="Sponsor Project"
-              className="flex items-center gap-1 font-sans text-[#3F3F47] text-sm underline-offset-4 focus-within:outline-offset-4 hover:underline focus-visible:outline-1 focus-visible:outline-primary dark:text-[#FAFAFA]"
-              href={LINK.SPONSOR}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              tabIndex={0}
-              target="_blank"
-            >
-              <FilledHeartIcon
-                className="text-primary"
-                ref={heartRef}
-                size={16}
-              />
-              Sponsor Project
-            </a>
-            <div className="flex items-center gap-2">
-              <ThemeToggle />
-              <GithubStarsButton />
-            </div>
-          </div>
+            <FilledHeartIcon
+              className="text-primary"
+              ref={heartRef}
+              size={16}
+            />
+            <span className="hidden sm:inline">Sponsor Project</span>
+          </a>
+          <ThemeToggle />
+          <GithubStarsButton />
         </div>
       </div>
     </header>
