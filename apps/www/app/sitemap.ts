@@ -1,5 +1,6 @@
-import { ICON_MANIFEST, SITE } from "@heroicons-animated/shared";
+import { ICON_MANIFEST } from "@heroicons-animated/shared";
 import type { MetadataRoute } from "next";
+import { SITE } from "@/constants";
 
 // biome-ignore lint/suspicious/useAwait: ignore
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
