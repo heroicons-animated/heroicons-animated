@@ -5,9 +5,7 @@
   "description": "Animated archive-box-arrow-down icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "archive-box-arrow-down.vue",

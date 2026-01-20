@@ -5,9 +5,7 @@
   "description": "Animated link-slash icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "link-slash.vue",

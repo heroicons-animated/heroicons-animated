@@ -5,9 +5,7 @@
   "description": "Animated shield-check icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "shield-check.vue",

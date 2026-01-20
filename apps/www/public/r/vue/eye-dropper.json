@@ -5,9 +5,7 @@
   "description": "Animated eye-dropper icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "eye-dropper.vue",

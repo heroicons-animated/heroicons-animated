@@ -5,9 +5,7 @@
   "description": "Animated bug-ant icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "bug-ant.vue",

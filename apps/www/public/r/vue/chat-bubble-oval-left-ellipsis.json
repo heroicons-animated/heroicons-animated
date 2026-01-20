@@ -5,9 +5,7 @@
   "description": "Animated chat-bubble-oval-left-ellipsis icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "chat-bubble-oval-left-ellipsis.vue",

@@ -5,9 +5,7 @@
   "description": "Animated arrow-path-rounded-square icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "arrow-path-rounded-square.vue",

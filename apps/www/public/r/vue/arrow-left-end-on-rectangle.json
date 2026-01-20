@@ -5,9 +5,7 @@
   "description": "Animated arrow-left-end-on-rectangle icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "arrow-left-end-on-rectangle.vue",

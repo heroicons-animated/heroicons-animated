@@ -5,9 +5,7 @@
   "description": "Animated chat-bubble-oval-left icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "chat-bubble-oval-left.vue",

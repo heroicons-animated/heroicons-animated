@@ -5,9 +5,7 @@
   "description": "Animated cog-6-tooth icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "cog-6-tooth.vue",

@@ -5,9 +5,7 @@
   "description": "Animated code-bracket-square icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "code-bracket-square.vue",

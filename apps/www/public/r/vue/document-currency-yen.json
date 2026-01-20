@@ -5,9 +5,7 @@
   "description": "Animated document-currency-yen icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "document-currency-yen.vue",

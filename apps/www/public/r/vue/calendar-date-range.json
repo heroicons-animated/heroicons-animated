@@ -5,9 +5,7 @@
   "description": "Animated calendar-date-range icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "calendar-date-range.vue",

@@ -5,9 +5,7 @@
   "description": "Animated phone-arrow-down-left icon for React",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "motion"
-  ],
+  "dependencies": ["motion"],
   "files": [
     {
       "path": "phone-arrow-down-left.tsx",

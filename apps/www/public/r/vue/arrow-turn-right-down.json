@@ -5,9 +5,7 @@
   "description": "Animated arrow-turn-right-down icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "arrow-turn-right-down.vue",

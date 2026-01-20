@@ -31,11 +31,6 @@
       "types": "./dist/icons/*.d.ts",
       "import": "./dist/icons/*.mjs",
       "require": "./dist/icons/*.js"
-    },
-    "./manifest": {
-      "types": "./dist/manifest.d.ts",
-      "import": "./dist/manifest.mjs",
-      "require": "./dist/manifest.js"
     }
   },
   "files": [

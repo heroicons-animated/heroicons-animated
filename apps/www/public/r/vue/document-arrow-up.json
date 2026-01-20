@@ -5,9 +5,7 @@
   "description": "Animated document-arrow-up icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "document-arrow-up.vue",

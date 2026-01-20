@@ -9,9 +9,7 @@
       "description": "Animated academic-cap icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "academic-cap.tsx",
@@ -25,9 +23,7 @@
       "description": "Animated adjustments-horizontal icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "adjustments-horizontal.tsx",
@@ -41,9 +37,7 @@
       "description": "Animated adjustments-vertical icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "adjustments-vertical.tsx",
@@ -57,9 +51,7 @@
       "description": "Animated archive-box-arrow-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "archive-box-arrow-down.tsx",
@@ -73,9 +65,7 @@
       "description": "Animated archive-box-x-mark icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "archive-box-x-mark.tsx",
@@ -89,9 +79,7 @@
       "description": "Animated archive-box icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "archive-box.tsx",
@@ -105,9 +93,7 @@
       "description": "Animated arrow-down-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-down-circle.tsx",
@@ -121,9 +107,7 @@
       "description": "Animated arrow-down-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-down-left.tsx",
@@ -137,9 +121,7 @@
       "description": "Animated arrow-down-on-square-stack icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-down-on-square-stack.tsx",
@@ -153,9 +135,7 @@
       "description": "Animated arrow-down-on-square icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-down-on-square.tsx",
@@ -169,9 +149,7 @@
       "description": "Animated arrow-down-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-down-right.tsx",
@@ -185,9 +163,7 @@
       "description": "Animated arrow-down-tray icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-down-tray.tsx",
@@ -201,9 +177,7 @@
       "description": "Animated arrow-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-down.tsx",
@@ -217,9 +191,7 @@
       "description": "Animated arrow-left-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-left-circle.tsx",
@@ -233,9 +205,7 @@
       "description": "Animated arrow-left-end-on-rectangle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-left-end-on-rectangle.tsx",
@@ -249,9 +219,7 @@
       "description": "Animated arrow-left-start-on-rectangle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-left-start-on-rectangle.tsx",
@@ -265,9 +233,7 @@
       "description": "Animated arrow-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-left.tsx",
@@ -281,9 +247,7 @@
       "description": "Animated arrow-long-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-long-down.tsx",
@@ -297,9 +261,7 @@
       "description": "Animated arrow-long-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-long-left.tsx",
@@ -313,9 +275,7 @@
       "description": "Animated arrow-long-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-long-right.tsx",
@@ -329,9 +289,7 @@
       "description": "Animated arrow-long-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-long-up.tsx",
@@ -345,9 +303,7 @@
       "description": "Animated arrow-path-rounded-square icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-path-rounded-square.tsx",
@@ -361,9 +317,7 @@
       "description": "Animated arrow-path icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-path.tsx",
@@ -377,9 +331,7 @@
       "description": "Animated arrow-right-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-right-circle.tsx",
@@ -393,9 +345,7 @@
       "description": "Animated arrow-right-end-on-rectangle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-right-end-on-rectangle.tsx",
@@ -409,9 +359,7 @@
       "description": "Animated arrow-right-start-on-rectangle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-right-start-on-rectangle.tsx",
@@ -425,9 +373,7 @@
       "description": "Animated arrow-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-right.tsx",
@@ -441,9 +387,7 @@
       "description": "Animated arrow-top-right-on-square icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-top-right-on-square.tsx",
@@ -457,9 +401,7 @@
       "description": "Animated arrow-trending-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-trending-down.tsx",
@@ -473,9 +415,7 @@
       "description": "Animated arrow-trending-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-trending-up.tsx",
@@ -489,9 +429,7 @@
       "description": "Animated arrow-turn-down-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-turn-down-left.tsx",
@@ -505,9 +443,7 @@
       "description": "Animated arrow-turn-down-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-turn-down-right.tsx",
@@ -521,9 +457,7 @@
       "description": "Animated arrow-turn-left-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-turn-left-down.tsx",
@@ -537,9 +471,7 @@
       "description": "Animated arrow-turn-left-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-turn-left-up.tsx",
@@ -553,9 +485,7 @@
       "description": "Animated arrow-turn-right-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-turn-right-down.tsx",
@@ -569,9 +499,7 @@
       "description": "Animated arrow-turn-right-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-turn-right-up.tsx",
@@ -585,9 +513,7 @@
       "description": "Animated arrow-turn-up-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-turn-up-left.tsx",
@@ -601,9 +527,7 @@
       "description": "Animated arrow-turn-up-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-turn-up-right.tsx",
@@ -617,9 +541,7 @@
       "description": "Animated arrow-up-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-up-circle.tsx",
@@ -633,9 +555,7 @@
       "description": "Animated arrow-up-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-up-left.tsx",
@@ -649,9 +569,7 @@
       "description": "Animated arrow-up-on-square-stack icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-up-on-square-stack.tsx",
@@ -665,9 +583,7 @@
       "description": "Animated arrow-up-on-square icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-up-on-square.tsx",
@@ -681,9 +597,7 @@
       "description": "Animated arrow-up-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-up-right.tsx",
@@ -697,9 +611,7 @@
       "description": "Animated arrow-up-tray icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-up-tray.tsx",
@@ -713,9 +625,7 @@
       "description": "Animated arrow-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-up.tsx",
@@ -729,9 +639,7 @@
       "description": "Animated arrow-uturn-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-uturn-down.tsx",
@@ -745,9 +653,7 @@
       "description": "Animated arrow-uturn-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-uturn-left.tsx",
@@ -761,9 +667,7 @@
       "description": "Animated arrow-uturn-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-uturn-right.tsx",
@@ -777,9 +681,7 @@
       "description": "Animated arrow-uturn-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrow-uturn-up.tsx",
@@ -793,9 +695,7 @@
       "description": "Animated arrows-pointing-in icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrows-pointing-in.tsx",
@@ -809,9 +709,7 @@
       "description": "Animated arrows-pointing-out icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrows-pointing-out.tsx",
@@ -825,9 +723,7 @@
       "description": "Animated arrows-right-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrows-right-left.tsx",
@@ -841,9 +737,7 @@
       "description": "Animated arrows-up-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "arrows-up-down.tsx",
@@ -857,9 +751,7 @@
       "description": "Animated at-symbol icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "at-symbol.tsx",
@@ -873,9 +765,7 @@
       "description": "Animated backspace icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "backspace.tsx",
@@ -889,9 +779,7 @@
       "description": "Animated backward icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "backward.tsx",
@@ -905,9 +793,7 @@
       "description": "Animated banknotes icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "banknotes.tsx",
@@ -921,9 +807,7 @@
       "description": "Animated bars-2 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bars-2.tsx",
@@ -937,9 +821,7 @@
       "description": "Animated bars-3-bottom-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bars-3-bottom-left.tsx",
@@ -953,9 +835,7 @@
       "description": "Animated bars-3-bottom-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bars-3-bottom-right.tsx",
@@ -969,9 +849,7 @@
       "description": "Animated bars-3-center-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bars-3-center-left.tsx",
@@ -985,9 +863,7 @@
       "description": "Animated bars-3 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bars-3.tsx",
@@ -1001,9 +877,7 @@
       "description": "Animated bars-4 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bars-4.tsx",
@@ -1017,9 +891,7 @@
       "description": "Animated bars-arrow-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bars-arrow-down.tsx",
@@ -1033,9 +905,7 @@
       "description": "Animated bars-arrow-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bars-arrow-up.tsx",
@@ -1049,9 +919,7 @@
       "description": "Animated battery-0 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "battery-0.tsx",
@@ -1065,9 +933,7 @@
       "description": "Animated battery-100 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "battery-100.tsx",
@@ -1081,9 +947,7 @@
       "description": "Animated battery-50 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "battery-50.tsx",
@@ -1097,9 +961,7 @@
       "description": "Animated beaker icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "beaker.tsx",
@@ -1113,9 +975,7 @@
       "description": "Animated bell-alert icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bell-alert.tsx",
@@ -1129,9 +989,7 @@
       "description": "Animated bell-slash icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bell-slash.tsx",
@@ -1145,9 +1003,7 @@
       "description": "Animated bell-snooze icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bell-snooze.tsx",
@@ -1161,9 +1017,7 @@
       "description": "Animated bell icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bell.tsx",
@@ -1177,9 +1031,7 @@
       "description": "Animated bold icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bold.tsx",
@@ -1193,9 +1045,7 @@
       "description": "Animated bolt-slash icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bolt-slash.tsx",
@@ -1209,9 +1059,7 @@
       "description": "Animated bolt icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bolt.tsx",
@@ -1225,9 +1073,7 @@
       "description": "Animated book-open icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "book-open.tsx",
@@ -1241,9 +1087,7 @@
       "description": "Animated bookmark-slash icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bookmark-slash.tsx",
@@ -1257,9 +1101,7 @@
       "description": "Animated bookmark-square icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bookmark-square.tsx",
@@ -1273,9 +1115,7 @@
       "description": "Animated bookmark icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bookmark.tsx",
@@ -1289,9 +1129,7 @@
       "description": "Animated briefcase icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "briefcase.tsx",
@@ -1305,9 +1143,7 @@
       "description": "Animated bug-ant icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "bug-ant.tsx",
@@ -1321,9 +1157,7 @@
       "description": "Animated building-library icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "building-library.tsx",
@@ -1337,9 +1171,7 @@
       "description": "Animated building-office-2 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "building-office-2.tsx",
@@ -1353,9 +1185,7 @@
       "description": "Animated building-office icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "building-office.tsx",
@@ -1369,9 +1199,7 @@
       "description": "Animated building-storefront icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "building-storefront.tsx",
@@ -1385,9 +1213,7 @@
       "description": "Animated cake icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cake.tsx",
@@ -1401,9 +1227,7 @@
       "description": "Animated calculator icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "calculator.tsx",
@@ -1417,9 +1241,7 @@
       "description": "Animated calendar-date-range icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "calendar-date-range.tsx",
@@ -1433,9 +1255,7 @@
       "description": "Animated calendar-days icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "calendar-days.tsx",
@@ -1449,9 +1269,7 @@
       "description": "Animated calendar icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "calendar.tsx",
@@ -1465,9 +1283,7 @@
       "description": "Animated camera icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "camera.tsx",
@@ -1481,9 +1297,7 @@
       "description": "Animated chart-bar-square icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chart-bar-square.tsx",
@@ -1497,9 +1311,7 @@
       "description": "Animated chart-bar icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chart-bar.tsx",
@@ -1513,9 +1325,7 @@
       "description": "Animated chart-pie icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chart-pie.tsx",
@@ -1529,9 +1339,7 @@
       "description": "Animated chat-bubble-bottom-center-text icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chat-bubble-bottom-center-text.tsx",
@@ -1545,9 +1353,7 @@
       "description": "Animated chat-bubble-bottom-center icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chat-bubble-bottom-center.tsx",
@@ -1561,9 +1367,7 @@
       "description": "Animated chat-bubble-left-ellipsis icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chat-bubble-left-ellipsis.tsx",
@@ -1577,9 +1381,7 @@
       "description": "Animated chat-bubble-left-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chat-bubble-left-right.tsx",
@@ -1593,9 +1395,7 @@
       "description": "Animated chat-bubble-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chat-bubble-left.tsx",
@@ -1609,9 +1409,7 @@
       "description": "Animated chat-bubble-oval-left-ellipsis icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chat-bubble-oval-left-ellipsis.tsx",
@@ -1625,9 +1423,7 @@
       "description": "Animated chat-bubble-oval-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chat-bubble-oval-left.tsx",
@@ -1641,9 +1437,7 @@
       "description": "Animated check-badge icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "check-badge.tsx",
@@ -1657,9 +1451,7 @@
       "description": "Animated check-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "check-circle.tsx",
@@ -1673,9 +1465,7 @@
       "description": "Animated check icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "check.tsx",
@@ -1689,9 +1479,7 @@
       "description": "Animated chevron-double-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chevron-double-down.tsx",
@@ -1705,9 +1493,7 @@
       "description": "Animated chevron-double-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chevron-double-left.tsx",
@@ -1721,9 +1507,7 @@
       "description": "Animated chevron-double-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chevron-double-right.tsx",
@@ -1737,9 +1521,7 @@
       "description": "Animated chevron-double-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chevron-double-up.tsx",
@@ -1753,9 +1535,7 @@
       "description": "Animated chevron-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chevron-down.tsx",
@@ -1769,9 +1549,7 @@
       "description": "Animated chevron-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chevron-left.tsx",
@@ -1785,9 +1563,7 @@
       "description": "Animated chevron-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chevron-right.tsx",
@@ -1801,9 +1577,7 @@
       "description": "Animated chevron-up-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chevron-up-down.tsx",
@@ -1817,9 +1591,7 @@
       "description": "Animated chevron-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "chevron-up.tsx",
@@ -1833,9 +1605,7 @@
       "description": "Animated circle-stack icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "circle-stack.tsx",
@@ -1849,9 +1619,7 @@
       "description": "Animated clipboard-document-check icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "clipboard-document-check.tsx",
@@ -1865,9 +1633,7 @@
       "description": "Animated clipboard-document-list icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "clipboard-document-list.tsx",
@@ -1881,9 +1647,7 @@
       "description": "Animated clipboard-document icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "clipboard-document.tsx",
@@ -1897,9 +1661,7 @@
       "description": "Animated clipboard icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "clipboard.tsx",
@@ -1913,9 +1675,7 @@
       "description": "Animated clock icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "clock.tsx",
@@ -1929,9 +1689,7 @@
       "description": "Animated cloud-arrow-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cloud-arrow-down.tsx",
@@ -1945,9 +1703,7 @@
       "description": "Animated cloud-arrow-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cloud-arrow-up.tsx",
@@ -1961,9 +1717,7 @@
       "description": "Animated cloud icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cloud.tsx",
@@ -1977,9 +1731,7 @@
       "description": "Animated code-bracket-square icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "code-bracket-square.tsx",
@@ -1993,9 +1745,7 @@
       "description": "Animated code-bracket icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "code-bracket.tsx",
@@ -2009,9 +1759,7 @@
       "description": "Animated cog-6-tooth icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cog-6-tooth.tsx",
@@ -2025,9 +1773,7 @@
       "description": "Animated cog-8-tooth icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cog-8-tooth.tsx",
@@ -2041,9 +1787,7 @@
       "description": "Animated cog icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cog.tsx",
@@ -2057,9 +1801,7 @@
       "description": "Animated command-line icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "command-line.tsx",
@@ -2073,9 +1815,7 @@
       "description": "Animated computer-desktop icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "computer-desktop.tsx",
@@ -2089,9 +1829,7 @@
       "description": "Animated cpu-chip icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cpu-chip.tsx",
@@ -2105,9 +1843,7 @@
       "description": "Animated credit-card icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "credit-card.tsx",
@@ -2121,9 +1857,7 @@
       "description": "Animated cube-transparent icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cube-transparent.tsx",
@@ -2137,9 +1871,7 @@
       "description": "Animated cube icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cube.tsx",
@@ -2153,9 +1885,7 @@
       "description": "Animated currency-bangladeshi icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "currency-bangladeshi.tsx",
@@ -2169,9 +1899,7 @@
       "description": "Animated currency-dollar icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "currency-dollar.tsx",
@@ -2185,9 +1913,7 @@
       "description": "Animated currency-euro icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "currency-euro.tsx",
@@ -2201,9 +1927,7 @@
       "description": "Animated currency-pound icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "currency-pound.tsx",
@@ -2217,9 +1941,7 @@
       "description": "Animated currency-rupee icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "currency-rupee.tsx",
@@ -2233,9 +1955,7 @@
       "description": "Animated currency-yen icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "currency-yen.tsx",
@@ -2249,9 +1969,7 @@
       "description": "Animated cursor-arrow-rays icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cursor-arrow-rays.tsx",
@@ -2265,9 +1983,7 @@
       "description": "Animated cursor-arrow-ripple icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "cursor-arrow-ripple.tsx",
@@ -2281,9 +1997,7 @@
       "description": "Animated device-phone-mobile icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "device-phone-mobile.tsx",
@@ -2297,9 +2011,7 @@
       "description": "Animated device-tablet icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "device-tablet.tsx",
@@ -2313,9 +2025,7 @@
       "description": "Animated divide icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "divide.tsx",
@@ -2329,9 +2039,7 @@
       "description": "Animated document-arrow-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-arrow-down.tsx",
@@ -2345,9 +2053,7 @@
       "description": "Animated document-arrow-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-arrow-up.tsx",
@@ -2361,9 +2067,7 @@
       "description": "Animated document-chart-bar icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-chart-bar.tsx",
@@ -2377,9 +2081,7 @@
       "description": "Animated document-check icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-check.tsx",
@@ -2393,9 +2095,7 @@
       "description": "Animated document-currency-bangladeshi icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-currency-bangladeshi.tsx",
@@ -2409,9 +2109,7 @@
       "description": "Animated document-currency-dollar icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-currency-dollar.tsx",
@@ -2425,9 +2123,7 @@
       "description": "Animated document-currency-euro icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-currency-euro.tsx",
@@ -2441,9 +2137,7 @@
       "description": "Animated document-currency-pound icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-currency-pound.tsx",
@@ -2457,9 +2151,7 @@
       "description": "Animated document-currency-rupee icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-currency-rupee.tsx",
@@ -2473,9 +2165,7 @@
       "description": "Animated document-currency-yen icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-currency-yen.tsx",
@@ -2489,9 +2179,7 @@
       "description": "Animated document-duplicate icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-duplicate.tsx",
@@ -2505,9 +2193,7 @@
       "description": "Animated document-magnifying-glass icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-magnifying-glass.tsx",
@@ -2521,9 +2207,7 @@
       "description": "Animated document-minus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-minus.tsx",
@@ -2537,9 +2221,7 @@
       "description": "Animated document-plus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-plus.tsx",
@@ -2553,9 +2235,7 @@
       "description": "Animated document-text icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document-text.tsx",
@@ -2569,9 +2249,7 @@
       "description": "Animated document icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "document.tsx",
@@ -2585,9 +2263,7 @@
       "description": "Animated ellipsis-horizontal-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "ellipsis-horizontal-circle.tsx",
@@ -2601,9 +2277,7 @@
       "description": "Animated ellipsis-horizontal icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "ellipsis-horizontal.tsx",
@@ -2617,9 +2291,7 @@
       "description": "Animated ellipsis-vertical icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "ellipsis-vertical.tsx",
@@ -2633,9 +2305,7 @@
       "description": "Animated envelope-open icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "envelope-open.tsx",
@@ -2649,9 +2319,7 @@
       "description": "Animated envelope icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "envelope.tsx",
@@ -2665,9 +2333,7 @@
       "description": "Animated equals icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "equals.tsx",
@@ -2681,9 +2347,7 @@
       "description": "Animated exclamation-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "exclamation-circle.tsx",
@@ -2697,9 +2361,7 @@
       "description": "Animated exclamation-triangle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "exclamation-triangle.tsx",
@@ -2713,9 +2375,7 @@
       "description": "Animated eye-dropper icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "eye-dropper.tsx",
@@ -2729,9 +2389,7 @@
       "description": "Animated eye-slash icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "eye-slash.tsx",
@@ -2745,9 +2403,7 @@
       "description": "Animated eye icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "eye.tsx",
@@ -2761,9 +2417,7 @@
       "description": "Animated face-frown icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "face-frown.tsx",
@@ -2777,9 +2431,7 @@
       "description": "Animated face-smile icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "face-smile.tsx",
@@ -2793,9 +2445,7 @@
       "description": "Animated film icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "film.tsx",
@@ -2809,9 +2459,7 @@
       "description": "Animated finger-print icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "finger-print.tsx",
@@ -2825,9 +2473,7 @@
       "description": "Animated fire icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "fire.tsx",
@@ -2841,9 +2487,7 @@
       "description": "Animated flag icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "flag.tsx",
@@ -2857,9 +2501,7 @@
       "description": "Animated folder-arrow-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "folder-arrow-down.tsx",
@@ -2873,9 +2515,7 @@
       "description": "Animated folder-minus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "folder-minus.tsx",
@@ -2889,9 +2529,7 @@
       "description": "Animated folder-open icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "folder-open.tsx",
@@ -2905,9 +2543,7 @@
       "description": "Animated folder-plus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "folder-plus.tsx",
@@ -2921,9 +2557,7 @@
       "description": "Animated folder icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "folder.tsx",
@@ -2937,9 +2571,7 @@
       "description": "Animated forward icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "forward.tsx",
@@ -2953,9 +2585,7 @@
       "description": "Animated funnel icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "funnel.tsx",
@@ -2969,9 +2599,7 @@
       "description": "Animated gif icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "gif.tsx",
@@ -2985,9 +2613,7 @@
       "description": "Animated gift-top icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "gift-top.tsx",
@@ -3001,9 +2627,7 @@
       "description": "Animated gift icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "gift.tsx",
@@ -3017,9 +2641,7 @@
       "description": "Animated globe-alt icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "globe-alt.tsx",
@@ -3033,9 +2655,7 @@
       "description": "Animated globe-americas icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "globe-americas.tsx",
@@ -3049,9 +2669,7 @@
       "description": "Animated globe-asia-australia icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "globe-asia-australia.tsx",
@@ -3065,9 +2683,7 @@
       "description": "Animated globe-europe-africa icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "globe-europe-africa.tsx",
@@ -3081,9 +2697,7 @@
       "description": "Animated h1 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "h1.tsx",
@@ -3097,9 +2711,7 @@
       "description": "Animated h2 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "h2.tsx",
@@ -3113,9 +2725,7 @@
       "description": "Animated h3 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "h3.tsx",
@@ -3129,9 +2739,7 @@
       "description": "Animated hand-raised icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "hand-raised.tsx",
@@ -3145,9 +2753,7 @@
       "description": "Animated hand-thumb-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "hand-thumb-down.tsx",
@@ -3161,9 +2767,7 @@
       "description": "Animated hand-thumb-up icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "hand-thumb-up.tsx",
@@ -3177,9 +2781,7 @@
       "description": "Animated hashtag icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "hashtag.tsx",
@@ -3193,9 +2795,7 @@
       "description": "Animated heart icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "heart.tsx",
@@ -3209,9 +2809,7 @@
       "description": "Animated home-modern icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "home-modern.tsx",
@@ -3225,9 +2823,7 @@
       "description": "Animated home icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "home.tsx",
@@ -3241,9 +2837,7 @@
       "description": "Animated identification icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "identification.tsx",
@@ -3257,9 +2851,7 @@
       "description": "Animated inbox-arrow-down icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "inbox-arrow-down.tsx",
@@ -3273,9 +2865,7 @@
       "description": "Animated inbox-stack icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "inbox-stack.tsx",
@@ -3289,9 +2879,7 @@
       "description": "Animated inbox icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "inbox.tsx",
@@ -3305,9 +2893,7 @@
       "description": "Animated information-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "information-circle.tsx",
@@ -3321,9 +2907,7 @@
       "description": "Animated italic icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "italic.tsx",
@@ -3337,9 +2921,7 @@
       "description": "Animated key icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "key.tsx",
@@ -3353,9 +2935,7 @@
       "description": "Animated language icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "language.tsx",
@@ -3369,9 +2949,7 @@
       "description": "Animated lifebuoy icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "lifebuoy.tsx",
@@ -3385,9 +2963,7 @@
       "description": "Animated light-bulb icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "light-bulb.tsx",
@@ -3401,9 +2977,7 @@
       "description": "Animated link-slash icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "link-slash.tsx",
@@ -3417,9 +2991,7 @@
       "description": "Animated link icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "link.tsx",
@@ -3433,9 +3005,7 @@
       "description": "Animated list-bullet icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "list-bullet.tsx",
@@ -3449,9 +3019,7 @@
       "description": "Animated lock-closed icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "lock-closed.tsx",
@@ -3465,9 +3033,7 @@
       "description": "Animated lock-open icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "lock-open.tsx",
@@ -3481,9 +3047,7 @@
       "description": "Animated magnifying-glass-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "magnifying-glass-circle.tsx",
@@ -3497,9 +3061,7 @@
       "description": "Animated magnifying-glass-minus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "magnifying-glass-minus.tsx",
@@ -3513,9 +3075,7 @@
       "description": "Animated magnifying-glass-plus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "magnifying-glass-plus.tsx",
@@ -3529,9 +3089,7 @@
       "description": "Animated magnifying-glass icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "magnifying-glass.tsx",
@@ -3545,9 +3103,7 @@
       "description": "Animated map-pin icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "map-pin.tsx",
@@ -3561,9 +3117,7 @@
       "description": "Animated map icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "map.tsx",
@@ -3577,9 +3131,7 @@
       "description": "Animated megaphone icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "megaphone.tsx",
@@ -3593,9 +3145,7 @@
       "description": "Animated microphone icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "microphone.tsx",
@@ -3609,9 +3159,7 @@
       "description": "Animated minus-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "minus-circle.tsx",
@@ -3625,9 +3173,7 @@
       "description": "Animated minus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "minus.tsx",
@@ -3641,9 +3187,7 @@
       "description": "Animated moon icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "moon.tsx",
@@ -3657,9 +3201,7 @@
       "description": "Animated musical-note icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "musical-note.tsx",
@@ -3673,9 +3215,7 @@
       "description": "Animated newspaper icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "newspaper.tsx",
@@ -3689,9 +3229,7 @@
       "description": "Animated no-symbol icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "no-symbol.tsx",
@@ -3705,9 +3243,7 @@
       "description": "Animated numbered-list icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "numbered-list.tsx",
@@ -3721,9 +3257,7 @@
       "description": "Animated paint-brush icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "paint-brush.tsx",
@@ -3737,9 +3271,7 @@
       "description": "Animated paper-airplane icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "paper-airplane.tsx",
@@ -3753,9 +3285,7 @@
       "description": "Animated paper-clip icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "paper-clip.tsx",
@@ -3769,9 +3299,7 @@
       "description": "Animated pause-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "pause-circle.tsx",
@@ -3785,9 +3313,7 @@
       "description": "Animated pause icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "pause.tsx",
@@ -3801,9 +3327,7 @@
       "description": "Animated pencil-square icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "pencil-square.tsx",
@@ -3817,9 +3341,7 @@
       "description": "Animated pencil icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "pencil.tsx",
@@ -3833,9 +3355,7 @@
       "description": "Animated percent-badge icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "percent-badge.tsx",
@@ -3849,9 +3369,7 @@
       "description": "Animated phone-arrow-down-left icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "phone-arrow-down-left.tsx",
@@ -3865,9 +3383,7 @@
       "description": "Animated phone-arrow-up-right icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "phone-arrow-up-right.tsx",
@@ -3881,9 +3397,7 @@
       "description": "Animated phone-x-mark icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "phone-x-mark.tsx",
@@ -3897,9 +3411,7 @@
       "description": "Animated phone icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "phone.tsx",
@@ -3913,9 +3425,7 @@
       "description": "Animated photo icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "photo.tsx",
@@ -3929,9 +3439,7 @@
       "description": "Animated play-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "play-circle.tsx",
@@ -3945,9 +3453,7 @@
       "description": "Animated play-pause icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "play-pause.tsx",
@@ -3961,9 +3467,7 @@
       "description": "Animated play icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "play.tsx",
@@ -3977,9 +3481,7 @@
       "description": "Animated plus-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "plus-circle.tsx",
@@ -3993,9 +3495,7 @@
       "description": "Animated plus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "plus.tsx",
@@ -4009,9 +3509,7 @@
       "description": "Animated power icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "power.tsx",
@@ -4025,9 +3523,7 @@
       "description": "Animated presentation-chart-bar icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "presentation-chart-bar.tsx",
@@ -4041,9 +3537,7 @@
       "description": "Animated presentation-chart-line icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "presentation-chart-line.tsx",
@@ -4057,9 +3551,7 @@
       "description": "Animated printer icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "printer.tsx",
@@ -4073,9 +3565,7 @@
       "description": "Animated puzzle-piece icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "puzzle-piece.tsx",
@@ -4089,9 +3579,7 @@
       "description": "Animated qr-code icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "qr-code.tsx",
@@ -4105,9 +3593,7 @@
       "description": "Animated question-mark-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "question-mark-circle.tsx",
@@ -4121,9 +3607,7 @@
       "description": "Animated queue-list icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "queue-list.tsx",
@@ -4137,9 +3621,7 @@
       "description": "Animated radio icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "radio.tsx",
@@ -4153,9 +3635,7 @@
       "description": "Animated receipt-percent icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "receipt-percent.tsx",
@@ -4169,9 +3649,7 @@
       "description": "Animated receipt-refund icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "receipt-refund.tsx",
@@ -4185,9 +3663,7 @@
       "description": "Animated rectangle-group icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "rectangle-group.tsx",
@@ -4201,9 +3677,7 @@
       "description": "Animated rectangle-stack icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "rectangle-stack.tsx",
@@ -4217,9 +3691,7 @@
       "description": "Animated rocket-launch icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "rocket-launch.tsx",
@@ -4233,9 +3705,7 @@
       "description": "Animated rss icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "rss.tsx",
@@ -4249,9 +3719,7 @@
       "description": "Animated scale icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "scale.tsx",
@@ -4265,9 +3733,7 @@
       "description": "Animated scissors icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "scissors.tsx",
@@ -4281,9 +3747,7 @@
       "description": "Animated server-stack icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "server-stack.tsx",
@@ -4297,9 +3761,7 @@
       "description": "Animated server icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "server.tsx",
@@ -4313,9 +3775,7 @@
       "description": "Animated share icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "share.tsx",
@@ -4329,9 +3789,7 @@
       "description": "Animated shield-check icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "shield-check.tsx",
@@ -4345,9 +3803,7 @@
       "description": "Animated shield-exclamation icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "shield-exclamation.tsx",
@@ -4361,9 +3817,7 @@
       "description": "Animated shopping-bag icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "shopping-bag.tsx",
@@ -4377,9 +3831,7 @@
       "description": "Animated shopping-cart icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "shopping-cart.tsx",
@@ -4393,9 +3845,7 @@
       "description": "Animated signal-slash icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "signal-slash.tsx",
@@ -4409,9 +3859,7 @@
       "description": "Animated signal icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "signal.tsx",
@@ -4425,9 +3873,7 @@
       "description": "Animated slash icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "slash.tsx",
@@ -4441,9 +3887,7 @@
       "description": "Animated sparkles icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "sparkles.tsx",
@@ -4457,9 +3901,7 @@
       "description": "Animated speaker-wave icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "speaker-wave.tsx",
@@ -4473,9 +3915,7 @@
       "description": "Animated speaker-x-mark icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "speaker-x-mark.tsx",
@@ -4489,9 +3929,7 @@
       "description": "Animated square-2-stack icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "square-2-stack.tsx",
@@ -4505,9 +3943,7 @@
       "description": "Animated square-3-stack-3d icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "square-3-stack-3d.tsx",
@@ -4521,9 +3957,7 @@
       "description": "Animated squares-2x2 icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "squares-2x2.tsx",
@@ -4537,9 +3971,7 @@
       "description": "Animated squares-plus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "squares-plus.tsx",
@@ -4553,9 +3985,7 @@
       "description": "Animated star icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "star.tsx",
@@ -4569,9 +3999,7 @@
       "description": "Animated stop-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "stop-circle.tsx",
@@ -4585,9 +4013,7 @@
       "description": "Animated stop icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "stop.tsx",
@@ -4601,9 +4027,7 @@
       "description": "Animated strikethrough icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "strikethrough.tsx",
@@ -4617,9 +4041,7 @@
       "description": "Animated sun icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "sun.tsx",
@@ -4633,9 +4055,7 @@
       "description": "Animated swatch icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "swatch.tsx",
@@ -4649,9 +4069,7 @@
       "description": "Animated table-cells icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "table-cells.tsx",
@@ -4665,9 +4083,7 @@
       "description": "Animated tag icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "tag.tsx",
@@ -4681,9 +4097,7 @@
       "description": "Animated ticket icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "ticket.tsx",
@@ -4697,9 +4111,7 @@
       "description": "Animated trash icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "trash.tsx",
@@ -4713,9 +4125,7 @@
       "description": "Animated trophy icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "trophy.tsx",
@@ -4729,9 +4139,7 @@
       "description": "Animated truck icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "truck.tsx",
@@ -4745,9 +4153,7 @@
       "description": "Animated tv icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "tv.tsx",
@@ -4761,9 +4167,7 @@
       "description": "Animated underline icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "underline.tsx",
@@ -4777,9 +4181,7 @@
       "description": "Animated user-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "user-circle.tsx",
@@ -4793,9 +4195,7 @@
       "description": "Animated user-group icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "user-group.tsx",
@@ -4809,9 +4209,7 @@
       "description": "Animated user-minus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "user-minus.tsx",
@@ -4825,9 +4223,7 @@
       "description": "Animated user-plus icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "user-plus.tsx",
@@ -4841,9 +4237,7 @@
       "description": "Animated user icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "user.tsx",
@@ -4857,9 +4251,7 @@
       "description": "Animated users icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "users.tsx",
@@ -4873,9 +4265,7 @@
       "description": "Animated variable icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "variable.tsx",
@@ -4889,9 +4279,7 @@
       "description": "Animated video-camera-slash icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "video-camera-slash.tsx",
@@ -4905,9 +4293,7 @@
       "description": "Animated video-camera icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "video-camera.tsx",
@@ -4921,9 +4307,7 @@
       "description": "Animated view-columns icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "view-columns.tsx",
@@ -4937,9 +4321,7 @@
       "description": "Animated viewfinder-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "viewfinder-circle.tsx",
@@ -4953,9 +4335,7 @@
       "description": "Animated wallet icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "wallet.tsx",
@@ -4969,9 +4349,7 @@
       "description": "Animated wifi icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "wifi.tsx",
@@ -4985,9 +4363,7 @@
       "description": "Animated window icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "window.tsx",
@@ -5001,9 +4377,7 @@
       "description": "Animated wrench-screwdriver icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "wrench-screwdriver.tsx",
@@ -5017,9 +4391,7 @@
       "description": "Animated wrench icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "wrench.tsx",
@@ -5033,9 +4405,7 @@
       "description": "Animated x-circle icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "x-circle.tsx",
@@ -5049,9 +4419,7 @@
       "description": "Animated x-mark icon for React",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "motion"
-      ],
+      "dependencies": ["motion"],
       "files": [
         {
           "path": "x-mark.tsx",

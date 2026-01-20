@@ -9,9 +9,7 @@
       "description": "Animated academic-cap icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "academic-cap.vue",
@@ -25,9 +23,7 @@
       "description": "Animated adjustments-horizontal icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "adjustments-horizontal.vue",
@@ -41,9 +37,7 @@
       "description": "Animated adjustments-vertical icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "adjustments-vertical.vue",
@@ -57,9 +51,7 @@
       "description": "Animated archive-box-arrow-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "archive-box-arrow-down.vue",
@@ -73,9 +65,7 @@
       "description": "Animated archive-box-x-mark icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "archive-box-x-mark.vue",
@@ -89,9 +79,7 @@
       "description": "Animated archive-box icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "archive-box.vue",
@@ -105,9 +93,7 @@
       "description": "Animated arrow-down-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-down-circle.vue",
@@ -121,9 +107,7 @@
       "description": "Animated arrow-down-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-down-left.vue",
@@ -137,9 +121,7 @@
       "description": "Animated arrow-down-on-square-stack icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-down-on-square-stack.vue",
@@ -153,9 +135,7 @@
       "description": "Animated arrow-down-on-square icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-down-on-square.vue",
@@ -169,9 +149,7 @@
       "description": "Animated arrow-down-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-down-right.vue",
@@ -185,9 +163,7 @@
       "description": "Animated arrow-down-tray icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-down-tray.vue",
@@ -201,9 +177,7 @@
       "description": "Animated arrow-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-down.vue",
@@ -217,9 +191,7 @@
       "description": "Animated arrow-left-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-left-circle.vue",
@@ -233,9 +205,7 @@
       "description": "Animated arrow-left-end-on-rectangle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-left-end-on-rectangle.vue",
@@ -249,9 +219,7 @@
       "description": "Animated arrow-left-start-on-rectangle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-left-start-on-rectangle.vue",
@@ -265,9 +233,7 @@
       "description": "Animated arrow-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-left.vue",
@@ -281,9 +247,7 @@
       "description": "Animated arrow-long-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-long-down.vue",
@@ -297,9 +261,7 @@
       "description": "Animated arrow-long-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-long-left.vue",
@@ -313,9 +275,7 @@
       "description": "Animated arrow-long-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-long-right.vue",
@@ -329,9 +289,7 @@
       "description": "Animated arrow-long-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-long-up.vue",
@@ -345,9 +303,7 @@
       "description": "Animated arrow-path-rounded-square icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-path-rounded-square.vue",
@@ -361,9 +317,7 @@
       "description": "Animated arrow-path icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-path.vue",
@@ -377,9 +331,7 @@
       "description": "Animated arrow-right-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-right-circle.vue",
@@ -393,9 +345,7 @@
       "description": "Animated arrow-right-end-on-rectangle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-right-end-on-rectangle.vue",
@@ -409,9 +359,7 @@
       "description": "Animated arrow-right-start-on-rectangle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-right-start-on-rectangle.vue",
@@ -425,9 +373,7 @@
       "description": "Animated arrow-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-right.vue",
@@ -441,9 +387,7 @@
       "description": "Animated arrow-top-right-on-square icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-top-right-on-square.vue",
@@ -457,9 +401,7 @@
       "description": "Animated arrow-trending-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-trending-down.vue",
@@ -473,9 +415,7 @@
       "description": "Animated arrow-trending-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-trending-up.vue",
@@ -489,9 +429,7 @@
       "description": "Animated arrow-turn-down-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-turn-down-left.vue",
@@ -505,9 +443,7 @@
       "description": "Animated arrow-turn-down-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-turn-down-right.vue",
@@ -521,9 +457,7 @@
       "description": "Animated arrow-turn-left-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-turn-left-down.vue",
@@ -537,9 +471,7 @@
       "description": "Animated arrow-turn-left-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-turn-left-up.vue",
@@ -553,9 +485,7 @@
       "description": "Animated arrow-turn-right-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-turn-right-down.vue",
@@ -569,9 +499,7 @@
       "description": "Animated arrow-turn-right-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-turn-right-up.vue",
@@ -585,9 +513,7 @@
       "description": "Animated arrow-turn-up-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-turn-up-left.vue",
@@ -601,9 +527,7 @@
       "description": "Animated arrow-turn-up-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-turn-up-right.vue",
@@ -617,9 +541,7 @@
       "description": "Animated arrow-up-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-up-circle.vue",
@@ -633,9 +555,7 @@
       "description": "Animated arrow-up-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-up-left.vue",
@@ -649,9 +569,7 @@
       "description": "Animated arrow-up-on-square-stack icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-up-on-square-stack.vue",
@@ -665,9 +583,7 @@
       "description": "Animated arrow-up-on-square icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-up-on-square.vue",
@@ -681,9 +597,7 @@
       "description": "Animated arrow-up-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-up-right.vue",
@@ -697,9 +611,7 @@
       "description": "Animated arrow-up-tray icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-up-tray.vue",
@@ -713,9 +625,7 @@
       "description": "Animated arrow-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-up.vue",
@@ -729,9 +639,7 @@
       "description": "Animated arrow-uturn-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-uturn-down.vue",
@@ -745,9 +653,7 @@
       "description": "Animated arrow-uturn-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-uturn-left.vue",
@@ -761,9 +667,7 @@
       "description": "Animated arrow-uturn-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-uturn-right.vue",
@@ -777,9 +681,7 @@
       "description": "Animated arrow-uturn-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrow-uturn-up.vue",
@@ -793,9 +695,7 @@
       "description": "Animated arrows-pointing-in icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrows-pointing-in.vue",
@@ -809,9 +709,7 @@
       "description": "Animated arrows-pointing-out icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrows-pointing-out.vue",
@@ -825,9 +723,7 @@
       "description": "Animated arrows-right-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrows-right-left.vue",
@@ -841,9 +737,7 @@
       "description": "Animated arrows-up-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "arrows-up-down.vue",
@@ -857,9 +751,7 @@
       "description": "Animated at-symbol icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "at-symbol.vue",
@@ -873,9 +765,7 @@
       "description": "Animated backspace icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "backspace.vue",
@@ -889,9 +779,7 @@
       "description": "Animated backward icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "backward.vue",
@@ -905,9 +793,7 @@
       "description": "Animated banknotes icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "banknotes.vue",
@@ -921,9 +807,7 @@
       "description": "Animated bars-2 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bars-2.vue",
@@ -937,9 +821,7 @@
       "description": "Animated bars-3-bottom-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bars-3-bottom-left.vue",
@@ -953,9 +835,7 @@
       "description": "Animated bars-3-bottom-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bars-3-bottom-right.vue",
@@ -969,9 +849,7 @@
       "description": "Animated bars-3-center-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bars-3-center-left.vue",
@@ -985,9 +863,7 @@
       "description": "Animated bars-3 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bars-3.vue",
@@ -1001,9 +877,7 @@
       "description": "Animated bars-4 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bars-4.vue",
@@ -1017,9 +891,7 @@
       "description": "Animated bars-arrow-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bars-arrow-down.vue",
@@ -1033,9 +905,7 @@
       "description": "Animated bars-arrow-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bars-arrow-up.vue",
@@ -1049,9 +919,7 @@
       "description": "Animated battery-0 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "battery-0.vue",
@@ -1065,9 +933,7 @@
       "description": "Animated battery-100 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "battery-100.vue",
@@ -1081,9 +947,7 @@
       "description": "Animated battery-50 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "battery-50.vue",
@@ -1097,9 +961,7 @@
       "description": "Animated beaker icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "beaker.vue",
@@ -1113,9 +975,7 @@
       "description": "Animated bell-alert icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bell-alert.vue",
@@ -1129,9 +989,7 @@
       "description": "Animated bell-slash icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bell-slash.vue",
@@ -1145,9 +1003,7 @@
       "description": "Animated bell-snooze icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bell-snooze.vue",
@@ -1161,9 +1017,7 @@
       "description": "Animated bell icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bell.vue",
@@ -1177,9 +1031,7 @@
       "description": "Animated bold icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bold.vue",
@@ -1193,9 +1045,7 @@
       "description": "Animated bolt-slash icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bolt-slash.vue",
@@ -1209,9 +1059,7 @@
       "description": "Animated bolt icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bolt.vue",
@@ -1225,9 +1073,7 @@
       "description": "Animated book-open icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "book-open.vue",
@@ -1241,9 +1087,7 @@
       "description": "Animated bookmark-slash icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bookmark-slash.vue",
@@ -1257,9 +1101,7 @@
       "description": "Animated bookmark-square icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bookmark-square.vue",
@@ -1273,9 +1115,7 @@
       "description": "Animated bookmark icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bookmark.vue",
@@ -1289,9 +1129,7 @@
       "description": "Animated briefcase icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "briefcase.vue",
@@ -1305,9 +1143,7 @@
       "description": "Animated bug-ant icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "bug-ant.vue",
@@ -1321,9 +1157,7 @@
       "description": "Animated building-library icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "building-library.vue",
@@ -1337,9 +1171,7 @@
       "description": "Animated building-office-2 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "building-office-2.vue",
@@ -1353,9 +1185,7 @@
       "description": "Animated building-office icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "building-office.vue",
@@ -1369,9 +1199,7 @@
       "description": "Animated building-storefront icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "building-storefront.vue",
@@ -1385,9 +1213,7 @@
       "description": "Animated cake icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cake.vue",
@@ -1401,9 +1227,7 @@
       "description": "Animated calculator icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "calculator.vue",
@@ -1417,9 +1241,7 @@
       "description": "Animated calendar-date-range icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "calendar-date-range.vue",
@@ -1433,9 +1255,7 @@
       "description": "Animated calendar-days icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "calendar-days.vue",
@@ -1449,9 +1269,7 @@
       "description": "Animated calendar icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "calendar.vue",
@@ -1465,9 +1283,7 @@
       "description": "Animated camera icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "camera.vue",
@@ -1481,9 +1297,7 @@
       "description": "Animated chart-bar-square icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chart-bar-square.vue",
@@ -1497,9 +1311,7 @@
       "description": "Animated chart-bar icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chart-bar.vue",
@@ -1513,9 +1325,7 @@
       "description": "Animated chart-pie icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chart-pie.vue",
@@ -1529,9 +1339,7 @@
       "description": "Animated chat-bubble-bottom-center-text icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chat-bubble-bottom-center-text.vue",
@@ -1545,9 +1353,7 @@
       "description": "Animated chat-bubble-bottom-center icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chat-bubble-bottom-center.vue",
@@ -1561,9 +1367,7 @@
       "description": "Animated chat-bubble-left-ellipsis icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chat-bubble-left-ellipsis.vue",
@@ -1577,9 +1381,7 @@
       "description": "Animated chat-bubble-left-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chat-bubble-left-right.vue",
@@ -1593,9 +1395,7 @@
       "description": "Animated chat-bubble-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chat-bubble-left.vue",
@@ -1609,9 +1409,7 @@
       "description": "Animated chat-bubble-oval-left-ellipsis icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chat-bubble-oval-left-ellipsis.vue",
@@ -1625,9 +1423,7 @@
       "description": "Animated chat-bubble-oval-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chat-bubble-oval-left.vue",
@@ -1641,9 +1437,7 @@
       "description": "Animated check-badge icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "check-badge.vue",
@@ -1657,9 +1451,7 @@
       "description": "Animated check-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "check-circle.vue",
@@ -1673,9 +1465,7 @@
       "description": "Animated check icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "check.vue",
@@ -1689,9 +1479,7 @@
       "description": "Animated chevron-double-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chevron-double-down.vue",
@@ -1705,9 +1493,7 @@
       "description": "Animated chevron-double-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chevron-double-left.vue",
@@ -1721,9 +1507,7 @@
       "description": "Animated chevron-double-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chevron-double-right.vue",
@@ -1737,9 +1521,7 @@
       "description": "Animated chevron-double-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chevron-double-up.vue",
@@ -1753,9 +1535,7 @@
       "description": "Animated chevron-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chevron-down.vue",
@@ -1769,9 +1549,7 @@
       "description": "Animated chevron-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chevron-left.vue",
@@ -1785,9 +1563,7 @@
       "description": "Animated chevron-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chevron-right.vue",
@@ -1801,9 +1577,7 @@
       "description": "Animated chevron-up-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chevron-up-down.vue",
@@ -1817,9 +1591,7 @@
       "description": "Animated chevron-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "chevron-up.vue",
@@ -1833,9 +1605,7 @@
       "description": "Animated circle-stack icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "circle-stack.vue",
@@ -1849,9 +1619,7 @@
       "description": "Animated clipboard-document-check icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "clipboard-document-check.vue",
@@ -1865,9 +1633,7 @@
       "description": "Animated clipboard-document-list icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "clipboard-document-list.vue",
@@ -1881,9 +1647,7 @@
       "description": "Animated clipboard-document icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "clipboard-document.vue",
@@ -1897,9 +1661,7 @@
       "description": "Animated clipboard icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "clipboard.vue",
@@ -1913,9 +1675,7 @@
       "description": "Animated clock icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "clock.vue",
@@ -1929,9 +1689,7 @@
       "description": "Animated cloud-arrow-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cloud-arrow-down.vue",
@@ -1945,9 +1703,7 @@
       "description": "Animated cloud-arrow-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cloud-arrow-up.vue",
@@ -1961,9 +1717,7 @@
       "description": "Animated cloud icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cloud.vue",
@@ -1977,9 +1731,7 @@
       "description": "Animated code-bracket-square icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "code-bracket-square.vue",
@@ -1993,9 +1745,7 @@
       "description": "Animated code-bracket icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "code-bracket.vue",
@@ -2009,9 +1759,7 @@
       "description": "Animated cog-6-tooth icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cog-6-tooth.vue",
@@ -2025,9 +1773,7 @@
       "description": "Animated cog-8-tooth icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cog-8-tooth.vue",
@@ -2041,9 +1787,7 @@
       "description": "Animated cog icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cog.vue",
@@ -2057,9 +1801,7 @@
       "description": "Animated command-line icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "command-line.vue",
@@ -2073,9 +1815,7 @@
       "description": "Animated computer-desktop icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "computer-desktop.vue",
@@ -2089,9 +1829,7 @@
       "description": "Animated cpu-chip icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cpu-chip.vue",
@@ -2105,9 +1843,7 @@
       "description": "Animated credit-card icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "credit-card.vue",
@@ -2121,9 +1857,7 @@
       "description": "Animated cube-transparent icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cube-transparent.vue",
@@ -2137,9 +1871,7 @@
       "description": "Animated cube icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cube.vue",
@@ -2153,9 +1885,7 @@
       "description": "Animated currency-bangladeshi icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "currency-bangladeshi.vue",
@@ -2169,9 +1899,7 @@
       "description": "Animated currency-dollar icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "currency-dollar.vue",
@@ -2185,9 +1913,7 @@
       "description": "Animated currency-euro icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "currency-euro.vue",
@@ -2201,9 +1927,7 @@
       "description": "Animated currency-pound icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "currency-pound.vue",
@@ -2217,9 +1941,7 @@
       "description": "Animated currency-rupee icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "currency-rupee.vue",
@@ -2233,9 +1955,7 @@
       "description": "Animated currency-yen icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "currency-yen.vue",
@@ -2249,9 +1969,7 @@
       "description": "Animated cursor-arrow-rays icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cursor-arrow-rays.vue",
@@ -2265,9 +1983,7 @@
       "description": "Animated cursor-arrow-ripple icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "cursor-arrow-ripple.vue",
@@ -2281,9 +1997,7 @@
       "description": "Animated device-phone-mobile icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "device-phone-mobile.vue",
@@ -2297,9 +2011,7 @@
       "description": "Animated device-tablet icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "device-tablet.vue",
@@ -2313,9 +2025,7 @@
       "description": "Animated divide icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "divide.vue",
@@ -2329,9 +2039,7 @@
       "description": "Animated document-arrow-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-arrow-down.vue",
@@ -2345,9 +2053,7 @@
       "description": "Animated document-arrow-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-arrow-up.vue",
@@ -2361,9 +2067,7 @@
       "description": "Animated document-chart-bar icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-chart-bar.vue",
@@ -2377,9 +2081,7 @@
       "description": "Animated document-check icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-check.vue",
@@ -2393,9 +2095,7 @@
       "description": "Animated document-currency-bangladeshi icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-currency-bangladeshi.vue",
@@ -2409,9 +2109,7 @@
       "description": "Animated document-currency-dollar icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-currency-dollar.vue",
@@ -2425,9 +2123,7 @@
       "description": "Animated document-currency-euro icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-currency-euro.vue",
@@ -2441,9 +2137,7 @@
       "description": "Animated document-currency-pound icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-currency-pound.vue",
@@ -2457,9 +2151,7 @@
       "description": "Animated document-currency-rupee icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-currency-rupee.vue",
@@ -2473,9 +2165,7 @@
       "description": "Animated document-currency-yen icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-currency-yen.vue",
@@ -2489,9 +2179,7 @@
       "description": "Animated document-duplicate icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-duplicate.vue",
@@ -2505,9 +2193,7 @@
       "description": "Animated document-magnifying-glass icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-magnifying-glass.vue",
@@ -2521,9 +2207,7 @@
       "description": "Animated document-minus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-minus.vue",
@@ -2537,9 +2221,7 @@
       "description": "Animated document-plus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-plus.vue",
@@ -2553,9 +2235,7 @@
       "description": "Animated document-text icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document-text.vue",
@@ -2569,9 +2249,7 @@
       "description": "Animated document icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "document.vue",
@@ -2585,9 +2263,7 @@
       "description": "Animated ellipsis-horizontal-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "ellipsis-horizontal-circle.vue",
@@ -2601,9 +2277,7 @@
       "description": "Animated ellipsis-horizontal icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "ellipsis-horizontal.vue",
@@ -2617,9 +2291,7 @@
       "description": "Animated ellipsis-vertical icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "ellipsis-vertical.vue",
@@ -2633,9 +2305,7 @@
       "description": "Animated envelope-open icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "envelope-open.vue",
@@ -2649,9 +2319,7 @@
       "description": "Animated envelope icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "envelope.vue",
@@ -2665,9 +2333,7 @@
       "description": "Animated equals icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "equals.vue",
@@ -2681,9 +2347,7 @@
       "description": "Animated exclamation-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "exclamation-circle.vue",
@@ -2697,9 +2361,7 @@
       "description": "Animated exclamation-triangle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "exclamation-triangle.vue",
@@ -2713,9 +2375,7 @@
       "description": "Animated eye-dropper icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "eye-dropper.vue",
@@ -2729,9 +2389,7 @@
       "description": "Animated eye-slash icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "eye-slash.vue",
@@ -2745,9 +2403,7 @@
       "description": "Animated eye icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "eye.vue",
@@ -2761,9 +2417,7 @@
       "description": "Animated face-frown icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "face-frown.vue",
@@ -2777,9 +2431,7 @@
       "description": "Animated face-smile icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "face-smile.vue",
@@ -2793,9 +2445,7 @@
       "description": "Animated film icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "film.vue",
@@ -2809,9 +2459,7 @@
       "description": "Animated finger-print icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "finger-print.vue",
@@ -2825,9 +2473,7 @@
       "description": "Animated fire icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "fire.vue",
@@ -2841,9 +2487,7 @@
       "description": "Animated flag icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "flag.vue",
@@ -2857,9 +2501,7 @@
       "description": "Animated folder-arrow-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "folder-arrow-down.vue",
@@ -2873,9 +2515,7 @@
       "description": "Animated folder-minus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "folder-minus.vue",
@@ -2889,9 +2529,7 @@
       "description": "Animated folder-open icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "folder-open.vue",
@@ -2905,9 +2543,7 @@
       "description": "Animated folder-plus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "folder-plus.vue",
@@ -2921,9 +2557,7 @@
       "description": "Animated folder icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "folder.vue",
@@ -2937,9 +2571,7 @@
       "description": "Animated forward icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "forward.vue",
@@ -2953,9 +2585,7 @@
       "description": "Animated funnel icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "funnel.vue",
@@ -2969,9 +2599,7 @@
       "description": "Animated gif icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "gif.vue",
@@ -2985,9 +2613,7 @@
       "description": "Animated gift-top icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "gift-top.vue",
@@ -3001,9 +2627,7 @@
       "description": "Animated gift icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "gift.vue",
@@ -3017,9 +2641,7 @@
       "description": "Animated globe-alt icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "globe-alt.vue",
@@ -3033,9 +2655,7 @@
       "description": "Animated globe-americas icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "globe-americas.vue",
@@ -3049,9 +2669,7 @@
       "description": "Animated globe-asia-australia icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "globe-asia-australia.vue",
@@ -3065,9 +2683,7 @@
       "description": "Animated globe-europe-africa icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "globe-europe-africa.vue",
@@ -3081,9 +2697,7 @@
       "description": "Animated h1 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "h1.vue",
@@ -3097,9 +2711,7 @@
       "description": "Animated h2 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "h2.vue",
@@ -3113,9 +2725,7 @@
       "description": "Animated h3 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "h3.vue",
@@ -3129,9 +2739,7 @@
       "description": "Animated hand-raised icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "hand-raised.vue",
@@ -3145,9 +2753,7 @@
       "description": "Animated hand-thumb-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "hand-thumb-down.vue",
@@ -3161,9 +2767,7 @@
       "description": "Animated hand-thumb-up icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "hand-thumb-up.vue",
@@ -3177,9 +2781,7 @@
       "description": "Animated hashtag icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "hashtag.vue",
@@ -3193,9 +2795,7 @@
       "description": "Animated heart icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "heart.vue",
@@ -3209,9 +2809,7 @@
       "description": "Animated home-modern icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "home-modern.vue",
@@ -3225,9 +2823,7 @@
       "description": "Animated home icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "home.vue",
@@ -3241,9 +2837,7 @@
       "description": "Animated identification icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "identification.vue",
@@ -3257,9 +2851,7 @@
       "description": "Animated inbox-arrow-down icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "inbox-arrow-down.vue",
@@ -3273,9 +2865,7 @@
       "description": "Animated inbox-stack icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "inbox-stack.vue",
@@ -3289,9 +2879,7 @@
       "description": "Animated inbox icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "inbox.vue",
@@ -3305,9 +2893,7 @@
       "description": "Animated information-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "information-circle.vue",
@@ -3321,9 +2907,7 @@
       "description": "Animated italic icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "italic.vue",
@@ -3337,9 +2921,7 @@
       "description": "Animated key icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "key.vue",
@@ -3353,9 +2935,7 @@
       "description": "Animated language icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "language.vue",
@@ -3369,9 +2949,7 @@
       "description": "Animated lifebuoy icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "lifebuoy.vue",
@@ -3385,9 +2963,7 @@
       "description": "Animated light-bulb icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "light-bulb.vue",
@@ -3401,9 +2977,7 @@
       "description": "Animated link-slash icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "link-slash.vue",
@@ -3417,9 +2991,7 @@
       "description": "Animated link icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "link.vue",
@@ -3433,9 +3005,7 @@
       "description": "Animated list-bullet icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "list-bullet.vue",
@@ -3449,9 +3019,7 @@
       "description": "Animated lock-closed icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "lock-closed.vue",
@@ -3465,9 +3033,7 @@
       "description": "Animated lock-open icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "lock-open.vue",
@@ -3481,9 +3047,7 @@
       "description": "Animated magnifying-glass-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "magnifying-glass-circle.vue",
@@ -3497,9 +3061,7 @@
       "description": "Animated magnifying-glass-minus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "magnifying-glass-minus.vue",
@@ -3513,9 +3075,7 @@
       "description": "Animated magnifying-glass-plus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "magnifying-glass-plus.vue",
@@ -3529,9 +3089,7 @@
       "description": "Animated magnifying-glass icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "magnifying-glass.vue",
@@ -3545,9 +3103,7 @@
       "description": "Animated map-pin icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "map-pin.vue",
@@ -3561,9 +3117,7 @@
       "description": "Animated map icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "map.vue",
@@ -3577,9 +3131,7 @@
       "description": "Animated megaphone icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "megaphone.vue",
@@ -3593,9 +3145,7 @@
       "description": "Animated microphone icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "microphone.vue",
@@ -3609,9 +3159,7 @@
       "description": "Animated minus-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "minus-circle.vue",
@@ -3625,9 +3173,7 @@
       "description": "Animated minus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "minus.vue",
@@ -3641,9 +3187,7 @@
       "description": "Animated moon icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "moon.vue",
@@ -3657,9 +3201,7 @@
       "description": "Animated musical-note icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "musical-note.vue",
@@ -3673,9 +3215,7 @@
       "description": "Animated newspaper icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "newspaper.vue",
@@ -3689,9 +3229,7 @@
       "description": "Animated no-symbol icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "no-symbol.vue",
@@ -3705,9 +3243,7 @@
       "description": "Animated numbered-list icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "numbered-list.vue",
@@ -3721,9 +3257,7 @@
       "description": "Animated paint-brush icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "paint-brush.vue",
@@ -3737,9 +3271,7 @@
       "description": "Animated paper-airplane icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "paper-airplane.vue",
@@ -3753,9 +3285,7 @@
       "description": "Animated paper-clip icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "paper-clip.vue",
@@ -3769,9 +3299,7 @@
       "description": "Animated pause-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "pause-circle.vue",
@@ -3785,9 +3313,7 @@
       "description": "Animated pause icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "pause.vue",
@@ -3801,9 +3327,7 @@
       "description": "Animated pencil-square icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "pencil-square.vue",
@@ -3817,9 +3341,7 @@
       "description": "Animated pencil icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "pencil.vue",
@@ -3833,9 +3355,7 @@
       "description": "Animated percent-badge icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "percent-badge.vue",
@@ -3849,9 +3369,7 @@
       "description": "Animated phone-arrow-down-left icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "phone-arrow-down-left.vue",
@@ -3865,9 +3383,7 @@
       "description": "Animated phone-arrow-up-right icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "phone-arrow-up-right.vue",
@@ -3881,9 +3397,7 @@
       "description": "Animated phone-x-mark icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "phone-x-mark.vue",
@@ -3897,9 +3411,7 @@
       "description": "Animated phone icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "phone.vue",
@@ -3913,9 +3425,7 @@
       "description": "Animated photo icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "photo.vue",
@@ -3929,9 +3439,7 @@
       "description": "Animated play-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "play-circle.vue",
@@ -3945,9 +3453,7 @@
       "description": "Animated play-pause icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "play-pause.vue",
@@ -3961,9 +3467,7 @@
       "description": "Animated play icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "play.vue",
@@ -3977,9 +3481,7 @@
       "description": "Animated plus-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "plus-circle.vue",
@@ -3993,9 +3495,7 @@
       "description": "Animated plus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "plus.vue",
@@ -4009,9 +3509,7 @@
       "description": "Animated power icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "power.vue",
@@ -4025,9 +3523,7 @@
       "description": "Animated presentation-chart-bar icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "presentation-chart-bar.vue",
@@ -4041,9 +3537,7 @@
       "description": "Animated presentation-chart-line icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "presentation-chart-line.vue",
@@ -4057,9 +3551,7 @@
       "description": "Animated printer icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "printer.vue",
@@ -4073,9 +3565,7 @@
       "description": "Animated puzzle-piece icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "puzzle-piece.vue",
@@ -4089,9 +3579,7 @@
       "description": "Animated qr-code icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "qr-code.vue",
@@ -4105,9 +3593,7 @@
       "description": "Animated question-mark-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "question-mark-circle.vue",
@@ -4121,9 +3607,7 @@
       "description": "Animated queue-list icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "queue-list.vue",
@@ -4137,9 +3621,7 @@
       "description": "Animated radio icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "radio.vue",
@@ -4153,9 +3635,7 @@
       "description": "Animated receipt-percent icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "receipt-percent.vue",
@@ -4169,9 +3649,7 @@
       "description": "Animated receipt-refund icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "receipt-refund.vue",
@@ -4185,9 +3663,7 @@
       "description": "Animated rectangle-group icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "rectangle-group.vue",
@@ -4201,9 +3677,7 @@
       "description": "Animated rectangle-stack icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "rectangle-stack.vue",
@@ -4217,9 +3691,7 @@
       "description": "Animated rocket-launch icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "rocket-launch.vue",
@@ -4233,9 +3705,7 @@
       "description": "Animated rss icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "rss.vue",
@@ -4249,9 +3719,7 @@
       "description": "Animated scale icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "scale.vue",
@@ -4265,9 +3733,7 @@
       "description": "Animated scissors icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "scissors.vue",
@@ -4281,9 +3747,7 @@
       "description": "Animated server-stack icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "server-stack.vue",
@@ -4297,9 +3761,7 @@
       "description": "Animated server icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "server.vue",
@@ -4313,9 +3775,7 @@
       "description": "Animated share icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "share.vue",
@@ -4329,9 +3789,7 @@
       "description": "Animated shield-check icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "shield-check.vue",
@@ -4345,9 +3803,7 @@
       "description": "Animated shield-exclamation icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "shield-exclamation.vue",
@@ -4361,9 +3817,7 @@
       "description": "Animated shopping-bag icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "shopping-bag.vue",
@@ -4377,9 +3831,7 @@
       "description": "Animated shopping-cart icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "shopping-cart.vue",
@@ -4393,9 +3845,7 @@
       "description": "Animated signal-slash icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "signal-slash.vue",
@@ -4409,9 +3859,7 @@
       "description": "Animated signal icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "signal.vue",
@@ -4425,9 +3873,7 @@
       "description": "Animated slash icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "slash.vue",
@@ -4441,9 +3887,7 @@
       "description": "Animated sparkles icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "sparkles.vue",
@@ -4457,9 +3901,7 @@
       "description": "Animated speaker-wave icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "speaker-wave.vue",
@@ -4473,9 +3915,7 @@
       "description": "Animated speaker-x-mark icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "speaker-x-mark.vue",
@@ -4489,9 +3929,7 @@
       "description": "Animated square-2-stack icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "square-2-stack.vue",
@@ -4505,9 +3943,7 @@
       "description": "Animated square-3-stack-3d icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "square-3-stack-3d.vue",
@@ -4521,9 +3957,7 @@
       "description": "Animated squares-2x2 icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "squares-2x2.vue",
@@ -4537,9 +3971,7 @@
       "description": "Animated squares-plus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "squares-plus.vue",
@@ -4553,9 +3985,7 @@
       "description": "Animated star icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "star.vue",
@@ -4569,9 +3999,7 @@
       "description": "Animated stop-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "stop-circle.vue",
@@ -4585,9 +4013,7 @@
       "description": "Animated stop icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "stop.vue",
@@ -4601,9 +4027,7 @@
       "description": "Animated strikethrough icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "strikethrough.vue",
@@ -4617,9 +4041,7 @@
       "description": "Animated sun icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "sun.vue",
@@ -4633,9 +4055,7 @@
       "description": "Animated swatch icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "swatch.vue",
@@ -4649,9 +4069,7 @@
       "description": "Animated table-cells icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "table-cells.vue",
@@ -4665,9 +4083,7 @@
       "description": "Animated tag icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "tag.vue",
@@ -4681,9 +4097,7 @@
       "description": "Animated ticket icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "ticket.vue",
@@ -4697,9 +4111,7 @@
       "description": "Animated trash icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "trash.vue",
@@ -4713,9 +4125,7 @@
       "description": "Animated trophy icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "trophy.vue",
@@ -4729,9 +4139,7 @@
       "description": "Animated truck icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "truck.vue",
@@ -4745,9 +4153,7 @@
       "description": "Animated tv icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "tv.vue",
@@ -4761,9 +4167,7 @@
       "description": "Animated underline icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "underline.vue",
@@ -4777,9 +4181,7 @@
       "description": "Animated user-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "user-circle.vue",
@@ -4793,9 +4195,7 @@
       "description": "Animated user-group icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "user-group.vue",
@@ -4809,9 +4209,7 @@
       "description": "Animated user-minus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "user-minus.vue",
@@ -4825,9 +4223,7 @@
       "description": "Animated user-plus icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "user-plus.vue",
@@ -4841,9 +4237,7 @@
       "description": "Animated user icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "user.vue",
@@ -4857,9 +4251,7 @@
       "description": "Animated users icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "users.vue",
@@ -4873,9 +4265,7 @@
       "description": "Animated variable icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "variable.vue",
@@ -4889,9 +4279,7 @@
       "description": "Animated video-camera-slash icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "video-camera-slash.vue",
@@ -4905,9 +4293,7 @@
       "description": "Animated video-camera icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "video-camera.vue",
@@ -4921,9 +4307,7 @@
       "description": "Animated view-columns icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "view-columns.vue",
@@ -4937,9 +4321,7 @@
       "description": "Animated viewfinder-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "viewfinder-circle.vue",
@@ -4953,9 +4335,7 @@
       "description": "Animated wallet icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "wallet.vue",
@@ -4969,9 +4349,7 @@
       "description": "Animated wifi icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "wifi.vue",
@@ -4985,9 +4363,7 @@
       "description": "Animated window icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "window.vue",
@@ -5001,9 +4377,7 @@
       "description": "Animated wrench-screwdriver icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "wrench-screwdriver.vue",
@@ -5017,9 +4391,7 @@
       "description": "Animated wrench icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "wrench.vue",
@@ -5033,9 +4405,7 @@
       "description": "Animated x-circle icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "x-circle.vue",
@@ -5049,9 +4419,7 @@
       "description": "Animated x-mark icon for Vue",
       "type": "registry:ui",
       "registryDependencies": [],
-      "dependencies": [
-        "@vueuse/motion"
-      ],
+      "dependencies": ["@vueuse/motion"],
       "files": [
         {
           "path": "x-mark.vue",

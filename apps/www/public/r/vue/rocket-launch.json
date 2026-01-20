@@ -5,9 +5,7 @@
   "description": "Animated rocket-launch icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "rocket-launch.vue",

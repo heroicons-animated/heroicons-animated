@@ -187,11 +187,6 @@ import { AtSymbolIcon, type AtSymbolIconHandle } from "./at-symbol";
 import { BackspaceIcon, type BackspaceIconHandle } from "./backspace";
 import { BackwardIcon, type BackwardIconHandle } from "./backward";
 import { BanknotesIcon, type BanknotesIconHandle } from "./banknotes";
-import {
-  BarsArrowDownIcon,
-  type BarsArrowDownIconHandle,
-} from "./bars-arrow-down";
-import { BarsArrowUpIcon, type BarsArrowUpIconHandle } from "./bars-arrow-up";
 import { Bars2Icon, type Bars2IconHandle } from "./bars-2";
 import { Bars3Icon, type Bars3IconHandle } from "./bars-3";
 import {
@@ -207,6 +202,11 @@ import {
   type Bars3CenterLeftIconHandle,
 } from "./bars-3-center-left";
 import { Bars4Icon, type Bars4IconHandle } from "./bars-4";
+import {
+  BarsArrowDownIcon,
+  type BarsArrowDownIconHandle,
+} from "./bars-arrow-down";
+import { BarsArrowUpIcon, type BarsArrowUpIconHandle } from "./bars-arrow-up";
 import { Battery0Icon, type Battery0IconHandle } from "./battery-0";
 import { Battery50Icon, type Battery50IconHandle } from "./battery-50";
 import { Battery100Icon, type Battery100IconHandle } from "./battery-100";
@@ -653,13 +653,16 @@ import {
   SpeakerXMarkIcon,
   type SpeakerXMarkIconHandle,
 } from "./speaker-x-mark";
-import { Square2StackIcon, type Square2StackIconHandle } from "./square-2-stack";
+import {
+  Square2StackIcon,
+  type Square2StackIconHandle,
+} from "./square-2-stack";
 import {
   Square3Stack3DIcon,
   type Square3Stack3DIconHandle,
 } from "./square-3-stack-3d";
-import { SquaresPlusIcon, type SquaresPlusIconHandle } from "./squares-plus";
 import { Squares2X2Icon, type Squares2X2IconHandle } from "./squares-2x2";
+import { SquaresPlusIcon, type SquaresPlusIconHandle } from "./squares-plus";
 import { StarIcon, type StarIconHandle } from "./star";
 import { StopIcon, type StopIconHandle } from "./stop";
 import { StopCircleIcon, type StopCircleIconHandle } from "./stop-circle";

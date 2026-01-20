@@ -5,9 +5,7 @@
   "description": "Animated arrow-left-circle icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "arrow-left-circle.vue",

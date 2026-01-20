@@ -5,9 +5,7 @@
   "description": "Animated device-phone-mobile icon for Vue",
   "type": "registry:ui",
   "registryDependencies": [],
-  "dependencies": [
-    "@vueuse/motion"
-  ],
+  "dependencies": ["@vueuse/motion"],
   "files": [
     {
       "path": "device-phone-mobile.vue",
