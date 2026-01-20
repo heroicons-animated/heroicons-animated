@@ -23,11 +23,30 @@ heroicons-animated/
 
 ## Installation
 
-### React
+### Using shadcn CLI
 
+#### React
 ```bash
-npm install @heroicons-animated/react motion
-# or
+pnpm dlx shadcn add @heroicons-animated/heart
+pnpm dlx shadcn add @heroicons-animated/wifi
+```
+
+#### Vue
+```bash
+pnpm dlx shadcn-vue add @heroicons-animated/vue/heart
+pnpm dlx shadcn-vue add @heroicons-animated/vue/wifi
+```
+
+#### Svelte
+```bash
+pnpm dlx shadcn-svelte add @heroicons-animated/svelte/heart
+pnpm dlx shadcn-svelte add @heroicons-animated/svelte/wifi
+```
+
+### Using npm packages
+
+#### React
+```bash
 pnpm add @heroicons-animated/react motion
 ```
 
@@ -39,11 +58,8 @@ export default function App() {
 }
 ```
 
-### Vue
-
+#### Vue
 ```bash
-npm install @heroicons-animated/vue @vueuse/motion
-# or
 pnpm add @heroicons-animated/vue @vueuse/motion
 ```
 
@@ -57,11 +73,8 @@ import { BeakerIcon } from '@heroicons-animated/vue'
 </template>
 ```
 
-### Svelte
-
+#### Svelte
 ```bash
-npm install @heroicons-animated/svelte
-# or
 pnpm add @heroicons-animated/svelte
 ```
 
@@ -76,6 +89,11 @@ pnpm add @heroicons-animated/svelte
 ## Contributing
 
 We welcome contributions to `heroicons-animated`! Please read our [contributing guidelines](CONTRIBUTING.md) on how to submit improvements and new icons.
+
+## Credits
+
+- Original project: [lucide-animated](https://lucide-animated.com/) by [@pqoqubbw](https://x.com/pqoqubbw)
+- Heroicons: [heroicons.com](https://heroicons.com)
 
 ## License
 
