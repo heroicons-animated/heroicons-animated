@@ -49,17 +49,17 @@ const CommentAnimationsDevLinkClient = () => {
   return (
     <a
       className="inline-block underline underline-offset-3 transition-[decoration-color,color] duration-100 focus-within:outline-offset-0 hover:text-primary hover:decoration-primary focus-visible:text-primary focus-visible:outline-1 focus-visible:outline-primary"
-      href="https://www.svg.guide/"
+      href="https://animations.dev/"
       onClick={() => {
         if (typeof window !== "undefined" && window.umami) {
-          window.umami.track(ANALYTIC_EVENT.COMMENT_SVG_GUIDE_LINK);
+          window.umami.track(ANALYTIC_EVENT.COMMENT_ANIMATIONS_DEV_LINK);
         }
       }}
       rel="noopener external"
       tabIndex={0}
       target="_blank"
     >
-      svg.guide
+      animations.dev
     </a>
   );
 };
@@ -70,7 +70,7 @@ const CommentButtonClient = () => {
   return (
     <a
       className="supports-[corner-shape:squircle]:corner-squircle flex w-fit cursor-pointer items-center justify-center gap-1 rounded-[8px] bg-primary px-[12px] py-[4px] font-sans text-sm text-white transition-[background-color] duration-100 hover:bg-[color-mix(in_oklab,var(--color-primary),black_10%)] focus-visible:outline-1 focus-visible:outline-primary focus-visible:outline-offset-1 supports-[corner-shape:squircle]:rounded-[12px] max-[445px]:w-full"
-      href="https://www.svg.guide/"
+      href="https://animations.dev/"
       onClick={() => {
         if (typeof window !== "undefined" && window.umami) {
           window.umami.track(ANALYTIC_EVENT.COMMENT_BUTTON_CLICK);
