@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -57,7 +57,11 @@ function handleMouseLeave() {
     <path
       d="M9 8.25H7.5a2.25 2.25 0 0 0-2.25 2.25v9a2.25 2.25 0 0 0 2.25 2.25h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25H15"
     />
-    <path class="arrow-path" class:animate={isAnimating} d="M9 12l3 3m0 0 3-3m-3 3V2.25" />
+    <path
+      class="arrow-path"
+      class:animate={isAnimating}
+      d="M9 12l3 3m0 0 3-3m-3 3V2.25"
+    />
   </svg>
 </div>
 

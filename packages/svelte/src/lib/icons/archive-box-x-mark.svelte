@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -11,7 +11,7 @@ let xMark2: SVGPathElement;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     // Animate X marks with delays
     setTimeout(() => {
       xMark1?.classList.add("xmark-animate");
@@ -19,7 +19,7 @@ export function startAnimation() {
     setTimeout(() => {
       xMark2?.classList.add("xmark-animate");
     }, 400);
-    
+
     setTimeout(() => {
       isAnimating = false;
       xMark1?.classList.remove("xmark-animate");
@@ -84,16 +84,8 @@ function handleMouseLeave() {
       class:animate={isAnimating}
       d="M3.75 7.5L4.37542 18.1321"
     />
-    <path
-      bind:this={xMark1}
-      class="xmark-path"
-      d="M9.75 11.625L14.25 16.125"
-    />
-    <path
-      bind:this={xMark2}
-      class="xmark-path"
-      d="M14.25 11.625L9.75 16.125"
-    />
+    <path bind:this={xMark1} class="xmark-path" d="M9.75 11.625L14.25 16.125" />
+    <path bind:this={xMark2} class="xmark-path" d="M14.25 11.625L9.75 16.125" />
     <path
       class="lid-group"
       class:animate={isAnimating}
@@ -136,7 +128,9 @@ div {
   opacity: 1;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  transition: opacity 0.3s, stroke-dashoffset 0.3s;
+  transition:
+    opacity 0.3s,
+    stroke-dashoffset 0.3s;
 }
 
 .xmark-path.xmark-animate {

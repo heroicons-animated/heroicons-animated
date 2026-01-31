@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -88,14 +88,26 @@ div {
 }
 
 @keyframes chevron-up-animate {
-  0% { transform: translateY(0); }
-  40% { transform: translateY(-2px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes chevron-down-animate {
-  0% { transform: translateY(0); }
-  40% { transform: translateY(2px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 </style>

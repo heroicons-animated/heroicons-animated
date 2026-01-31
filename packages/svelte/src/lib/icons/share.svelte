@@ -59,9 +59,27 @@ function handleMouseLeave() {
       class:share-line-draw={isAnimating}
       d="M7.21721 10.9071C7.39737 11.2307 7.5 11.6034 7.5 12C7.5 12.3966 7.39737 12.7693 7.21721 13.0929M7.21721 10.9071L16.7828 5.5929M7.21721 13.0929L16.7828 18.4071"
     />
-    <circle class="share-node share-node-0" class:share-node-pop={isAnimating} cx="5.25" cy="12" r="2.25" />
-    <circle class="share-node share-node-1" class:share-node-pop={isAnimating} cx="18.75" cy="4.5" r="2.25" />
-    <circle class="share-node share-node-2" class:share-node-pop={isAnimating} cx="18.75" cy="19.5" r="2.25" />
+    <circle
+      class="share-node share-node-0"
+      class:share-node-pop={isAnimating}
+      cx="5.25"
+      cy="12"
+      r="2.25"
+    />
+    <circle
+      class="share-node share-node-1"
+      class:share-node-pop={isAnimating}
+      cx="18.75"
+      cy="4.5"
+      r="2.25"
+    />
+    <circle
+      class="share-node share-node-2"
+      class:share-node-pop={isAnimating}
+      cx="18.75"
+      cy="19.5"
+      r="2.25"
+    />
   </svg>
 </div>
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -81,7 +81,8 @@ div {
 }
 
 .chart-pie-wedge.chart-pie-wedge-animate {
-  animation: chart-pie-wedge-move 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation: chart-pie-wedge-move 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)
+    forwards;
 }
 
 @keyframes chart-pie-wedge-move {

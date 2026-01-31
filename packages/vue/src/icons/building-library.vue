@@ -112,7 +112,7 @@ const startAnimation = () => {
   PILLARS.forEach((pillar, index) => {
     if (pillarMotions.value[index]) {
       pillarMotions.value[index].apply(
-        createPillarVariants(pillar.index).animate,
+        createPillarVariants(pillar.index).animate
       );
     }
   });
@@ -123,7 +123,7 @@ const stopAnimation = () => {
   PILLARS.forEach((pillar, index) => {
     if (pillarMotions.value[index]) {
       pillarMotions.value[index].apply(
-        createPillarVariants(pillar.index).normal,
+        createPillarVariants(pillar.index).normal
       );
     }
   });

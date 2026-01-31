@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -90,10 +90,18 @@ div {
   animation: facefrown-svg-bounce 0.8s ease-in-out forwards;
 }
 @keyframes facefrown-svg-bounce {
-  0% { transform: scale(1) rotate(0deg); }
-  30% { transform: scale(1.15) rotate(-2deg); }
-  60% { transform: scale(1.05) rotate(2deg); }
-  100% { transform: scale(1.08) rotate(0deg); }
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-2deg);
+  }
+  60% {
+    transform: scale(1.05) rotate(2deg);
+  }
+  100% {
+    transform: scale(1.08) rotate(0deg);
+  }
 }
 
 /* Mouth: pathLength [0.3,1,1] 0.5s delay 0.1 (d morph not in CSS, pathLength only) */
@@ -104,9 +112,15 @@ div {
   animation: facefrown-mouth-draw 0.5s ease-in-out 0.1s forwards;
 }
 @keyframes facefrown-mouth-draw {
-  0% { stroke-dashoffset: 0.7; }
-  50% { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: 0; }
+  0% {
+    stroke-dashoffset: 0.7;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 /* Left eye: scale [1,1.3,0.9,1.1] y [0,-0.5,0.3,0] 0.6s */
@@ -114,19 +128,35 @@ div {
   animation: facefrown-eye-left-bounce 0.6s ease-in-out forwards;
 }
 @keyframes facefrown-eye-left-bounce {
-  0% { transform: scale(1) translateY(0); }
-  30% { transform: scale(1.3) translateY(-0.5px); }
-  60% { transform: scale(0.9) translateY(0.3px); }
-  100% { transform: scale(1.1) translateY(0); }
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  30% {
+    transform: scale(1.3) translateY(-0.5px);
+  }
+  60% {
+    transform: scale(0.9) translateY(0.3px);
+  }
+  100% {
+    transform: scale(1.1) translateY(0);
+  }
 }
 /* Right eye: scale [1,0.9,1.3,1.1] y [0,-0.5,0.3,0] 0.6s */
 .facefrown-eye-right.facefrown-eye-animate {
   animation: facefrown-eye-right-bounce 0.6s ease-in-out forwards;
 }
 @keyframes facefrown-eye-right-bounce {
-  0% { transform: scale(1) translateY(0); }
-  30% { transform: scale(0.9) translateY(-0.5px); }
-  60% { transform: scale(1.3) translateY(0.3px); }
-  100% { transform: scale(1.1) translateY(0); }
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  30% {
+    transform: scale(0.9) translateY(-0.5px);
+  }
+  60% {
+    transform: scale(1.3) translateY(0.3px);
+  }
+  100% {
+    transform: scale(1.1) translateY(0);
+  }
 }
 </style>

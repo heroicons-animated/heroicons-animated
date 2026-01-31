@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -23,22 +23,22 @@ const defaultOptions = {
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     // Column 1
     line1?.animate([{ y2: 13.5 }, { y2: 10.5 }], defaultOptions);
     line2?.animate([{ y1: 16.5 }, { y1: 13.5 }], defaultOptions);
     circle1?.animate([{ cy: 15 }, { cy: 12 }], defaultOptions);
-    
+
     // Column 2
     line3?.animate([{ y2: 7.5 }, { y2: 10.5 }], defaultOptions);
     line4?.animate([{ y1: 10.5 }, { y1: 13.5 }], defaultOptions);
     circle2?.animate([{ cy: 9 }, { cy: 12 }], defaultOptions);
-    
+
     // Column 3
     line5?.animate([{ y2: 13.5 }, { y2: 10.5 }], defaultOptions);
     line6?.animate([{ y1: 16.5 }, { y1: 13.5 }], defaultOptions);
     circle3?.animate([{ cy: 15 }, { cy: 12 }], defaultOptions);
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 300);
@@ -47,17 +47,17 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
+
   // Column 1
   line1?.animate([{ y2: 10.5 }, { y2: 13.5 }], defaultOptions);
   line2?.animate([{ y1: 13.5 }, { y1: 16.5 }], defaultOptions);
   circle1?.animate([{ cy: 12 }, { cy: 15 }], defaultOptions);
-  
+
   // Column 2
   line3?.animate([{ y2: 10.5 }, { y2: 7.5 }], defaultOptions);
   line4?.animate([{ y1: 13.5 }, { y1: 10.5 }], defaultOptions);
   circle2?.animate([{ cy: 12 }, { cy: 9 }], defaultOptions);
-  
+
   // Column 3
   line5?.animate([{ y2: 10.5 }, { y2: 13.5 }], defaultOptions);
   line6?.animate([{ y1: 13.5 }, { y1: 16.5 }], defaultOptions);

@@ -9,7 +9,9 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    setTimeout(() => { isAnimating = false; }, 500);
+    setTimeout(() => {
+      isAnimating = false;
+    }, 500);
   }
 }
 

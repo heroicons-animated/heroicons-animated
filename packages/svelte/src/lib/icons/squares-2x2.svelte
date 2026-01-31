@@ -9,7 +9,9 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    setTimeout(() => { isAnimating = false; }, 700);
+    setTimeout(() => {
+      isAnimating = false;
+    }, 700);
   }
 }
 
@@ -91,10 +93,18 @@ div {
   animation: squares2x2-pop 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
-.squares2x2-0.squares2x2-pop { animation-delay: 0s; }
-.squares2x2-1.squares2x2-pop { animation-delay: 0.08s; }
-.squares2x2-2.squares2x2-pop { animation-delay: 0.24s; }
-.squares2x2-3.squares2x2-pop { animation-delay: 0.32s; }
+.squares2x2-0.squares2x2-pop {
+  animation-delay: 0s;
+}
+.squares2x2-1.squares2x2-pop {
+  animation-delay: 0.08s;
+}
+.squares2x2-2.squares2x2-pop {
+  animation-delay: 0.24s;
+}
+.squares2x2-3.squares2x2-pop {
+  animation-delay: 0.32s;
+}
 
 @keyframes squares2x2-pop {
   0% {

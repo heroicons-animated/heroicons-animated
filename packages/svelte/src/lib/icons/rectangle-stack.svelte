@@ -76,7 +76,8 @@ div {
 }
 
 @keyframes rectanglestack-stretch {
-  0%, 100% {
+  0%,
+  100% {
     transform: scaleY(1);
   }
   50% {

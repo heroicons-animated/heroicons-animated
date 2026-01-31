@@ -75,7 +75,7 @@ const startAnimation = () => {
         duration: 400,
         easing: "ease-in-out",
         fill: "forwards",
-      },
+      }
     );
   }
 };

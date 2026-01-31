@@ -85,7 +85,9 @@ div {
 .sparkle-path {
   transform-box: fill-box;
   transform-origin: center;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transition:
+    opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
 }
 
 .sparkle-path.sparkles-animate {

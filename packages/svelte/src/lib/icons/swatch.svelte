@@ -9,7 +9,9 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    setTimeout(() => { isAnimating = false; }, 500);
+    setTimeout(() => {
+      isAnimating = false;
+    }, 500);
   }
 }
 
@@ -70,7 +72,8 @@ div {
 }
 
 @keyframes swatch-tilt {
-  0%, 100% {
+  0%,
+  100% {
     transform: rotate(0deg);
   }
   50% {

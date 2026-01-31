@@ -54,7 +54,11 @@ function handleMouseLeave() {
     stroke-linejoin="round"
     class="icon-svg"
   >
-    <path d="m9 20.247 6-16.5" class="slash-path" class:slash-draw={isAnimating} />
+    <path
+      d="m9 20.247 6-16.5"
+      class="slash-path"
+      class:slash-draw={isAnimating}
+    />
   </svg>
 </div>
 

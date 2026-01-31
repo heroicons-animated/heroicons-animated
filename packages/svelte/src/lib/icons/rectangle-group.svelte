@@ -92,9 +92,15 @@ div {
   animation: rectanglegroup-pop 0.3s ease-out forwards;
 }
 
-.rectanglegroup-rect-0.rectanglegroup-pop { animation-delay: 0s; }
-.rectanglegroup-rect-1.rectanglegroup-pop { animation-delay: 0.1s; }
-.rectanglegroup-rect-2.rectanglegroup-pop { animation-delay: 0.2s; }
+.rectanglegroup-rect-0.rectanglegroup-pop {
+  animation-delay: 0s;
+}
+.rectanglegroup-rect-1.rectanglegroup-pop {
+  animation-delay: 0.1s;
+}
+.rectanglegroup-rect-2.rectanglegroup-pop {
+  animation-delay: 0.2s;
+}
 
 @keyframes rectanglegroup-pop {
   0% {

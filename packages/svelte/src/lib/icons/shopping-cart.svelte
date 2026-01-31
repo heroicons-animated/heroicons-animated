@@ -72,7 +72,8 @@ div {
 }
 
 .icon-svg.shoppingcart-bounce {
-  animation: shoppingcart-scale 0.3s ease-in-out forwards,
+  animation:
+    shoppingcart-scale 0.3s ease-in-out forwards,
     shoppingcart-bounce 0.4s ease-in-out 0.1s 2;
 }
 

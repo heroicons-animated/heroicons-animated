@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -90,10 +90,18 @@ div {
   animation: facesmile-svg-bounce 0.8s ease-in-out forwards;
 }
 @keyframes facesmile-svg-bounce {
-  0% { transform: scale(1) rotate(0deg); }
-  30% { transform: scale(1.15) rotate(-3deg); }
-  60% { transform: scale(1.05) rotate(3deg); }
-  100% { transform: scale(1.1) rotate(0deg); }
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  30% {
+    transform: scale(1.15) rotate(-3deg);
+  }
+  60% {
+    transform: scale(1.05) rotate(3deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(0deg);
+  }
 }
 
 /* Mouth: pathLength [0.3,1,1] 0.5s delay 0.1 (d morph not in CSS) */
@@ -104,9 +112,15 @@ div {
   animation: facesmile-mouth-draw 0.5s ease-in-out 0.1s forwards;
 }
 @keyframes facesmile-mouth-draw {
-  0% { stroke-dashoffset: 0.7; }
-  50% { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: 0; }
+  0% {
+    stroke-dashoffset: 0.7;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
 }
 
 /* Both eyes: scale [1,1.5,0.8,1.2] 0.5s times 0/0.3/0.6/1 */
@@ -114,9 +128,17 @@ div {
   animation: facesmile-eye-bounce 0.5s ease-in-out forwards;
 }
 @keyframes facesmile-eye-bounce {
-  0% { transform: scale(1); }
-  30% { transform: scale(1.5); }
-  60% { transform: scale(0.8); }
-  100% { transform: scale(1.2); }
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.5);
+  }
+  60% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.2);
+  }
 }
 </style>

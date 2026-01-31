@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -69,11 +69,7 @@ function handleMouseLeave() {
       class:animate={isAnimating}
       d="M3.75 7.5L4.37542 18.1321"
     />
-    <path
-      class="arrow-group"
-      class:animate={isAnimating}
-      d="M12 10.5V17.25"
-    />
+    <path class="arrow-group" class:animate={isAnimating} d="M12 10.5V17.25" />
     <path
       class="arrow-group"
       class:animate={isAnimating}
@@ -119,7 +115,8 @@ div {
 }
 
 .arrow-group.animate {
-  animation: arrow-translate 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  animation: arrow-translate 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    forwards;
 }
 
 .lid-group {

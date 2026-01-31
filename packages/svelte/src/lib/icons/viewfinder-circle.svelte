@@ -98,7 +98,8 @@ div {
   transform-origin: center;
 }
 .viewfindercircle-corner.viewfindercircle-corner-animate {
-  animation: viewfindercircle-corner-flash 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation: viewfindercircle-corner-flash 0.6s
+    cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 .viewfindercircle-circle {
   transform-box: fill-box;
@@ -109,13 +110,31 @@ div {
 }
 
 @keyframes viewfindercircle-corner-flash {
-  0% { transform: scale(1) rotate(0deg); opacity: 1; }
-  50% { transform: scale(1.2) rotate(45deg); opacity: 0; }
-  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2) rotate(45deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
 }
 @keyframes viewfindercircle-circle-flash {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(0.8); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 </style>

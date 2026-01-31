@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -123,29 +123,65 @@ div {
 .calculator-screen.calculator-screen-animate {
   animation: calculator-screen-pulse 0.2s ease-out 0.65s forwards;
 }
-.calculator-btn0.calculator-btn-animate { animation: calculator-btn-pulse 0.15s ease-out 0s forwards; }
-.calculator-btn1.calculator-btn-animate { animation: calculator-btn-pulse 0.15s ease-out 0.16s forwards; }
-.calculator-btn2.calculator-btn-animate { animation: calculator-btn-pulse 0.15s ease-out 0.08s forwards; }
-.calculator-btn3.calculator-btn-animate { animation: calculator-btn-pulse 0.15s ease-out 0.32s forwards; }
-.calculator-btn4.calculator-btn-animate { animation: calculator-btn-pulse 0.15s ease-out 0.24s forwards; }
-.calculator-btn5.calculator-btn-animate { animation: calculator-btn-pulse 0.15s ease-out 0.4s forwards; }
+.calculator-btn0.calculator-btn-animate {
+  animation: calculator-btn-pulse 0.15s ease-out 0s forwards;
+}
+.calculator-btn1.calculator-btn-animate {
+  animation: calculator-btn-pulse 0.15s ease-out 0.16s forwards;
+}
+.calculator-btn2.calculator-btn-animate {
+  animation: calculator-btn-pulse 0.15s ease-out 0.08s forwards;
+}
+.calculator-btn3.calculator-btn-animate {
+  animation: calculator-btn-pulse 0.15s ease-out 0.32s forwards;
+}
+.calculator-btn4.calculator-btn-animate {
+  animation: calculator-btn-pulse 0.15s ease-out 0.24s forwards;
+}
+.calculator-btn5.calculator-btn-animate {
+  animation: calculator-btn-pulse 0.15s ease-out 0.4s forwards;
+}
 .calculator-enter.calculator-enter-animate {
   animation: calculator-enter-pulse 0.2s ease-out 0.5s forwards;
 }
 
 @keyframes calculator-screen-pulse {
-  0% { opacity: 1; }
-  50% { opacity: 0.4; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes calculator-btn-pulse {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.5); opacity: 0.5; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 @keyframes calculator-enter-pulse {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.3); opacity: 0.6; }
-  100% { transform: scale(1); opacity: 1; }
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 </style>

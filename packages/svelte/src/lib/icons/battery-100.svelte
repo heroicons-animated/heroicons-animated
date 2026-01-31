@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -13,21 +13,15 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     if (clipRect) {
-      clipAnimation = clipRect.animate(
-        [
-          { width: 0 },
-          { width: 13.5 },
-        ],
-        {
-          duration: 500,
-          easing: "ease-out",
-          fill: "forwards",
-        }
-      );
+      clipAnimation = clipRect.animate([{ width: 0 }, { width: 13.5 }], {
+        duration: 500,
+        easing: "ease-out",
+        fill: "forwards",
+      });
     }
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 500);
@@ -36,12 +30,12 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
+
   if (clipAnimation) {
     clipAnimation.cancel();
     clipAnimation = null;
   }
-  
+
   if (clipRect) {
     clipRect.setAttribute("width", "0");
   }

@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -14,14 +14,14 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     // Animate path drawing using Web Animations API
     if (pathElement) {
       const pathLength = pathElement.getTotalLength();
       pathElement.style.strokeDasharray = `${pathLength}`;
       pathElement.style.strokeDashoffset = `${pathLength}`;
       pathElement.style.opacity = "0";
-      
+
       pathAnimation = pathElement.animate(
         [
           { strokeDashoffset: pathLength, opacity: 0 },
@@ -34,14 +34,14 @@ export function startAnimation() {
         }
       );
     }
-    
+
     // Animate arrow path drawing with delay
     if (arrowElement) {
       const arrowLength = arrowElement.getTotalLength();
       arrowElement.style.strokeDasharray = `${arrowLength}`;
       arrowElement.style.strokeDashoffset = `${arrowLength * 0.5}`;
       arrowElement.style.opacity = "0";
-      
+
       setTimeout(() => {
         if (arrowElement) {
           arrowAnimation = arrowElement.animate(
@@ -58,7 +58,7 @@ export function startAnimation() {
         }
       }, 300);
     }
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 500);
@@ -67,23 +67,23 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
+
   if (pathAnimation) {
     pathAnimation.cancel();
     pathAnimation = null;
   }
-  
+
   if (arrowAnimation) {
     arrowAnimation.cancel();
     arrowAnimation = null;
   }
-  
+
   if (pathElement) {
     pathElement.style.strokeDasharray = "";
     pathElement.style.strokeDashoffset = "";
     pathElement.style.opacity = "1";
   }
-  
+
   if (arrowElement) {
     arrowElement.style.strokeDasharray = "";
     arrowElement.style.strokeDashoffset = "";

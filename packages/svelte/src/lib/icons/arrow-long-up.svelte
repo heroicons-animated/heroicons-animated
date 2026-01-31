@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -12,15 +12,11 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     // Animate line path morphing using Web Animations API
     if (linePath) {
       lineAnimation = linePath.animate(
-        [
-          { d: "M12 3v18" },
-          { d: "M12 6v15" },
-          { d: "M12 3v18" },
-        ],
+        [{ d: "M12 3v18" }, { d: "M12 6v15" }, { d: "M12 3v18" }],
         {
           duration: 400,
           easing: "ease-in-out",
@@ -28,7 +24,7 @@ export function startAnimation() {
         }
       );
     }
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 400);
@@ -37,12 +33,12 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
+
   if (lineAnimation) {
     lineAnimation.cancel();
     lineAnimation = null;
   }
-  
+
   if (linePath) {
     linePath.setAttribute("d", "M12 3v18");
   }
@@ -83,7 +79,12 @@ function handleMouseLeave() {
     stroke-linejoin="round"
     class="icon-svg"
   >
-    <path bind:this={headPath} class="head-path" class:animate={isAnimating} d="M8.25 6.75 12 3m0 0 3.75 3.75" />
+    <path
+      bind:this={headPath}
+      class="head-path"
+      class:animate={isAnimating}
+      d="M8.25 6.75 12 3m0 0 3.75 3.75"
+    />
     <path bind:this={linePath} d="M12 3v18" />
   </svg>
 </div>

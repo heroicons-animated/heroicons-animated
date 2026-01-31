@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -23,22 +23,22 @@ const defaultOptions = {
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     // Row 1
     line1?.animate([{ x1: 10.5 }, { x1: 13.5 }], defaultOptions);
     line2?.animate([{ x2: 7.5 }, { x2: 10.5 }], defaultOptions);
     circle1?.animate([{ cx: 9 }, { cx: 12 }], defaultOptions);
-    
+
     // Row 2
     line3?.animate([{ x1: 16.5 }, { x1: 13.5 }], defaultOptions);
     line4?.animate([{ x2: 13.5 }, { x2: 10.5 }], defaultOptions);
     circle2?.animate([{ cx: 15 }, { cx: 12 }], defaultOptions);
-    
+
     // Row 3
     line5?.animate([{ x1: 10.5 }, { x1: 13.5 }], defaultOptions);
     line6?.animate([{ x2: 7.5 }, { x2: 10.5 }], defaultOptions);
     circle3?.animate([{ cx: 9 }, { cx: 12 }], defaultOptions);
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 300);
@@ -47,17 +47,17 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
+
   // Row 1
   line1?.animate([{ x1: 13.5 }, { x1: 10.5 }], defaultOptions);
   line2?.animate([{ x2: 10.5 }, { x2: 7.5 }], defaultOptions);
   circle1?.animate([{ cx: 12 }, { cx: 9 }], defaultOptions);
-  
+
   // Row 2
   line3?.animate([{ x1: 13.5 }, { x1: 16.5 }], defaultOptions);
   line4?.animate([{ x2: 10.5 }, { x2: 13.5 }], defaultOptions);
   circle2?.animate([{ cx: 12 }, { cx: 15 }], defaultOptions);
-  
+
   // Row 3
   line5?.animate([{ x1: 13.5 }, { x1: 10.5 }], defaultOptions);
   line6?.animate([{ x2: 10.5 }, { x2: 7.5 }], defaultOptions);

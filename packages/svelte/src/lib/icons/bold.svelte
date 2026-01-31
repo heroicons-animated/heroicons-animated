@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -11,20 +11,17 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     if (pathElement) {
       pathAnimation = pathElement.animate(
-        [
-          { strokeWidth: 2 },
-          { strokeWidth: 3.5 },
-        ],
+        [{ strokeWidth: 2 }, { strokeWidth: 3.5 }],
         {
           duration: 300,
           fill: "forwards",
         }
       );
     }
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 300);
@@ -33,12 +30,12 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
+
   if (pathAnimation) {
     pathAnimation.cancel();
     pathAnimation = null;
   }
-  
+
   if (pathElement) {
     pathElement.style.strokeWidth = "";
   }

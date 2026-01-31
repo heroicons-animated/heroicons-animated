@@ -114,10 +114,15 @@ div {
 
 /* Svelte: path d morph not in CSS; opacity flicker approximates flame */
 @keyframes rocketlaunch-fire-flicker {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     opacity: 1;
   }
-  40%, 60% {
+  40%,
+  60% {
     opacity: 0.85;
   }
 }

@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -21,23 +21,17 @@ const PILLARS = [
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     // Animate dot opacity
     if (dotPath) {
       dotPath.style.opacity = "0";
-      dotAnimation = dotPath.animate(
-        [
-          { opacity: 0 },
-          { opacity: 1 },
-        ],
-        {
-          duration: 100,
-          delay: 100,
-          fill: "forwards",
-        }
-      );
+      dotAnimation = dotPath.animate([{ opacity: 0 }, { opacity: 1 }], {
+        duration: 100,
+        delay: 100,
+        fill: "forwards",
+      });
     }
-    
+
     // Animate pillars with staggered delays
     const pillarPaths = [pillarPath1, pillarPath2, pillarPath3];
     pillarPaths.forEach((path, index) => {
@@ -46,7 +40,7 @@ export function startAnimation() {
         path.style.strokeDasharray = `${pathLength}`;
         path.style.strokeDashoffset = `${pathLength}`;
         path.style.opacity = "0";
-        
+
         pillarAnimations[index] = path.animate(
           [
             { strokeDashoffset: pathLength, opacity: 0 },
@@ -61,7 +55,7 @@ export function startAnimation() {
         );
       }
     });
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 800);
@@ -70,16 +64,16 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
+
   if (dotAnimation) {
     dotAnimation.cancel();
     dotAnimation = null;
   }
-  
+
   if (dotPath) {
     dotPath.style.opacity = "";
   }
-  
+
   const pillarPaths = [pillarPath1, pillarPath2, pillarPath3];
   pillarAnimations.forEach((anim, index) => {
     if (anim) {

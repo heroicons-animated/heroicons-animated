@@ -76,7 +76,8 @@ div {
 }
 
 @keyframes scissors-squeeze {
-  0%, 100% {
+  0%,
+  100% {
     transform: scaleY(1);
   }
   50% {

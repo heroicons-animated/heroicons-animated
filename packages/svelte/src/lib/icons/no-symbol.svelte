@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -60,7 +60,11 @@ function handleMouseLeave() {
         d="M18.364 18.364A9 9 0 0 0 5.636 5.636m12.728 12.728A9 9 0 0 1 5.636 5.636"
       />
     </g>
-    <path d="M18.364 18.364L5.636 5.636" class="nosymbol-line" class:nosymbol-line-animate={isAnimating} />
+    <path
+      d="M18.364 18.364L5.636 5.636"
+      class="nosymbol-line"
+      class:nosymbol-line-animate={isAnimating}
+    />
   </svg>
 </div>
 
@@ -84,7 +88,8 @@ div {
 }
 
 @keyframes nosymbol-circle-pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {

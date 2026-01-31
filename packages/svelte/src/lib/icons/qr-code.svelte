@@ -63,14 +63,46 @@ function handleMouseLeave() {
     <path
       d="M13.5 4.875C13.5 4.25368 14.0037 3.75 14.625 3.75H19.125C19.7463 3.75 20.25 4.25368 20.25 4.875V9.375C20.25 9.99632 19.7463 10.5 19.125 10.5H14.625C14.0037 10.5 13.5 9.99632 13.5 9.375V4.875Z"
     />
-    <path class="qrcode-dot qrcode-dot-0" class:qrcode-dot-animate={isAnimating} d="M6.75 6.75H7.5V7.5H6.75V6.75Z" />
-    <path class="qrcode-dot qrcode-dot-1" class:qrcode-dot-animate={isAnimating} d="M6.75 16.5H7.5V17.25H6.75V16.5Z" />
-    <path class="qrcode-dot qrcode-dot-2" class:qrcode-dot-animate={isAnimating} d="M16.5 6.75H17.25V7.5H16.5V6.75Z" />
-    <path class="qrcode-dot qrcode-dot-3" class:qrcode-dot-animate={isAnimating} d="M13.5 13.5H14.25V14.25H13.5V13.5Z" />
-    <path class="qrcode-dot qrcode-dot-4" class:qrcode-dot-animate={isAnimating} d="M13.5 19.5H14.25V20.25H13.5V19.5Z" />
-    <path class="qrcode-dot qrcode-dot-5" class:qrcode-dot-animate={isAnimating} d="M19.5 13.5H20.25V14.25H19.5V13.5Z" />
-    <path class="qrcode-dot qrcode-dot-6" class:qrcode-dot-animate={isAnimating} d="M19.5 19.5H20.25V20.25H19.5V19.5Z" />
-    <path class="qrcode-dot qrcode-dot-7" class:qrcode-dot-animate={isAnimating} d="M16.5 16.5H17.25V17.25H16.5V16.5Z" />
+    <path
+      class="qrcode-dot qrcode-dot-0"
+      class:qrcode-dot-animate={isAnimating}
+      d="M6.75 6.75H7.5V7.5H6.75V6.75Z"
+    />
+    <path
+      class="qrcode-dot qrcode-dot-1"
+      class:qrcode-dot-animate={isAnimating}
+      d="M6.75 16.5H7.5V17.25H6.75V16.5Z"
+    />
+    <path
+      class="qrcode-dot qrcode-dot-2"
+      class:qrcode-dot-animate={isAnimating}
+      d="M16.5 6.75H17.25V7.5H16.5V6.75Z"
+    />
+    <path
+      class="qrcode-dot qrcode-dot-3"
+      class:qrcode-dot-animate={isAnimating}
+      d="M13.5 13.5H14.25V14.25H13.5V13.5Z"
+    />
+    <path
+      class="qrcode-dot qrcode-dot-4"
+      class:qrcode-dot-animate={isAnimating}
+      d="M13.5 19.5H14.25V20.25H13.5V19.5Z"
+    />
+    <path
+      class="qrcode-dot qrcode-dot-5"
+      class:qrcode-dot-animate={isAnimating}
+      d="M19.5 13.5H20.25V14.25H19.5V13.5Z"
+    />
+    <path
+      class="qrcode-dot qrcode-dot-6"
+      class:qrcode-dot-animate={isAnimating}
+      d="M19.5 19.5H20.25V20.25H19.5V19.5Z"
+    />
+    <path
+      class="qrcode-dot qrcode-dot-7"
+      class:qrcode-dot-animate={isAnimating}
+      d="M16.5 16.5H17.25V17.25H16.5V16.5Z"
+    />
   </svg>
 </div>
 
@@ -94,14 +126,30 @@ div {
   animation: qrcode-dot-pop 0.3s ease-out forwards;
 }
 
-.qrcode-dot-0.qrcode-dot-animate { animation-delay: 0s; }
-.qrcode-dot-1.qrcode-dot-animate { animation-delay: 0.05s; }
-.qrcode-dot-2.qrcode-dot-animate { animation-delay: 0.1s; }
-.qrcode-dot-3.qrcode-dot-animate { animation-delay: 0.15s; }
-.qrcode-dot-4.qrcode-dot-animate { animation-delay: 0.2s; }
-.qrcode-dot-5.qrcode-dot-animate { animation-delay: 0.25s; }
-.qrcode-dot-6.qrcode-dot-animate { animation-delay: 0.3s; }
-.qrcode-dot-7.qrcode-dot-animate { animation-delay: 0.35s; }
+.qrcode-dot-0.qrcode-dot-animate {
+  animation-delay: 0s;
+}
+.qrcode-dot-1.qrcode-dot-animate {
+  animation-delay: 0.05s;
+}
+.qrcode-dot-2.qrcode-dot-animate {
+  animation-delay: 0.1s;
+}
+.qrcode-dot-3.qrcode-dot-animate {
+  animation-delay: 0.15s;
+}
+.qrcode-dot-4.qrcode-dot-animate {
+  animation-delay: 0.2s;
+}
+.qrcode-dot-5.qrcode-dot-animate {
+  animation-delay: 0.25s;
+}
+.qrcode-dot-6.qrcode-dot-animate {
+  animation-delay: 0.3s;
+}
+.qrcode-dot-7.qrcode-dot-animate {
+  animation-delay: 0.35s;
+}
 
 @keyframes qrcode-dot-pop {
   0% {

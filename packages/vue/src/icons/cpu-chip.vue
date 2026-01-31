@@ -103,7 +103,7 @@ const startAnimation = () => {
 const stopAnimation = () => {
   for (let i = 0; i < motions.length; i++) {
     motions[i].apply(
-      [0, 1, 2, 9, 10, 11].includes(i) ? yVariants.normal : xVariants.normal,
+      [0, 1, 2, 9, 10, 11].includes(i) ? yVariants.normal : xVariants.normal
     );
   }
 };

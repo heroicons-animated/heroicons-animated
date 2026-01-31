@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -86,7 +86,8 @@ div {
 }
 
 .percentbadge-badge.percentbadge-badge-animate {
-  animation: percentbadge-rotate 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s forwards;
+  animation: percentbadge-rotate 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s
+    forwards;
 }
 
 @keyframes percentbadge-rotate {

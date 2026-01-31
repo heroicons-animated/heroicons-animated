@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -90,9 +90,15 @@ div {
 }
 
 @keyframes clipboarddocument-clipboard-bounce {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-1px); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* Match React: document g x [-4,0] y [4,0] opacity [0,1] 0.3s easeOut (keyframes: current→(-4,4),0→(0,0),1) */

@@ -88,11 +88,16 @@ div {
   animation: rss-wave-pulse 0.4s ease-in-out forwards;
 }
 
-.rss-wave-1.rss-wave-pulse { animation-delay: 0s; }
-.rss-wave-2.rss-wave-pulse { animation-delay: 0.2s; }
+.rss-wave-1.rss-wave-pulse {
+  animation-delay: 0s;
+}
+.rss-wave-2.rss-wave-pulse {
+  animation-delay: 0.2s;
+}
 
 @keyframes rss-wave-pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }

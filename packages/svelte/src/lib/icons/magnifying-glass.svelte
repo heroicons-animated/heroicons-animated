@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -74,7 +74,8 @@ div {
 }
 
 .icon-svg.magnifyingglass-bounce {
-  animation: magnifyingglass-bounce 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation: magnifyingglass-bounce 1s cubic-bezier(0.34, 1.56, 0.64, 1)
+    forwards;
 }
 
 @keyframes magnifyingglass-bounce {

@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -18,33 +18,41 @@ let floorPath3: SVGPathElement;
 let floorPath4: SVGPathElement;
 let floorPath5: SVGPathElement;
 let floorPath6: SVGPathElement;
-let floorAnimations: (Animation | null)[] = [null, null, null, null, null, null];
+let floorAnimations: (Animation | null)[] = [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+];
 let isAnimating = false;
 let isControlled = false;
 
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
-    const floorPaths = [floorPath1, floorPath2, floorPath3, floorPath4, floorPath5, floorPath6];
+
+    const floorPaths = [
+      floorPath1,
+      floorPath2,
+      floorPath3,
+      floorPath4,
+      floorPath5,
+      floorPath6,
+    ];
     floorPaths.forEach((path, i) => {
       if (path) {
         path.style.opacity = "0";
-        floorAnimations[i] = path.animate(
-          [
-            { opacity: 0 },
-            { opacity: 1 },
-          ],
-          {
-            duration: 300,
-            delay: 100 + FLOOR_LINES[i].index * 150,
-            easing: "linear",
-            fill: "forwards",
-          }
-        );
+        floorAnimations[i] = path.animate([{ opacity: 0 }, { opacity: 1 }], {
+          duration: 300,
+          delay: 100 + FLOOR_LINES[i].index * 150,
+          easing: "linear",
+          fill: "forwards",
+        });
       }
     });
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 550);
@@ -53,8 +61,15 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
-  const floorPaths = [floorPath1, floorPath2, floorPath3, floorPath4, floorPath5, floorPath6];
+
+  const floorPaths = [
+    floorPath1,
+    floorPath2,
+    floorPath3,
+    floorPath4,
+    floorPath5,
+    floorPath6,
+  ];
   floorAnimations.forEach((anim, index) => {
     if (anim) {
       anim.cancel();

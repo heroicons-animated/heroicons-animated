@@ -19,16 +19,8 @@
       <path
         d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
       />
-      <Motion
-        is="path"
-        ref="verticalRef"
-        d="M10.5 7.5v6"
-      />
-      <Motion
-        is="path"
-        ref="horizontalRef"
-        d="M7.5 10.5h6"
-      />
+      <Motion is="path" ref="verticalRef" d="M10.5 7.5v6" />
+      <Motion is="path" ref="horizontalRef" d="M7.5 10.5h6" />
     </svg>
   </div>
 </template>
@@ -58,7 +50,11 @@ const verticalVariants = {
   animate: {
     opacity: [0, 1],
     pathLength: [0, 1],
-    transition: { delay: 0.3, duration: 0.2, opacity: { duration: 0.1, delay: 0.3 } },
+    transition: {
+      delay: 0.3,
+      duration: 0.2,
+      opacity: { duration: 0.1, delay: 0.3 },
+    },
   },
 };
 
@@ -67,14 +63,24 @@ const horizontalVariants = {
   animate: {
     opacity: [0, 1],
     pathLength: [0, 1],
-    transition: { delay: 0.6, duration: 0.2, opacity: { duration: 0.1, delay: 0.6 } },
+    transition: {
+      delay: 0.6,
+      duration: 0.2,
+      opacity: { duration: 0.1, delay: 0.6 },
+    },
   },
 };
 
 const verticalRef = ref<SVGPathElement | null>();
 const horizontalRef = ref<SVGPathElement | null>();
-const verticalMotion = useMotion(verticalRef, { initial: verticalVariants.normal, enter: verticalVariants.normal });
-const horizontalMotion = useMotion(horizontalRef, { initial: horizontalVariants.normal, enter: horizontalVariants.normal });
+const verticalMotion = useMotion(verticalRef, {
+  initial: verticalVariants.normal,
+  enter: verticalVariants.normal,
+});
+const horizontalMotion = useMotion(horizontalRef, {
+  initial: horizontalVariants.normal,
+  enter: horizontalVariants.normal,
+});
 
 let isControlled = false;
 

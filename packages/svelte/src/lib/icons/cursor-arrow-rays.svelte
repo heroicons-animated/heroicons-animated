@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -61,11 +61,23 @@ function handleMouseLeave() {
       class:cursor-move={isAnimating}
     />
     <path d="M12 2.25V4.5" class="ray ray0" class:ray-spread={isAnimating} />
-    <path d="M17.8336 4.66637L16.2426 6.25736" class="ray ray1" class:ray-spread={isAnimating} />
+    <path
+      d="M17.8336 4.66637L16.2426 6.25736"
+      class="ray ray1"
+      class:ray-spread={isAnimating}
+    />
     <path d="M20.25 10.5H18" class="ray ray2" class:ray-spread={isAnimating} />
-    <path d="M7.75736 14.7426L6.16637 16.3336" class="ray ray3" class:ray-spread={isAnimating} />
+    <path
+      d="M7.75736 14.7426L6.16637 16.3336"
+      class="ray ray3"
+      class:ray-spread={isAnimating}
+    />
     <path d="M6 10.5H3.75" class="ray ray4" class:ray-spread={isAnimating} />
-    <path d="M7.75736 6.25736L6.16637 4.66637" class="ray ray5" class:ray-spread={isAnimating} />
+    <path
+      d="M7.75736 6.25736L6.16637 4.66637"
+      class="ray ray5"
+      class:ray-spread={isAnimating}
+    />
   </svg>
 </div>
 
@@ -126,10 +138,28 @@ div {
   }
 }
 
-.ray0.ray-spread { --ray-x: 0; --ray-y: -2px; }
-.ray1.ray-spread { --ray-x: 2px; --ray-y: -2px; }
-.ray2.ray-spread { --ray-x: 2px; --ray-y: 0; }
-.ray3.ray-spread { --ray-x: -2px; --ray-y: 2px; }
-.ray4.ray-spread { --ray-x: -2px; --ray-y: 0; }
-.ray5.ray-spread { --ray-x: -2px; --ray-y: -2px; }
+.ray0.ray-spread {
+  --ray-x: 0;
+  --ray-y: -2px;
+}
+.ray1.ray-spread {
+  --ray-x: 2px;
+  --ray-y: -2px;
+}
+.ray2.ray-spread {
+  --ray-x: 2px;
+  --ray-y: 0;
+}
+.ray3.ray-spread {
+  --ray-x: -2px;
+  --ray-y: 2px;
+}
+.ray4.ray-spread {
+  --ray-x: -2px;
+  --ray-y: 0;
+}
+.ray5.ray-spread {
+  --ray-x: -2px;
+  --ray-y: -2px;
+}
 </style>

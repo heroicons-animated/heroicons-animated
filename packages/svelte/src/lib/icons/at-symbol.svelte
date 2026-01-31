@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -13,14 +13,14 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     // Animate circle path drawing using Web Animations API
     if (circleElement) {
       const circleLength = circleElement.getTotalLength();
       circleElement.style.strokeDasharray = `${circleLength}`;
       circleElement.style.strokeDashoffset = `${circleLength}`;
       circleElement.style.opacity = "0";
-      
+
       circleAnimation = circleElement.animate(
         [
           { strokeDashoffset: circleLength, opacity: 0 },
@@ -33,14 +33,14 @@ export function startAnimation() {
         }
       );
     }
-    
+
     // Animate path drawing with delay
     if (pathElement) {
       const pathLength = pathElement.getTotalLength();
       pathElement.style.strokeDasharray = `${pathLength}`;
       pathElement.style.strokeDashoffset = `${pathLength}`;
       pathElement.style.opacity = "0";
-      
+
       setTimeout(() => {
         if (pathElement) {
           pathAnimation = pathElement.animate(
@@ -57,7 +57,7 @@ export function startAnimation() {
         }
       }, 300);
     }
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 600);
@@ -66,23 +66,23 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
+
   if (circleAnimation) {
     circleAnimation.cancel();
     circleAnimation = null;
   }
-  
+
   if (pathAnimation) {
     pathAnimation.cancel();
     pathAnimation = null;
   }
-  
+
   if (circleElement) {
     circleElement.style.strokeDasharray = "";
     circleElement.style.strokeDashoffset = "";
     circleElement.style.opacity = "1";
   }
-  
+
   if (pathElement) {
     pathElement.style.strokeDasharray = "";
     pathElement.style.strokeDashoffset = "";

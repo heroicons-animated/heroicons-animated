@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -55,8 +55,16 @@ function handleMouseLeave() {
     stroke-linejoin="round"
     class="icon-svg"
   >
-    <path d="M15.75 5.25v13.5" class="pause-left" class:pause-left-animate={isAnimating} />
-    <path d="M8.25 5.25v13.5" class="pause-right" class:pause-right-animate={isAnimating} />
+    <path
+      d="M15.75 5.25v13.5"
+      class="pause-left"
+      class:pause-left-animate={isAnimating}
+    />
+    <path
+      d="M8.25 5.25v13.5"
+      class="pause-right"
+      class:pause-right-animate={isAnimating}
+    />
   </svg>
 </div>
 
@@ -85,7 +93,8 @@ div {
 }
 
 @keyframes pause-left-bounce {
-  0%, 20% {
+  0%,
+  20% {
     transform: translateY(0);
   }
   50% {
@@ -103,7 +112,8 @@ div {
   20% {
     transform: translateY(2px);
   }
-  50%, 100% {
+  50%,
+  100% {
     transform: translateY(0);
   }
 }

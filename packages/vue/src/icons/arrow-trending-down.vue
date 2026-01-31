@@ -95,7 +95,7 @@ const startAnimation = () => {
         duration: 400,
         easing: "ease-in-out",
         fill: "forwards",
-      },
+      }
     );
   }
 
@@ -117,7 +117,7 @@ const startAnimation = () => {
             duration: 300,
             easing: "ease-in-out",
             fill: "forwards",
-          },
+          }
         );
       }
     }, 300);

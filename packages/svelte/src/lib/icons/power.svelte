@@ -54,8 +54,16 @@ function handleMouseLeave() {
     stroke-linejoin="round"
     class="icon-svg"
   >
-    <path d="M5.636 5.636a9 9 0 1 0 12.728 0" class="power-circle" class:power-circle-animate={isAnimating} />
-    <path d="M12 3v9" class="power-line" class:power-line-animate={isAnimating} />
+    <path
+      d="M5.636 5.636a9 9 0 1 0 12.728 0"
+      class="power-circle"
+      class:power-circle-animate={isAnimating}
+    />
+    <path
+      d="M12 3v9"
+      class="power-line"
+      class:power-line-animate={isAnimating}
+    />
   </svg>
 </div>
 
@@ -107,7 +115,8 @@ div {
 }
 
 @keyframes power-line-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {

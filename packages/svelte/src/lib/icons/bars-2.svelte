@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -56,8 +56,18 @@ function handleMouseLeave() {
     stroke-linejoin="round"
     class="icon-svg"
   >
-    <path bind:this={bar1Path} class="bar-path" class:animate={isAnimating} d="M3.75 9h16.5" />
-    <path bind:this={bar2Path} class="bar-path" class:animate={isAnimating} d="M3.75 15.75h16.5" />
+    <path
+      bind:this={bar1Path}
+      class="bar-path"
+      class:animate={isAnimating}
+      d="M3.75 9h16.5"
+    />
+    <path
+      bind:this={bar2Path}
+      class="bar-path"
+      class:animate={isAnimating}
+      d="M3.75 15.75h16.5"
+    />
   </svg>
 </div>
 

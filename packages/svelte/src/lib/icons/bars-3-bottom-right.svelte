@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -13,13 +13,13 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     // Animate pathLength and pathOffset using Web Animations API
     if (bottomBarPath) {
       const pathLength = bottomBarPath.getTotalLength();
       bottomBarPath.style.strokeDasharray = `${pathLength}`;
       bottomBarPath.style.strokeDashoffset = "0";
-      
+
       bottomBarAnimation = bottomBarPath.animate(
         [
           { strokeDashoffset: 0 },
@@ -34,7 +34,7 @@ export function startAnimation() {
         }
       );
     }
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 650);
@@ -43,12 +43,12 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
+
   if (bottomBarAnimation) {
     bottomBarAnimation.cancel();
     bottomBarAnimation = null;
   }
-  
+
   if (bottomBarPath) {
     bottomBarPath.style.strokeDasharray = "";
     bottomBarPath.style.strokeDashoffset = "";
@@ -90,9 +90,24 @@ function handleMouseLeave() {
     stroke-linejoin="round"
     class="icon-svg"
   >
-    <path bind:this={topBarPath} class="top-bar" class:animate={isAnimating} d="M3.75 6.75h16.5" />
-    <path bind:this={middleBarPath} class="middle-bar" class:animate={isAnimating} d="M3.75 12h16.5" />
-    <path bind:this={bottomBarPath} class="bottom-bar" class:animate={isAnimating} d="M12 17.25h8.25" />
+    <path
+      bind:this={topBarPath}
+      class="top-bar"
+      class:animate={isAnimating}
+      d="M3.75 6.75h16.5"
+    />
+    <path
+      bind:this={middleBarPath}
+      class="middle-bar"
+      class:animate={isAnimating}
+      d="M3.75 12h16.5"
+    />
+    <path
+      bind:this={bottomBarPath}
+      class="bottom-bar"
+      class:animate={isAnimating}
+      d="M12 17.25h8.25"
+    />
   </svg>
 </div>
 

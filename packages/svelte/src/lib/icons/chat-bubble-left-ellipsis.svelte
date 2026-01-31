@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -98,34 +98,84 @@ div {
 }
 
 @keyframes chatbubble-dot0 {
-  0% { opacity: 1; }
-  6.67% { opacity: 0; }
-  13.33% { opacity: 1; }
-  33.33% { opacity: 1; }
-  40% { opacity: 0; }
-  46.67% { opacity: 1; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  6.67% {
+    opacity: 0;
+  }
+  13.33% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  46.67% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes chatbubble-dot1 {
-  0% { opacity: 1; }
-  6.67% { opacity: 0; }
-  13.33% { opacity: 0; }
-  20% { opacity: 1; }
-  33.33% { opacity: 1; }
-  40% { opacity: 0; }
-  46.67% { opacity: 0; }
-  53.33% { opacity: 1; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  6.67% {
+    opacity: 0;
+  }
+  13.33% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  46.67% {
+    opacity: 0;
+  }
+  53.33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes chatbubble-dot2 {
-  0% { opacity: 1; }
-  6.67% { opacity: 0; }
-  20% { opacity: 0; }
-  26.67% { opacity: 1; }
-  33.33% { opacity: 1; }
-  40% { opacity: 0; }
-  53.33% { opacity: 0; }
-  60% { opacity: 1; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 1;
+  }
+  6.67% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  26.67% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  53.33% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

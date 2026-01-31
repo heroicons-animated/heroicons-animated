@@ -134,7 +134,7 @@ const startAnimation = () => {
           duration: 300,
           easing: "cubic-bezier(0.4, 0, 0.2, 1)",
           fill: "forwards",
-        },
+        }
       );
     }
   }, 200);
@@ -155,7 +155,7 @@ const startAnimation = () => {
           duration: 300,
           easing: "cubic-bezier(0.4, 0, 0.2, 1)",
           fill: "forwards",
-        },
+        }
       );
     }
   }, 400);

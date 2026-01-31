@@ -126,7 +126,7 @@ const startAnimation = () => {
         easing: "ease-in-out",
         delay: 50,
         fill: "forwards",
-      },
+      }
     );
   }
 };

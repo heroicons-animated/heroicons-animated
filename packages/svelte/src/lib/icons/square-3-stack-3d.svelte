@@ -9,7 +9,9 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    setTimeout(() => { isAnimating = false; }, 400);
+    setTimeout(() => {
+      isAnimating = false;
+    }, 400);
   }
 }
 
@@ -70,7 +72,8 @@ div {
 }
 
 @keyframes square3stack3d-stretch {
-  0%, 100% {
+  0%,
+  100% {
     transform: scaleY(1);
   }
   50% {

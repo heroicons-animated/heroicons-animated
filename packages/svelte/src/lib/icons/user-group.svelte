@@ -9,7 +9,9 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    setTimeout(() => { isAnimating = false; }, 600);
+    setTimeout(() => {
+      isAnimating = false;
+    }, 600);
   }
 }
 
@@ -48,8 +50,12 @@ function handleMouseLeave() {
     stroke-linejoin="round"
     class="icon-svg"
   >
-    <path d="M15 6.75C15 8.40685 13.6569 9.75 12 9.75C10.3431 9.75 9 8.40685 9 6.75C9 5.09315 10.3431 3.75 12 3.75C13.6569 3.75 15 5.09315 15 6.75Z" />
-    <path d="M17.9999 18.7191C18 18.7294 18 18.7397 18 18.75C18 18.975 17.9876 19.1971 17.9635 19.4156C16.2067 20.4237 14.1707 21 12 21C9.82933 21 7.79327 20.4237 6.03651 19.4156C6.01238 19.1971 6 18.975 6 18.75C6 18.7397 6.00003 18.7295 6.00008 18.7192M17.9999 18.7191C17.994 17.5426 17.6494 16.4461 17.0587 15.5222M17.0587 15.5222C15.9928 13.8552 14.1255 12.75 12 12.75C9.87479 12.75 8.00765 13.8549 6.94169 15.5216M6.94169 15.5216C6.35071 16.4457 6.00598 17.5424 6.00008 18.7192" />
+    <path
+      d="M15 6.75C15 8.40685 13.6569 9.75 12 9.75C10.3431 9.75 9 8.40685 9 6.75C9 5.09315 10.3431 3.75 12 3.75C13.6569 3.75 15 5.09315 15 6.75Z"
+    />
+    <path
+      d="M17.9999 18.7191C18 18.7294 18 18.7397 18 18.75C18 18.975 17.9876 19.1971 17.9635 19.4156C16.2067 20.4237 14.1707 21 12 21C9.82933 21 7.79327 20.4237 6.03651 19.4156C6.01238 19.1971 6 18.975 6 18.75C6 18.7397 6.00003 18.7295 6.00008 18.7192M17.9999 18.7191C17.994 17.5426 17.6494 16.4461 17.0587 15.5222M17.0587 15.5222C15.9928 13.8552 14.1255 12.75 12 12.75C9.87479 12.75 8.00765 13.8549 6.94169 15.5216M6.94169 15.5216C6.35071 16.4457 6.00598 17.5424 6.00008 18.7192"
+    />
     <path
       class="usergroup-right"
       class:usergroup-slide={isAnimating}
@@ -79,7 +85,8 @@ div {
 }
 
 .usergroup-right.usergroup-slide {
-  animation: usergroup-right-slide 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s forwards;
+  animation: usergroup-right-slide 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s
+    forwards;
 }
 
 .usergroup-left {
@@ -88,7 +95,8 @@ div {
 }
 
 .usergroup-left.usergroup-slide {
-  animation: usergroup-left-slide 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s forwards;
+  animation: usergroup-left-slide 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0.1s
+    forwards;
 }
 
 @keyframes usergroup-right-slide {

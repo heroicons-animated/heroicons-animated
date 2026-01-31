@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 export let className = "";
 export { className as class };
 
@@ -107,7 +107,8 @@ div {
 }
 
 @keyframes divide-line {
-  0%, 100% {
+  0%,
+  100% {
     transform: scaleX(1);
   }
   50% {
@@ -116,7 +117,8 @@ div {
 }
 
 @keyframes divide-top {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -125,7 +127,8 @@ div {
 }
 
 @keyframes divide-bottom {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {

@@ -81,7 +81,8 @@ div {
 }
 
 @keyframes server-bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -98,10 +99,17 @@ div {
 }
 
 @keyframes server-lights-blink {
-  0%, 25%, 50%, 75%, 100% {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
     opacity: 1;
   }
-  12.5%, 37.5%, 62.5%, 87.5% {
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
     opacity: 0.4;
   }
 }

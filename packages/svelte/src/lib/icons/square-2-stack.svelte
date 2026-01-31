@@ -9,7 +9,9 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    setTimeout(() => { isAnimating = false; }, 300);
+    setTimeout(() => {
+      isAnimating = false;
+    }, 300);
   }
 }
 
@@ -100,7 +102,8 @@ div {
 }
 
 @keyframes square2stack-front {
-  0%, 100% {
+  0%,
+  100% {
     transform: translate(0, 0);
   }
   50% {

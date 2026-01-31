@@ -1,5 +1,5 @@
 <script lang="ts">
-export let size: number = 28;
+export let size = 28;
 const className = "";
 export { className as class };
 
@@ -12,7 +12,7 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    
+
     // Animate snooze path with Web Animations API
     if (snoozePath) {
       snoozeAnimation = snoozePath.animate(
@@ -29,7 +29,7 @@ export function startAnimation() {
         }
       );
     }
-    
+
     setTimeout(() => {
       isAnimating = false;
     }, 800);
@@ -38,12 +38,12 @@ export function startAnimation() {
 
 export function stopAnimation() {
   isAnimating = false;
-  
+
   if (snoozeAnimation) {
     snoozeAnimation.cancel();
     snoozeAnimation = null;
   }
-  
+
   if (snoozePath) {
     snoozePath.style.opacity = "";
     snoozePath.style.transform = "";
