@@ -64,7 +64,7 @@ const SpeakerWaveIcon = forwardRef<SpeakerWaveIconHandle, SpeakerWaveIconProps>(
         if (isControlledRef.current) {
           onMouseEnter?.(e);
         } else {
-          waveControls.start("expand");
+          waveControls.start("animate");
         }
       },
       [waveControls, onMouseEnter]

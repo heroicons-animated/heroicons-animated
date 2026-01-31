@@ -16,14 +16,14 @@
       stroke-linejoin="round"
     >
       <circle cx="12" cy="12" r="3.75" />
-      <Motion is="path" ref="pathRef" d="M12 3V5.25" :custom="0" />
-      <path :custom="1" d="M18.364 5.63604L16.773 7.22703" />
-      <path :custom="2" d="M21 12H18.75" />
-      <path :custom="3" d="M18.364 18.364L16.773 16.773" />
-      <path :custom="4" d="M12 18.75V21" />
-      <path :custom="5" d="M7.22703 16.773L5.63604 18.364" />
-      <path :custom="6" d="M5.25 12H3" />
-      <path :custom="7" d="M7.22703 7.22703L5.63604 5.63604" />
+      <Motion is="path" ref="r0" d="M12 3V5.25" />
+      <Motion is="path" ref="r1" d="M18.364 5.63604L16.773 7.22703" />
+      <Motion is="path" ref="r2" d="M21 12H18.75" />
+      <Motion is="path" ref="r3" d="M18.364 18.364L16.773 16.773" />
+      <Motion is="path" ref="r4" d="M12 18.75V21" />
+      <Motion is="path" ref="r5" d="M7.22703 16.773L5.63604 18.364" />
+      <Motion is="path" ref="r6" d="M5.25 12H3" />
+      <Motion is="path" ref="r7" d="M7.22703 7.22703L5.63604 5.63604" />
     </svg>
   </div>
 </template>
@@ -47,58 +47,78 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
-  normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
-  },
+const createRayVariants = (i: number) => ({
+  normal: { opacity: 1, transition: { duration: 0.2 } },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    opacity: [0, 1],
+    transition: { delay: i * 0.1, duration: 0.3 },
   },
-};
+});
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const r0 = ref(),
+  r1 = ref(),
+  r2 = ref(),
+  r3 = ref(),
+  r4 = ref(),
+  r5 = ref(),
+  r6 = ref(),
+  r7 = ref();
+const m0 = useMotion(r0, {
+  initial: createRayVariants(0).normal,
+  enter: createRayVariants(0).normal,
+});
+const m1 = useMotion(r1, {
+  initial: createRayVariants(1).normal,
+  enter: createRayVariants(1).normal,
+});
+const m2 = useMotion(r2, {
+  initial: createRayVariants(2).normal,
+  enter: createRayVariants(2).normal,
+});
+const m3 = useMotion(r3, {
+  initial: createRayVariants(3).normal,
+  enter: createRayVariants(3).normal,
+});
+const m4 = useMotion(r4, {
+  initial: createRayVariants(4).normal,
+  enter: createRayVariants(4).normal,
+});
+const m5 = useMotion(r5, {
+  initial: createRayVariants(5).normal,
+  enter: createRayVariants(5).normal,
+});
+const m6 = useMotion(r6, {
+  initial: createRayVariants(6).normal,
+  enter: createRayVariants(6).normal,
+});
+const m7 = useMotion(r7, {
+  initial: createRayVariants(7).normal,
+  enter: createRayVariants(7).normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  [m0, m1, m2, m3, m4, m5, m6, m7].forEach((m, i) => {
+    m.apply(createRayVariants(i).animate);
+  });
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  [m0, m1, m2, m3, m4, m5, m6, m7].forEach((m, i) => {
+    m.apply(createRayVariants(i).normal);
+  });
 };
 
 const handleMouseEnter = () => {
-  if (!isControlled) {
-    startAnimation();
-  }
+  if (!isControlled) startAnimation();
 };
-
 const handleMouseLeave = () => {
-  if (!isControlled) {
-    stopAnimation();
-  }
+  if (!isControlled) stopAnimation();
 };
-
 const setControlled = (value: boolean) => {
   isControlled = value;
 };
 
-defineExpose({
-  startAnimation,
-  stopAnimation,
-  setControlled,
-});
+defineExpose({ startAnimation, stopAnimation, setControlled });
 </script>

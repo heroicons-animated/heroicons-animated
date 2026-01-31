@@ -11,7 +11,7 @@ export function startAnimation() {
     isAnimating = true;
     setTimeout(() => {
       isAnimating = false;
-    }, 600);
+    }, 800);
   }
 }
 
@@ -53,13 +53,12 @@ function handleMouseLeave() {
     stroke-linecap="round"
     stroke-linejoin="round"
     class="icon-svg"
-    class:userplus-animate={isAnimating}
   >
     <path
       d="M13.75 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z"
     />
-    <path d="M18 7.5v6" />
-    <path d="M15 10.5h6" />
+    <path d="M18 7.5v6" class="userplus-vert" class:userplus-draw={isAnimating} />
+    <path d="M15 10.5h6" class="userplus-horiz" class:userplus-draw={isAnimating} />
   </svg>
 </div>
 
@@ -71,22 +70,31 @@ div {
 .icon-svg {
   transform-box: fill-box;
   transform-origin: center;
-  transition: transform 0.3s ease;
 }
 
-.icon-svg.userplus-animate {
-  animation: userplus-animate 0.6s ease-in-out;
+.userplus-vert,
+.userplus-horiz {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  opacity: 1;
 }
 
-@keyframes userplus-animate {
+.userplus-vert.userplus-draw {
+  animation: userplus-draw 0.2s linear 0.3s forwards;
+}
+
+.userplus-horiz.userplus-draw {
+  animation: userplus-draw 0.2s linear 0.6s forwards;
+}
+
+@keyframes userplus-draw {
   0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
+    stroke-dashoffset: 1;
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    stroke-dashoffset: 0;
+    opacity: 1;
   }
 }
 </style>

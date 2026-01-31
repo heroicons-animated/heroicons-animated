@@ -3,6 +3,7 @@ export const size = 28;
 const className = "";
 export { className as class };
 
+let pathElement: SVGPathElement;
 let isAnimating = false;
 let isControlled = false;
 
@@ -11,7 +12,7 @@ export function startAnimation() {
     isAnimating = true;
     setTimeout(() => {
       isAnimating = false;
-    }, 600);
+    }, 500);
   }
 }
 
@@ -53,10 +54,12 @@ function handleMouseLeave() {
     stroke-linecap="round"
     stroke-linejoin="round"
     class="icon-svg"
-    class:playpause-animate={isAnimating}
   >
     <path
+      bind:this={pathElement}
       d="M21 7.5V18M15 7.5V18M3 16.811V8.69c0-.864.933-1.406 1.683-.977l7.108 4.061a1.125 1.125 0 0 1 0 1.954l-7.108 4.061A1.125 1.125 0 0 1 3 16.811Z"
+      class="playpause-path"
+      class:playpause-animate={isAnimating}
     />
   </svg>
 </div>
@@ -69,22 +72,30 @@ div {
 .icon-svg {
   transform-box: fill-box;
   transform-origin: center;
-  transition: transform 0.3s ease;
 }
 
-.icon-svg.playpause-animate {
-  animation: playpause-animate 0.6s ease-in-out;
+.playpause-path {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.playpause-path.playpause-animate {
+  animation: playpause-animate 0.5s ease-in-out forwards;
 }
 
 @keyframes playpause-animate {
   0% {
-    transform: scale(1);
+    transform: translateX(0) rotate(0deg);
+  }
+  20% {
+    transform: translateX(-1px) rotate(-10deg);
   }
   50% {
-    transform: scale(1.1);
+    transform: translateX(2px) rotate(0deg);
   }
   100% {
-    transform: scale(1);
+    transform: translateX(0) rotate(0deg);
   }
 }
 </style>

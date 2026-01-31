@@ -20,9 +20,9 @@
         ref="pathRef"
         d="M7.21721 10.9071C7.39737 11.2307 7.5 11.6034 7.5 12C7.5 12.3966 7.39737 12.7693 7.21721 13.0929M7.21721 10.9071L16.7828 5.5929M7.21721 13.0929L16.7828 18.4071"
       />
-      <circle :custom="0" cx="5.25" cy="12" r="2.25" />
-      <circle :custom="0.15" cx="18.75" cy="4.5" r="2.25" />
-      <circle :custom="0.3" cx="18.75" cy="19.5" r="2.25" />
+      <Motion is="circle" ref="circleRef0" cx="5.25" cy="12" r="2.25" />
+      <Motion is="circle" ref="circleRef1" cx="18.75" cy="4.5" r="2.25" />
+      <Motion is="circle" ref="circleRef2" cx="18.75" cy="19.5" r="2.25" />
     </svg>
   </div>
 </template>
@@ -46,37 +46,71 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const lineVariants = {
   normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    pathLength: 1,
+    opacity: 1,
   },
   animate: {
-    scale: [1, 1.08, 1],
+    pathLength: [0, 1],
+    opacity: [0, 1],
     transition: {
-      duration: 0.45,
-      ease: "easeInOut",
+      duration: 0.4,
+      ease: "easeOut",
     },
   },
 };
 
+const createNodeVariants = (delay: number) => ({
+  normal: {
+    scale: 1,
+  },
+  animate: {
+    scale: [1, 1.3, 1],
+    transition: {
+      delay,
+      duration: 0.3,
+      ease: "easeOut",
+    },
+  },
+});
+
 const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const circleRef0 = ref();
+const circleRef1 = ref();
+const circleRef2 = ref();
+
+const pathMotion = useMotion(pathRef, {
+  initial: lineVariants.normal,
+  enter: lineVariants.normal,
+});
+const circle0Motion = useMotion(circleRef0, {
+  initial: createNodeVariants(0).normal,
+  enter: createNodeVariants(0).normal,
+});
+const circle1Motion = useMotion(circleRef1, {
+  initial: createNodeVariants(0.15).normal,
+  enter: createNodeVariants(0.15).normal,
+});
+const circle2Motion = useMotion(circleRef2, {
+  initial: createNodeVariants(0.3).normal,
+  enter: createNodeVariants(0.3).normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  pathMotion.apply(lineVariants.animate);
+  circle0Motion.apply(createNodeVariants(0).animate);
+  circle1Motion.apply(createNodeVariants(0.15).animate);
+  circle2Motion.apply(createNodeVariants(0.3).animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  pathMotion.apply(lineVariants.normal);
+  circle0Motion.apply(createNodeVariants(0).normal);
+  circle1Motion.apply(createNodeVariants(0.15).normal);
+  circle2Motion.apply(createNodeVariants(0.3).normal);
 };
 
 const handleMouseEnter = () => {

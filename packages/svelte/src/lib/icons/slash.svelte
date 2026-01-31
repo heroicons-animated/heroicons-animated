@@ -53,9 +53,8 @@ function handleMouseLeave() {
     stroke-linecap="round"
     stroke-linejoin="round"
     class="icon-svg"
-    class:slash-animate={isAnimating}
   >
-    <path d="m9 20.247 6-16.5" />
+    <path d="m9 20.247 6-16.5" class="slash-path" class:slash-draw={isAnimating} />
   </svg>
 </div>
 
@@ -67,22 +66,26 @@ div {
 .icon-svg {
   transform-box: fill-box;
   transform-origin: center;
-  transition: transform 0.3s ease;
 }
 
-.icon-svg.slash-animate {
-  animation: slash-animate 0.6s ease-in-out;
+.slash-path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  opacity: 1;
 }
 
-@keyframes slash-animate {
+.slash-path.slash-draw {
+  animation: slash-draw 0.6s linear forwards;
+}
+
+@keyframes slash-draw {
   0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
+    stroke-dashoffset: 1;
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    stroke-dashoffset: 0;
+    opacity: 1;
   }
 }
 </style>

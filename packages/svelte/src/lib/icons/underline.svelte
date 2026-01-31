@@ -11,7 +11,7 @@ export function startAnimation() {
     isAnimating = true;
     setTimeout(() => {
       isAnimating = false;
-    }, 600);
+    }, 400);
   }
 }
 
@@ -53,10 +53,9 @@ function handleMouseLeave() {
     stroke-linecap="round"
     stroke-linejoin="round"
     class="icon-svg"
-    class:underline-animate={isAnimating}
   >
-    <path d="M17.995 3.744v7.5a6 6 0 1 1-12 0v-7.5" />
-    <path d="M3.745 20.246h16.5" />
+    <path d="M17.995 3.744v7.5a6 6 0 1 1-12 0v-7.5" class="underline-u" class:underline-draw={isAnimating} />
+    <path d="M3.745 20.246h16.5" class="underline-line" class:underline-draw={isAnimating} />
   </svg>
 </div>
 
@@ -68,22 +67,42 @@ div {
 .icon-svg {
   transform-box: fill-box;
   transform-origin: center;
-  transition: transform 0.3s ease;
 }
 
-.icon-svg.underline-animate {
-  animation: underline-animate 0.6s ease-in-out;
+.underline-u,
+.underline-line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  opacity: 1;
 }
 
-@keyframes underline-animate {
+.underline-u.underline-draw {
+  animation: underline-u-draw 0.3s linear forwards;
+}
+
+.underline-line.underline-draw {
+  animation: underline-line-draw 0.1s linear 0.3s forwards;
+}
+
+@keyframes underline-u-draw {
   0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
+    stroke-dashoffset: 1;
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes underline-line-draw {
+  0% {
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
   }
 }
 </style>

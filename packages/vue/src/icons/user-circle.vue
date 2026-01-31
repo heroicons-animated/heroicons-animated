@@ -43,58 +43,41 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const pathVariants = {
   normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    pathLength: 1,
+    opacity: 1,
+    pathOffset: 0,
+    transition: { duration: 0.2 },
   },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    pathLength: [0, 1],
+    opacity: [0, 1],
+    pathOffset: [1, 0],
+    transition: { duration: 0.4, ease: "easeOut" },
   },
 };
 
 const pathRef = ref();
 const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+  initial: pathVariants.normal,
+  enter: pathVariants.normal,
 });
 
 let isControlled = false;
 
-const startAnimation = () => {
-  motionInstance.apply(variants.animate);
-};
-
-const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
-};
+const startAnimation = () => motionInstance.apply(pathVariants.animate);
+const stopAnimation = () => motionInstance.apply(pathVariants.normal);
 
 const handleMouseEnter = () => {
-  if (!isControlled) {
-    startAnimation();
-  }
+  if (!isControlled) startAnimation();
 };
-
 const handleMouseLeave = () => {
-  if (!isControlled) {
-    stopAnimation();
-  }
+  if (!isControlled) stopAnimation();
 };
-
 const setControlled = (value: boolean) => {
   isControlled = value;
 };
 
-defineExpose({
-  startAnimation,
-  stopAnimation,
-  setControlled,
-});
+defineExpose({ startAnimation, stopAnimation, setControlled });
 </script>

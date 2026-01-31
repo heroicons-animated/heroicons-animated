@@ -11,7 +11,7 @@ export function startAnimation() {
     isAnimating = true;
     setTimeout(() => {
       isAnimating = false;
-    }, 600);
+    }, 450);
   }
 }
 
@@ -67,22 +67,22 @@ div {
 .icon-svg {
   transform-box: fill-box;
   transform-origin: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.45s ease-in-out;
 }
 
 .icon-svg.arrowturnupleft-animate {
-  animation: arrowturnupleft-animate 0.6s ease-in-out;
+  animation: arrowturnupleft-animate 0.45s ease-in-out forwards;
 }
 
 @keyframes arrowturnupleft-animate {
   0% {
-    transform: scale(1);
+    transform: scaleX(1) translateX(0);
   }
   50% {
-    transform: scale(1.1);
+    transform: scaleX(1.15) translateX(-2px);
   }
   100% {
-    transform: scale(1);
+    transform: scaleX(1) translateX(0);
   }
 }
 </style>

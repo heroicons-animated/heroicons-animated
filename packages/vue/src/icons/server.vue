@@ -4,7 +4,9 @@
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
   >
-    <svg
+    <Motion
+      is="svg"
+      ref="svgRef"
       xmlns="http://www.w3.org/2000/svg"
       :width="props.size"
       :height="props.size"
@@ -15,15 +17,15 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
+      <path
         d="M21.75 17.25v-.228a4.5 4.5 0 0 0-.12-1.03l-2.268-9.64a3.375 3.375 0 0 0-3.285-2.602H7.923a3.375 3.375 0 0 0-3.285 2.602l-2.268 9.64a4.5 4.5 0 0 0-.12 1.03v.228m19.5 0a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3m19.5 0a3 3 0 0 0-3-3H5.25a3 3 0 0 0-3 3"
       />
-      <path
+      <Motion
+        is="path"
+        ref="lightsRef"
         d="M18.75 17.25h.008v.008h-.008v-.008Zm-3 0h.008v.008h-.008v-.008Z"
       />
-    </svg>
+    </Motion>
   </div>
 </template>
 
@@ -46,37 +48,43 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
-  normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
-  },
+const containerVariants = {
+  normal: { y: 0, transition: { duration: 0.2, ease: "easeOut" } },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    y: [0, -2, 0],
+    transition: { duration: 0.4, ease: "easeInOut" },
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const lightVariants = {
+  normal: { opacity: 1, transition: { duration: 0.2, ease: "easeOut" } },
+  animate: {
+    opacity: [1, 0.4, 1, 0.4, 1],
+    transition: { duration: 0.6, ease: "easeInOut" },
+  },
+};
+
+const svgRef = ref();
+const lightsRef = ref();
+const svgMotion = useMotion(svgRef, {
+  initial: containerVariants.normal,
+  enter: containerVariants.normal,
+});
+const lightsMotion = useMotion(lightsRef, {
+  initial: lightVariants.normal,
+  enter: lightVariants.normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  svgMotion.apply(containerVariants.animate);
+  lightsMotion.apply(lightVariants.animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  svgMotion.apply(containerVariants.normal);
+  lightsMotion.apply(lightVariants.normal);
 };
 
 const handleMouseEnter = () => {

@@ -18,12 +18,8 @@
       <path
         d="M4.125 19.5h15.75c.621 0 1.125-.504 1.125-1.125V5.625c0-.621-.504-1.125-1.125-1.125H4.125C3.504 4.5 3 5.004 3 5.625v12.75c0 .621.504 1.125 1.125 1.125Z"
       />
-      <path
-        v-for="(line, index) in LINES"
-        :key="index"
-        :d="line.d"
-        ref="lineRefs"
-      />
+      <Motion is="path" ref="line0Ref" d="M9 4.5v15" />
+      <Motion is="path" ref="line1Ref" d="M15 4.5v15" />
     </svg>
   </div>
 </template>
@@ -36,7 +32,7 @@ export default {
 
 <script setup lang="ts">
 import { useMotion } from "@vueuse/motion";
-import { onMounted, ref } from "vue";
+import { ref } from "vue";
 
 export interface Props {
   size?: number;
@@ -47,71 +43,51 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const lineVariants = (custom: number) => ({
-  normal: {
-    pathLength: 1,
-    opacity: 1,
-  },
+const createLineVariants = (index: number) => ({
+  normal: { pathLength: 1, opacity: 1, transition: { duration: 0.2 } },
   animate: {
     pathLength: [0, 1],
     opacity: [0, 1],
     transition: {
-      delay: 200 + custom * 150,
-      duration: 300,
+      delay: 0.2 + index * 0.15,
+      duration: 0.3,
       ease: "linear",
     },
   },
 });
 
-const LINES = [
-  { d: "M9 4.5v15", index: 0 },
-  { d: "M15 4.5v15", index: 1 },
-];
-
-const lineRefs = ref<SVGPathElement[]>([]);
-const lineMotions: any[] = [];
-
-onMounted(() => {
-  lineRefs.value.forEach((el, index) => {
-    lineMotions[index] = useMotion(el, {
-      initial: lineVariants(index).normal,
-    });
-  });
+const line0Ref = ref();
+const line1Ref = ref();
+const motion0 = useMotion(line0Ref, {
+  initial: createLineVariants(0).normal,
+  enter: createLineVariants(0).normal,
+});
+const motion1 = useMotion(line1Ref, {
+  initial: createLineVariants(1).normal,
+  enter: createLineVariants(1).normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  LINES.forEach((_, index) => {
-    lineMotions[index]?.apply(lineVariants(index).animate);
-  });
+  motion0.apply(createLineVariants(0).animate);
+  motion1.apply(createLineVariants(1).animate);
 };
 
 const stopAnimation = () => {
-  LINES.forEach((_, index) => {
-    lineMotions[index]?.apply(lineVariants(index).normal);
-  });
+  motion0.apply(createLineVariants(0).normal);
+  motion1.apply(createLineVariants(1).normal);
 };
 
 const handleMouseEnter = () => {
-  if (!isControlled) {
-    startAnimation();
-  }
+  if (!isControlled) startAnimation();
 };
-
 const handleMouseLeave = () => {
-  if (!isControlled) {
-    stopAnimation();
-  }
+  if (!isControlled) stopAnimation();
 };
-
 const setControlled = (value: boolean) => {
   isControlled = value;
 };
 
-defineExpose({
-  startAnimation,
-  stopAnimation,
-  setControlled,
-});
+defineExpose({ startAnimation, stopAnimation, setControlled });
 </script>

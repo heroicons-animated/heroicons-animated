@@ -15,8 +15,8 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion is="path" ref="pathRef" d="M6 6l12 12" />
-      <path d="M18 6l-12 12" />
+      <Motion is="path" ref="path1Ref" d="M6 6l12 12" />
+      <Motion is="path" ref="path2Ref" d="M18 6l-12 12" />
     </svg>
   </div>
 </template>
@@ -40,58 +40,57 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const pathVariants = {
   normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    opacity: 1,
+    pathLength: 1,
+    transition: { duration: 0.2 },
   },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    opacity: [0, 1],
+    pathLength: [0, 1],
+    transition: { duration: 0.4, ease: "easeOut" },
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const path1Ref = ref();
+const path2Ref = ref();
+const motion1 = useMotion(path1Ref, {
+  initial: pathVariants.normal,
+  enter: pathVariants.normal,
+});
+const motion2 = useMotion(path2Ref, {
+  initial: pathVariants.normal,
+  enter: pathVariants.normal,
 });
 
 let isControlled = false;
 
+const path2Animate = {
+  opacity: [0, 1],
+  pathLength: [0, 1],
+  transition: { duration: 0.4, ease: "easeOut", delay: 0.2 },
+};
+
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  motion1.apply(pathVariants.animate);
+  motion2.apply(path2Animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  motion1.apply(pathVariants.normal);
+  motion2.apply(pathVariants.normal);
 };
 
 const handleMouseEnter = () => {
-  if (!isControlled) {
-    startAnimation();
-  }
+  if (!isControlled) startAnimation();
 };
-
 const handleMouseLeave = () => {
-  if (!isControlled) {
-    stopAnimation();
-  }
+  if (!isControlled) stopAnimation();
 };
-
 const setControlled = (value: boolean) => {
   isControlled = value;
 };
 
-defineExpose({
-  startAnimation,
-  stopAnimation,
-  setControlled,
-});
+defineExpose({ startAnimation, stopAnimation, setControlled });
 </script>

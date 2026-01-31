@@ -15,12 +15,8 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
-        d="M17.995 3.744v7.5a6 6 0 1 1-12 0v-7.5"
-      />
-      <path d="M3.745 20.246h16.5" />
+      <Motion is="path" ref="uRef" d="M17.995 3.744v7.5a6 6 0 1 1-12 0v-7.5" />
+      <Motion is="path" ref="lineRef" d="M3.745 20.246h16.5" />
     </svg>
   </div>
 </template>
@@ -44,37 +40,60 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const uVariants = {
   normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    opacity: 1,
+    pathLength: 1,
+    pathOffset: 0,
+    transition: { duration: 0.2, ease: "easeOut" },
   },
   animate: {
-    scale: [1, 1.08, 1],
+    opacity: [0, 1],
+    pathLength: [0, 1],
+    pathOffset: [1, 0],
+    transition: { duration: 0.3, ease: "linear", opacity: { duration: 0.1 } },
+  },
+};
+
+const lineVariants = {
+  normal: {
+    opacity: 1,
+    pathLength: 1,
+    transition: { duration: 0.2, ease: "easeOut" },
+  },
+  animate: {
+    opacity: [0, 1],
+    pathLength: [0, 1],
     transition: {
-      duration: 0.45,
-      ease: "easeInOut",
+      duration: 0.1,
+      ease: "linear",
+      delay: 0.3,
+      opacity: { duration: 0.1, delay: 0.3 },
     },
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const uRef = ref();
+const lineRef = ref();
+const motionU = useMotion(uRef, {
+  initial: uVariants.normal,
+  enter: uVariants.normal,
+});
+const motionLine = useMotion(lineRef, {
+  initial: lineVariants.normal,
+  enter: lineVariants.normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  motionU.apply(uVariants.animate);
+  motionLine.apply(lineVariants.animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  motionU.apply(uVariants.normal);
+  motionLine.apply(lineVariants.normal);
 };
 
 const handleMouseEnter = () => {

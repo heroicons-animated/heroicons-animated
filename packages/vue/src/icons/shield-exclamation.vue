@@ -15,15 +15,13 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
+      <path
         d="M12 1.964A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.25-8.25-3.286Z"
       />
-      <g>
+      <Motion is="g" ref="exclamationRef" style="transform-origin: 50% 50%">
         <path d="M12 9v3.75" />
         <path d="M12 15.75h.008v.008H12v-.008Z" />
-      </g>
+      </Motion>
     </svg>
   </div>
 </template>
@@ -47,37 +45,36 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const exclamationVariants = {
   normal: {
+    opacity: 1,
     scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
   },
   animate: {
-    scale: [1, 1.08, 1],
+    opacity: [1, 0.4, 1],
+    scale: [1, 1.1, 1],
     transition: {
-      duration: 0.45,
+      duration: 0.8,
+      repeat: Number.POSITIVE_INFINITY,
       ease: "easeInOut",
     },
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const exclamationRef = ref();
+const motionInstance = useMotion(exclamationRef, {
+  initial: exclamationVariants.normal,
+  enter: exclamationVariants.normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  motionInstance.apply(exclamationVariants.animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  motionInstance.apply(exclamationVariants.normal);
 };
 
 const handleMouseEnter = () => {

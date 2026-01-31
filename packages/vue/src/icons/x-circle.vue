@@ -15,13 +15,9 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
-        d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-      />
-      <path d="m9.75 9.75 4.5 4.5" />
-      <path d="m14.25 9.75-4.5 4.5" />
+      <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+      <Motion is="path" ref="path1Ref" d="m9.75 9.75 4.5 4.5" />
+      <Motion is="path" ref="path2Ref" d="m14.25 9.75-4.5 4.5" />
     </svg>
   </div>
 </template>
@@ -45,37 +41,50 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const pathVariants = {
   normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    pathLength: 1,
+    opacity: 1,
+    transition: { duration: 0.2, ease: "easeOut" },
   },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    pathLength: [0, 1],
+    opacity: [0, 1],
+    transition: { duration: 0.4, ease: "easeOut" },
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const path2Variants = {
+  normal: {
+    ...pathVariants.normal,
+  },
+  animate: {
+    ...pathVariants.animate,
+    transition: { duration: 0.4, ease: "easeOut", delay: 0.2 },
+  },
+};
+
+const path1Ref = ref();
+const path2Ref = ref();
+const motion1 = useMotion(path1Ref, {
+  initial: pathVariants.normal,
+  enter: pathVariants.normal,
+});
+const motion2 = useMotion(path2Ref, {
+  initial: path2Variants.normal,
+  enter: path2Variants.normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  motion1.apply(pathVariants.animate);
+  motion2.apply(path2Variants.animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  motion1.apply(pathVariants.normal);
+  motion2.apply(path2Variants.normal);
 };
 
 const handleMouseEnter = () => {

@@ -53,11 +53,18 @@ function handleMouseLeave() {
     stroke-linecap="round"
     stroke-linejoin="round"
     class="icon-svg"
-    class:rss-animate={isAnimating}
   >
     <path d="M6 18.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-    <path d="M12.75 19.5v-.75a7.5 7.5 0 0 0-7.5-7.5H4.5" />
-    <path d="M4.5 4.5h.75c7.87 0 14.25 6.38 14.25 14.25v.75" />
+    <path
+      class="rss-wave rss-wave-1"
+      class:rss-wave-pulse={isAnimating}
+      d="M12.75 19.5v-.75a7.5 7.5 0 0 0-7.5-7.5H4.5"
+    />
+    <path
+      class="rss-wave rss-wave-2"
+      class:rss-wave-pulse={isAnimating}
+      d="M4.5 4.5h.75c7.87 0 14.25 6.38 14.25 14.25v.75"
+    />
   </svg>
 </div>
 
@@ -69,22 +76,29 @@ div {
 .icon-svg {
   transform-box: fill-box;
   transform-origin: center;
-  transition: transform 0.3s ease;
 }
 
-.icon-svg.rss-animate {
-  animation: rss-animate 0.6s ease-in-out;
+.rss-wave {
+  transform-origin: center;
+  opacity: 1;
+  transform: scale(1);
 }
 
-@keyframes rss-animate {
-  0% {
+.rss-wave.rss-wave-pulse {
+  animation: rss-wave-pulse 0.4s ease-in-out forwards;
+}
+
+.rss-wave-1.rss-wave-pulse { animation-delay: 0s; }
+.rss-wave-2.rss-wave-pulse { animation-delay: 0.2s; }
+
+@keyframes rss-wave-pulse {
+  0%, 100% {
+    opacity: 1;
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
+    opacity: 0;
+    transform: scale(0);
   }
 }
 </style>

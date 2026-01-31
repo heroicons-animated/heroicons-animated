@@ -17,20 +17,22 @@
     >
       <Motion
         is="path"
-        ref="pathRef"
+        ref="p0Ref"
         d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6Z"
-        :custom="0"
       />
-      <path
-        :custom="1"
+      <Motion
+        is="path"
+        ref="p1Ref"
         d="M13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6Z"
       />
-      <path
-        :custom="3"
+      <Motion
+        is="path"
+        ref="p2Ref"
         d="M13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z"
       />
-      <path
-        :custom="4"
+      <Motion
+        is="path"
+        ref="p3Ref"
         d="M3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25Z"
       />
     </svg>
@@ -56,58 +58,74 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const createVariants = (index: number) => ({
   normal: {
+    opacity: 1,
     scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    transition: { duration: 0.2, ease: "easeOut" },
   },
   animate: {
-    scale: [1, 1.08, 1],
+    opacity: [0, 1],
+    scale: [0.6, 1],
     transition: {
-      duration: 0.45,
-      ease: "easeInOut",
+      duration: 0.35,
+      delay: index * 0.08,
+      type: "spring",
+      stiffness: 260,
+      damping: 20,
     },
   },
-};
+});
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const p0Ref = ref();
+const p1Ref = ref();
+const p2Ref = ref();
+const p3Ref = ref();
+
+const m0 = useMotion(p0Ref, {
+  initial: createVariants(0).normal,
+  enter: createVariants(0).normal,
+});
+const m1 = useMotion(p1Ref, {
+  initial: createVariants(1).normal,
+  enter: createVariants(1).normal,
+});
+const m2 = useMotion(p2Ref, {
+  initial: createVariants(3).normal,
+  enter: createVariants(3).normal,
+});
+const m3 = useMotion(p3Ref, {
+  initial: createVariants(4).normal,
+  enter: createVariants(4).normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  m0.apply(createVariants(0).animate);
+  m1.apply(createVariants(1).animate);
+  m2.apply(createVariants(3).animate);
+  m3.apply(createVariants(4).animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  m0.apply(createVariants(0).normal);
+  m1.apply(createVariants(1).normal);
+  m2.apply(createVariants(3).normal);
+  m3.apply(createVariants(4).normal);
 };
 
 const handleMouseEnter = () => {
-  if (!isControlled) {
-    startAnimation();
-  }
+  if (!isControlled) startAnimation();
 };
 
 const handleMouseLeave = () => {
-  if (!isControlled) {
-    stopAnimation();
-  }
+  if (!isControlled) stopAnimation();
 };
 
 const setControlled = (value: boolean) => {
   isControlled = value;
 };
 
-defineExpose({
-  startAnimation,
-  stopAnimation,
-  setControlled,
-});
+defineExpose({ startAnimation, stopAnimation, setControlled });
 </script>

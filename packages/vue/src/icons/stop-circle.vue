@@ -3,8 +3,11 @@
     :class="props.class"
     @mouseenter="handleMouseEnter"
     @mouseleave="handleMouseLeave"
+    v-bind="$attrs"
   >
-    <svg
+    <Motion
+      is="svg"
+      ref="svgRef"
       xmlns="http://www.w3.org/2000/svg"
       :width="props.size"
       :height="props.size"
@@ -15,15 +18,11 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
-        d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
-      />
+      <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
       <path
         d="M9 9.563C9 9.252 9.252 9 9.563 9h4.874c.311 0 .563.252.563.563v4.874c0 .311-.252.563-.563.563H9.564A.562.562 0 0 1 9 14.437V9.564Z"
       />
-    </svg>
+    </Motion>
   </div>
 </template>
 
@@ -40,6 +39,7 @@ import { ref } from "vue";
 export interface Props {
   size?: number;
   class?: string;
+  [key: string]: any;
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -49,22 +49,18 @@ const props = withDefaults(defineProps<Props>(), {
 const variants = {
   normal: {
     scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
   },
   animate: {
-    scale: [1, 1.08, 1],
+    scale: [1, 0.9, 1],
     transition: {
-      duration: 0.45,
+      duration: 0.2,
       ease: "easeInOut",
     },
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
+const svgRef = ref<SVGSVGElement>();
+const motionInstance = useMotion(svgRef, {
   initial: variants.normal,
   enter: variants.normal,
 });

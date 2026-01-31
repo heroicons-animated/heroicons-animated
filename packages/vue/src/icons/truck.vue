@@ -5,6 +5,7 @@
     @mouseleave="handleMouseLeave"
   >
     <svg
+      class="overflow-visible"
       xmlns="http://www.w3.org/2000/svg"
       :width="props.size"
       :height="props.size"
@@ -15,21 +16,36 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <line
-        v-for="(line, i) in [
-          { y: 8, width: 5, x: 0 },
-          { y: 11, width: 7, x: -1 },
-          { y: 14, width: 4, x: 0 },
-        ]"
-        :key="`speed-${i}`"
+      <Motion
+        is="line"
+        ref="line0Ref"
         stroke-linecap="round"
         stroke-width="1.5"
-        :x1="line.x"
-        :x2="line.x + line.width"
-        :y1="line.y"
-        :y2="line.y"
+        x1="0"
+        x2="5"
+        y1="8"
+        y2="8"
       />
-
+      <Motion
+        is="line"
+        ref="line1Ref"
+        stroke-linecap="round"
+        stroke-width="1.5"
+        x1="-1"
+        x2="6"
+        y1="11"
+        y2="11"
+      />
+      <Motion
+        is="line"
+        ref="line2Ref"
+        stroke-linecap="round"
+        stroke-width="1.5"
+        x1="0"
+        x2="4"
+        y1="14"
+        y2="14"
+      />
       <Motion
         is="path"
         ref="pathRef"
@@ -58,58 +74,89 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
-  normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
-  },
+const truckVariants = {
+  normal: { y: 0, transition: { duration: 0.2 } },
   animate: {
-    scale: [1, 1.08, 1],
+    y: [0, -1, 0, -0.5, 0],
     transition: {
-      duration: 0.45,
+      duration: 0.4,
       ease: "easeInOut",
+      repeat: Number.POSITIVE_INFINITY,
+      repeatType: "loop" as const,
     },
   },
 };
 
+const createSpeedLineVariants = (i: number) => ({
+  normal: {
+    opacity: 0,
+    x: 0,
+    scaleX: 0.2,
+    transition: { duration: 0.2 },
+  },
+  animate: {
+    opacity: [0, 0.7, 0.5, 0],
+    x: [0, -4, -10, -16],
+    scaleX: [0.2, 1, 0.8, 0.3],
+    transition: {
+      duration: 0.5,
+      ease: "easeOut",
+      repeat: Number.POSITIVE_INFINITY,
+      delay: i * 0.08,
+      times: [0, 0.2, 0.6, 1],
+    },
+  },
+});
+
 const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const line0Ref = ref();
+const line1Ref = ref();
+const line2Ref = ref();
+
+const pathMotion = useMotion(pathRef, {
+  initial: truckVariants.normal,
+  enter: truckVariants.normal,
+});
+const lineMotion0 = useMotion(line0Ref, {
+  initial: createSpeedLineVariants(0).normal,
+  enter: createSpeedLineVariants(0).normal,
+});
+const lineMotion1 = useMotion(line1Ref, {
+  initial: createSpeedLineVariants(1).normal,
+  enter: createSpeedLineVariants(1).normal,
+});
+const lineMotion2 = useMotion(line2Ref, {
+  initial: createSpeedLineVariants(2).normal,
+  enter: createSpeedLineVariants(2).normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  pathMotion.apply(truckVariants.animate);
+  lineMotion0.apply(createSpeedLineVariants(0).animate);
+  lineMotion1.apply(createSpeedLineVariants(1).animate);
+  lineMotion2.apply(createSpeedLineVariants(2).animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  pathMotion.apply(truckVariants.normal);
+  lineMotion0.apply(createSpeedLineVariants(0).normal);
+  lineMotion1.apply(createSpeedLineVariants(1).normal);
+  lineMotion2.apply(createSpeedLineVariants(2).normal);
 };
 
 const handleMouseEnter = () => {
-  if (!isControlled) {
-    startAnimation();
-  }
+  if (!isControlled) startAnimation();
 };
 
 const handleMouseLeave = () => {
-  if (!isControlled) {
-    stopAnimation();
-  }
+  if (!isControlled) stopAnimation();
 };
 
 const setControlled = (value: boolean) => {
   isControlled = value;
 };
 
-defineExpose({
-  startAnimation,
-  stopAnimation,
-  setControlled,
-});
+defineExpose({ startAnimation, stopAnimation, setControlled });
 </script>

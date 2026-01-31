@@ -44,18 +44,13 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const variants = {
-  normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
-  },
+  normal: { rotate: 0, transition: { duration: 0.25, ease: "easeOut" } },
   animate: {
-    scale: [1, 1.08, 1],
+    rotate: [0, 12, -14, 4, 0],
     transition: {
-      duration: 0.45,
-      ease: "easeInOut",
+      duration: 1.05,
+      times: [0, 0.42, 0.68, 0.88, 1],
+      ease: ["easeInOut", "easeInOut", "easeOut", "easeOut"],
     },
   },
 };
@@ -68,33 +63,18 @@ const motionInstance = useMotion(pathRef, {
 
 let isControlled = false;
 
-const startAnimation = () => {
-  motionInstance.apply(variants.animate);
-};
-
-const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
-};
+const startAnimation = () => motionInstance.apply(variants.animate);
+const stopAnimation = () => motionInstance.apply(variants.normal);
 
 const handleMouseEnter = () => {
-  if (!isControlled) {
-    startAnimation();
-  }
+  if (!isControlled) startAnimation();
 };
-
 const handleMouseLeave = () => {
-  if (!isControlled) {
-    stopAnimation();
-  }
+  if (!isControlled) stopAnimation();
 };
-
 const setControlled = (value: boolean) => {
   isControlled = value;
 };
 
-defineExpose({
-  startAnimation,
-  stopAnimation,
-  setControlled,
-});
+defineExpose({ startAnimation, stopAnimation, setControlled });
 </script>

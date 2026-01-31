@@ -15,18 +15,18 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
+      <path
         d="M19.5 4.75699V21.75L15.75 20.25L12 21.75L8.25 20.25L4.5 21.75V4.75699C4.5 3.649 5.30608 2.70014 6.40668 2.57241C8.24156 2.35947 10.108 2.25 12 2.25C13.892 2.25 15.7584 2.35947 17.5933 2.57241C18.6939 2.70014 19.5 3.649 19.5 4.75699Z"
       />
-      <path d="M9 14.25L15 8.25" />
-      <path
-        :custom="0.2"
+      <Motion is="path" ref="percentLineRef" d="M9 14.25L15 8.25" />
+      <Motion
+        is="path"
+        ref="dot1Ref"
         d="M9.75 9H9.7575V9.0075H9.75V9ZM10.125 9C10.125 9.20711 9.95711 9.375 9.75 9.375C9.54289 9.375 9.375 9.20711 9.375 9C9.375 8.79289 9.54289 8.625 9.75 8.625C9.95711 8.625 10.125 8.79289 10.125 9Z"
       />
-      <path
-        :custom="0.35"
+      <Motion
+        is="path"
+        ref="dot2Ref"
         d="M14.25 13.5H14.2575V13.5075H14.25V13.5ZM14.625 13.5C14.625 13.7071 14.4571 13.875 14.25 13.875C14.0429 13.875 13.875 13.7071 13.875 13.5C13.875 13.2929 14.0429 13.125 14.25 13.125C14.4571 13.125 14.625 13.2929 14.625 13.5Z"
       />
     </svg>
@@ -52,37 +52,60 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const percentVariants = {
   normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    opacity: 1,
+    pathLength: 1,
+    transition: { duration: 0.3, opacity: { duration: 0.1 } },
   },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    opacity: [0, 1],
+    pathLength: [0, 1],
+    transition: { duration: 0.4, ease: "easeOut", opacity: { duration: 0.1 } },
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const createDotVariants = (delay: number) => ({
+  normal: {
+    scale: 1,
+    opacity: 1,
+    transition: { duration: 0.2, ease: "easeOut" },
+  },
+  animate: {
+    scale: [0, 1.2, 1],
+    opacity: [0, 1, 1],
+    transition: { delay, duration: 0.3, ease: "easeOut" },
+  },
+});
+
+const percentLineRef = ref();
+const dot1Ref = ref();
+const dot2Ref = ref();
+const percentMotion = useMotion(percentLineRef, {
+  initial: percentVariants.normal,
+  enter: percentVariants.normal,
+});
+const dot1Motion = useMotion(dot1Ref, {
+  initial: createDotVariants(0.2).normal,
+  enter: createDotVariants(0.2).normal,
+});
+const dot2Motion = useMotion(dot2Ref, {
+  initial: createDotVariants(0.35).normal,
+  enter: createDotVariants(0.35).normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  percentMotion.apply(percentVariants.animate);
+  dot1Motion.apply(createDotVariants(0.2).animate);
+  dot2Motion.apply(createDotVariants(0.35).animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  percentMotion.apply(percentVariants.normal);
+  dot1Motion.apply(createDotVariants(0.2).normal);
+  dot2Motion.apply(createDotVariants(0.35).normal);
 };
 
 const handleMouseEnter = () => {

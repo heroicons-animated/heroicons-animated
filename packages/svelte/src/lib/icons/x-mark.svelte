@@ -9,9 +9,7 @@ let isControlled = false;
 export function startAnimation() {
   if (!isControlled) {
     isAnimating = true;
-    setTimeout(() => {
-      isAnimating = false;
-    }, 600);
+    setTimeout(() => { isAnimating = false; }, 600);
   }
 }
 
@@ -24,15 +22,11 @@ export function setControlled(value: boolean) {
 }
 
 function handleMouseEnter() {
-  if (!isControlled) {
-    startAnimation();
-  }
+  if (!isControlled) startAnimation();
 }
 
 function handleMouseLeave() {
-  if (!isControlled) {
-    stopAnimation();
-  }
+  if (!isControlled) stopAnimation();
 }
 </script>
 
@@ -53,10 +47,17 @@ function handleMouseLeave() {
     stroke-linecap="round"
     stroke-linejoin="round"
     class="icon-svg"
-    class:xmark-animate={isAnimating}
   >
-    <path d="M6 6l12 12" />
-    <path d="M18 6l-12 12" />
+    <path
+      class="xmark-line xmark-line-1"
+      class:xmark-draw={isAnimating}
+      d="M6 6l12 12"
+    />
+    <path
+      class="xmark-line xmark-line-2"
+      class:xmark-draw={isAnimating}
+      d="M18 6l-12 12"
+    />
   </svg>
 </div>
 
@@ -68,22 +69,34 @@ div {
 .icon-svg {
   transform-box: fill-box;
   transform-origin: center;
-  transition: transform 0.3s ease;
 }
 
-.icon-svg.xmark-animate {
-  animation: xmark-animate 0.6s ease-in-out;
+.xmark-line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+  opacity: 1;
 }
 
-@keyframes xmark-animate {
+.xmark-line.xmark-draw {
+  animation: xmark-draw 0.4s ease-out forwards;
+}
+
+.xmark-line-1.xmark-draw {
+  animation-delay: 0s;
+}
+
+.xmark-line-2.xmark-draw {
+  animation-delay: 0.2s;
+}
+
+@keyframes xmark-draw {
   0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
+    stroke-dashoffset: 1;
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    stroke-dashoffset: 0;
+    opacity: 1;
   }
 }
 </style>

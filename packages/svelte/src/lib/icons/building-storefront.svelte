@@ -11,7 +11,7 @@ export function startAnimation() {
     isAnimating = true;
     setTimeout(() => {
       isAnimating = false;
-    }, 600);
+    }, 400);
   }
 }
 
@@ -73,18 +73,18 @@ div {
 }
 
 .icon-svg.buildingstorefront-animate {
-  animation: buildingstorefront-animate 0.6s ease-in-out;
+  animation: buildingstorefront-animate 0.4s ease-out forwards;
 }
 
 @keyframes buildingstorefront-animate {
   0% {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.1) translateY(-1px);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
   }
 }
 </style>

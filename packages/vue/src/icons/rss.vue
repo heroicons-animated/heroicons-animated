@@ -15,13 +15,17 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
+      <path d="M6 18.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
       <Motion
         is="path"
-        ref="pathRef"
-        d="M6 18.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+        ref="wave1Ref"
+        d="M12.75 19.5v-.75a7.5 7.5 0 0 0-7.5-7.5H4.5"
       />
-      <path :custom="1" d="M12.75 19.5v-.75a7.5 7.5 0 0 0-7.5-7.5H4.5" />
-      <path :custom="2" d="M4.5 4.5h.75c7.87 0 14.25 6.38 14.25 14.25v.75" />
+      <Motion
+        is="path"
+        ref="wave2Ref"
+        d="M4.5 4.5h.75c7.87 0 14.25 6.38 14.25 14.25v.75"
+      />
     </svg>
   </div>
 </template>
@@ -45,37 +49,45 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const createWaveVariants = (delay: number) => ({
   normal: {
+    opacity: 1,
     scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    transition: { duration: 0.2, ease: "easeOut" },
   },
   animate: {
-    scale: [1, 1.08, 1],
+    opacity: [1, 0, 1],
+    scale: [1, 0, 1],
     transition: {
-      duration: 0.45,
+      duration: 0.4,
       ease: "easeInOut",
+      delay,
+      times: [0, 0.5, 1],
     },
   },
-};
+});
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const wave1Ref = ref();
+const wave2Ref = ref();
+const motion1 = useMotion(wave1Ref, {
+  initial: createWaveVariants(0).normal,
+  enter: createWaveVariants(0).normal,
+});
+const motion2 = useMotion(wave2Ref, {
+  initial: createWaveVariants(0.2).normal,
+  enter: createWaveVariants(0.2).normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  motion1.apply(createWaveVariants(0).animate);
+  motion2.apply(createWaveVariants(0.2).animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  motion1.apply(createWaveVariants(0).normal);
+  motion2.apply(createWaveVariants(0.2).normal);
 };
 
 const handleMouseEnter = () => {

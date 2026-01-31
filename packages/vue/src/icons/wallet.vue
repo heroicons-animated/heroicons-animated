@@ -15,17 +15,17 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
+      <path
         d="M21 12V18C21 19.2426 19.9926 20.25 18.75 20.25H5.25C4.00736 20.25 3 19.2426 3 18V12M21 12V9M3 12V9M21 12C21 10.7574 19.9926 9.75 18.75 9.75H15C15 11.4069 13.6569 12.75 12 12.75C10.3431 12.75 9 11.4069 9 9.75H5.25C4.00736 9.75 3 10.7574 3 12"
       />
-      <path
-        :custom="0"
+      <Motion
+        is="path"
+        ref="card1Ref"
         d="M21 9C21 7.75736 19.9926 6.75 18.75 6.75H5.25C4.00736 6.75 3 7.75736 3 9M21 9V6M3 9V6"
       />
-      <path
-        :custom="1"
+      <Motion
+        is="path"
+        ref="card2Ref"
         d="M21 9V6C21 4.75736 19.9926 3.75 18.75 3.75H5.25C4.00736 3.75 3 4.75736 3 6V9"
       />
     </svg>
@@ -51,37 +51,32 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
-  normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
-  },
-  animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
-  },
+const cardNormal = {
+  opacity: 1,
+  y: 0,
+  transition: { duration: 0.2, ease: "easeOut" },
 };
-
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const createCardAnimate = (delay: number) => ({
+  opacity: [0, 1],
+  y: [2, 0],
+  transition: { duration: 0.4, delay, ease: "easeOut" },
 });
+
+const card1Ref = ref();
+const card2Ref = ref();
+const motion1 = useMotion(card1Ref, { initial: cardNormal, enter: cardNormal });
+const motion2 = useMotion(card2Ref, { initial: cardNormal, enter: cardNormal });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  motion1.apply(createCardAnimate(0));
+  motion2.apply(createCardAnimate(0.15));
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  motion1.apply(cardNormal);
+  motion2.apply(cardNormal);
 };
 
 const handleMouseEnter = () => {

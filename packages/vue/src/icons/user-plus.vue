@@ -15,13 +15,11 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
+      <path
         d="M13.75 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z"
       />
-      <path d="M18 7.5v6" />
-      <path d="M15 10.5h6" />
+      <Motion is="path" ref="vertRef" d="M18 7.5v6" />
+      <Motion is="path" ref="horizRef" d="M15 10.5h6" />
     </svg>
   </div>
 </template>
@@ -45,37 +43,60 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const vertVariants = {
   normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    opacity: 1,
+    pathLength: 1,
+    transition: { duration: 0.2, ease: "easeOut" },
   },
   animate: {
-    scale: [1, 1.08, 1],
+    opacity: [0, 1],
+    pathLength: [0, 1],
     transition: {
-      duration: 0.45,
-      ease: "easeInOut",
+      delay: 0.3,
+      duration: 0.2,
+      opacity: { duration: 0.1, delay: 0.3 },
+    },
+  },
+};
+const horizVariants = {
+  normal: {
+    opacity: 1,
+    pathLength: 1,
+    transition: { duration: 0.2, ease: "easeOut" },
+  },
+  animate: {
+    opacity: [0, 1],
+    pathLength: [0, 1],
+    transition: {
+      delay: 0.6,
+      duration: 0.2,
+      opacity: { duration: 0.1, delay: 0.6 },
     },
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const vertRef = ref();
+const horizRef = ref();
+const motionVert = useMotion(vertRef, {
+  initial: vertVariants.normal,
+  enter: vertVariants.normal,
+});
+const motionHoriz = useMotion(horizRef, {
+  initial: horizVariants.normal,
+  enter: horizVariants.normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  motionVert.apply(vertVariants.animate);
+  motionHoriz.apply(horizVariants.animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  motionVert.apply(vertVariants.normal);
+  motionHoriz.apply(horizVariants.normal);
 };
 
 const handleMouseEnter = () => {

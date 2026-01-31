@@ -15,13 +15,15 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
+      <path
         d="M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z"
       />
-      <path :custom="1" d="M16.463 8.288a5.25 5.25 0 0 1 0 7.424" />
-      <path :custom="2" d="M19.114 5.636a9 9 0 0 1 0 12.728" />
+      <Motion
+        is="path"
+        ref="wave1Ref"
+        d="M16.463 8.288a5.25 5.25 0 0 1 0 7.424"
+      />
+      <Motion is="path" ref="wave2Ref" d="M19.114 5.636a9 9 0 0 1 0 12.728" />
     </svg>
   </div>
 </template>
@@ -45,37 +47,39 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
-  normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
-  },
-  animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+// Match React: opacity/scale pulse with delay 0.2*(index-1), duration 0.2, repeat 1 reverse
+const normal = { opacity: 1, scale: 1 };
+const animateWave1 = {
+  opacity: [1, 0, 1],
+  scale: [1, 0, 1],
+  transition: { duration: 0.4, ease: "easeInOut", times: [0, 0.5, 1] },
+};
+const animateWave2 = {
+  opacity: [1, 0, 1],
+  scale: [1, 0, 1],
+  transition: {
+    duration: 0.4,
+    ease: "easeInOut",
+    times: [0, 0.5, 1],
+    delay: 0.2,
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
-});
+const wave1Ref = ref();
+const wave2Ref = ref();
+const motion1 = useMotion(wave1Ref, { initial: normal, enter: normal });
+const motion2 = useMotion(wave2Ref, { initial: normal, enter: normal });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  motion1.apply(animateWave1);
+  motion2.apply(animateWave2);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  motion1.apply(normal);
+  motion2.apply(normal);
 };
 
 const handleMouseEnter = () => {

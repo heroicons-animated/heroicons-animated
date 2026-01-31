@@ -11,7 +11,7 @@ export function startAnimation() {
     isAnimating = true;
     setTimeout(() => {
       isAnimating = false;
-    }, 600);
+    }, 500);
   }
 }
 
@@ -53,16 +53,19 @@ function handleMouseLeave() {
     stroke-linecap="round"
     stroke-linejoin="round"
     class="icon-svg"
-    class:radio-animate={isAnimating}
   >
-    <path d="M3.75 7.5L20.25 3.375" />
+    <path
+      class="radio-antenna"
+      class:radio-antenna-tilt={isAnimating}
+      d="M3.75 7.5L20.25 3.375"
+    />
     <path
       d="M12 6.75C9.29246 6.75 6.63727 6.97417 4.05199 7.40497C2.99912 7.58042 2.25 8.50663 2.25 9.57402V18.75C2.25 19.9926 3.25736 21 4.5 21H19.5C20.7426 21 21.75 19.9926 21.75 18.75V9.57402C21.75 8.50663 21.0009 7.58042 19.948 7.40497C17.3627 6.97417 14.7075 6.75 12 6.75Z"
     />
     <path
       d="M17.25 12.75C16.8358 12.75 16.5 12.4142 16.5 12C16.5 11.5858 16.8358 11.25 17.25 11.25C17.6642 11.25 18 11.5858 18 12C18 12.4142 17.6642 12.75 17.25 12.75ZM17.25 17.25C16.8358 17.25 16.5 16.9142 16.5 16.5C16.5 16.0858 16.8358 15.75 17.25 15.75C17.6642 15.75 18 16.0858 18 16.5C18 16.9142 17.6642 17.25 17.25 17.25Z"
     />
-    <g>
+    <g class="radio-speaker" class:radio-speaker-pulse={isAnimating}>
       <path
         d="M10.3169 13.1931L10.3116 13.1984L10.3063 13.1931L10.3116 13.1878L10.3169 13.1931Z"
       />
@@ -115,21 +118,51 @@ div {
 .icon-svg {
   transform-box: fill-box;
   transform-origin: center;
-  transition: transform 0.3s ease;
 }
 
-.icon-svg.radio-animate {
-  animation: radio-animate 0.6s ease-in-out;
+.radio-antenna {
+  transform-origin: 3.75px 7.5px;
 }
 
-@keyframes radio-animate {
+.radio-antenna.radio-antenna-tilt {
+  animation: radio-antenna-tilt 0.4s ease-out forwards;
+}
+
+@keyframes radio-antenna-tilt {
+  to {
+    transform: rotate(-10deg);
+  }
+}
+
+.radio-speaker {
+  transform-origin: center;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.radio-speaker.radio-speaker-pulse {
+  animation: radio-speaker-pulse 0.5s ease-in-out forwards;
+}
+
+@keyframes radio-speaker-pulse {
   0% {
+    opacity: 1;
     transform: scale(1);
   }
+  25% {
+    opacity: 0.7;
+    transform: scale(1.15);
+  }
   50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 0.8;
     transform: scale(1.1);
   }
   100% {
+    opacity: 1;
     transform: scale(1);
   }
 }

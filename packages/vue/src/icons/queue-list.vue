@@ -47,9 +47,9 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const ITEM_DURATION = 200;
-const INITIAL_DELAY = 100;
-const STAGGER_DELAY = 150;
+const ITEM_DURATION = 0.2;
+const INITIAL_DELAY = 0.1;
+const STAGGER_DELAY = 0.15;
 
 const LIST_ITEMS = [
   { y: 19.5, path: "M3.75 19.5H20.25" },

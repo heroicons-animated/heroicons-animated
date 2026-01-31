@@ -16,12 +16,14 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
+      <path
         d="M17.25 21.75c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z"
       />
-      <path d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6" />
+      <Motion
+        is="path"
+        ref="arrowRef"
+        d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6"
+      />
     </svg>
   </div>
 </template>
@@ -46,37 +48,33 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
+const arrowVariants = {
   normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    translateX: 0,
+    translateY: 0,
+    transition: { duration: 0.2, ease: "easeOut" },
   },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    translateX: [0, 3, 0],
+    translateY: [0, -3, 0],
+    transition: { duration: 0.5, ease: "easeInOut" },
   },
 };
 
-const pathRef = ref<SVGPathElement | null>();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const arrowRef = ref<SVGPathElement | null>();
+const motionInstance = useMotion(arrowRef, {
+  initial: arrowVariants.normal,
+  enter: arrowVariants.normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  motionInstance.apply(arrowVariants.animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  motionInstance.apply(arrowVariants.normal);
 };
 
 const handleMouseEnter = () => {

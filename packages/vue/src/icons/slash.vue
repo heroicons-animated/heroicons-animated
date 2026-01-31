@@ -41,18 +41,16 @@ const props = withDefaults(defineProps<Props>(), {
 
 const variants = {
   normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    pathLength: 1,
+    pathOffset: 0,
+    opacity: 1,
+    transition: { duration: 0.4, opacity: { duration: 0.1 } },
   },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    pathLength: [0, 1],
+    pathOffset: [1, 0],
+    opacity: [0, 1],
+    transition: { duration: 0.6, ease: "linear", opacity: { duration: 0.1 } },
   },
 };
 

@@ -15,14 +15,19 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion is="path" ref="pathRef" d="M3.75 7.5L20.25 3.375" />
+      <Motion
+        is="path"
+        ref="antennaRef"
+        d="M3.75 7.5L20.25 3.375"
+        :style="{ transformOrigin: '3.75px 7.5px' }"
+      />
       <path
         d="M12 6.75C9.29246 6.75 6.63727 6.97417 4.05199 7.40497C2.99912 7.58042 2.25 8.50663 2.25 9.57402V18.75C2.25 19.9926 3.25736 21 4.5 21H19.5C20.7426 21 21.75 19.9926 21.75 18.75V9.57402C21.75 8.50663 21.0009 7.58042 19.948 7.40497C17.3627 6.97417 14.7075 6.75 12 6.75Z"
       />
       <path
         d="M17.25 12.75C16.8358 12.75 16.5 12.4142 16.5 12C16.5 11.5858 16.8358 11.25 17.25 11.25C17.6642 11.25 18 11.5858 18 12C18 12.4142 17.6642 12.75 17.25 12.75ZM17.25 17.25C16.8358 17.25 16.5 16.9142 16.5 16.5C16.5 16.0858 16.8358 15.75 17.25 15.75C17.6642 15.75 18 16.0858 18 16.5C18 16.9142 17.6642 17.25 17.25 17.25Z"
       />
-      <g>
+      <Motion is="g" ref="speakerRef">
         <path
           d="M10.3169 13.1931L10.3116 13.1984L10.3063 13.1931L10.3116 13.1878L10.3169 13.1931Z"
         />
@@ -63,7 +68,7 @@
           d="M6.00513 12.3838L5.99863 12.38L6.00238 12.3735L6.00888 12.3773L6.00513 12.3838Z"
         />
         <path d="M5.50488 14.2573H5.49738V14.2498H5.50488V14.2573Z" />
-      </g>
+      </Motion>
     </svg>
   </div>
 </template>
@@ -87,37 +92,48 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
-  normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
-  },
+const antennaVariants = {
+  normal: { rotate: 0, transition: { duration: 0.3, ease: "easeOut" } },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    rotate: [0, -10],
+    transition: { duration: 0.4, ease: "easeOut" },
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const speakerVariants = {
+  normal: {
+    scale: 1,
+    opacity: 1,
+    transition: { duration: 0.3, ease: "easeOut" },
+  },
+  animate: {
+    scale: [1, 1.15, 1, 1.1, 1],
+    opacity: [1, 0.7, 1, 0.8, 1],
+    transition: { duration: 0.5, ease: "easeInOut" },
+  },
+};
+
+const antennaRef = ref();
+const speakerRef = ref();
+const antennaMotion = useMotion(antennaRef, {
+  initial: antennaVariants.normal,
+  enter: antennaVariants.normal,
+});
+const speakerMotion = useMotion(speakerRef, {
+  initial: speakerVariants.normal,
+  enter: speakerVariants.normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  antennaMotion.apply(antennaVariants.animate);
+  speakerMotion.apply(speakerVariants.animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  antennaMotion.apply(antennaVariants.normal);
+  speakerMotion.apply(speakerVariants.normal);
 };
 
 const handleMouseEnter = () => {

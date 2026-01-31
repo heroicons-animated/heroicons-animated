@@ -11,7 +11,7 @@ export function startAnimation() {
     isAnimating = true;
     setTimeout(() => {
       isAnimating = false;
-    }, 600);
+    }, 450);
   }
 }
 
@@ -53,10 +53,9 @@ function handleMouseLeave() {
     stroke-linecap="round"
     stroke-linejoin="round"
     class="icon-svg"
-    class:arrowuturnup-animate={isAnimating}
   >
     <path d="M15 3v12a6 6 0 0 1-12 0v-3" />
-    <g>
+    <g class="arrow-group" class:arrowuturnup-animate={isAnimating}>
       <path d="m9 9 6-6m0 0 6 6m-6-6" />
     </g>
   </svg>
@@ -70,22 +69,27 @@ div {
 .icon-svg {
   transform-box: fill-box;
   transform-origin: center;
-  transition: transform 0.3s ease;
 }
 
-.icon-svg.arrowuturnup-animate {
-  animation: arrowuturnup-animate 0.6s ease-in-out;
+.arrow-group {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.45s ease-in-out;
+}
+
+.arrow-group.arrowuturnup-animate {
+  animation: arrowuturnup-animate 0.45s ease-in-out forwards;
 }
 
 @keyframes arrowuturnup-animate {
   0% {
-    transform: scale(1);
+    transform: scaleY(1) translateY(0);
   }
   50% {
-    transform: scale(1.1);
+    transform: scaleY(1.15) translateY(-1.5px);
   }
   100% {
-    transform: scale(1);
+    transform: scaleY(1) translateY(0);
   }
 }
 </style>

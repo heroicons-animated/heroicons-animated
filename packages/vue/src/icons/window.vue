@@ -15,14 +15,12 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
+      <path
         d="M3 8.25V18C3 19.2426 4.00736 20.25 5.25 20.25H18.75C19.9926 20.25 21 19.2426 21 18V8.25M3 8.25V6C3 4.75736 4.00736 3.75 5.25 3.75H18.75C19.9926 3.75 21 4.75736 21 6V8.25M3 8.25H21"
       />
-      <path :custom="0" d="M5.25 6H5.2575V6.0075H5.25V6Z" />
-      <path :custom="0.1" d="M7.5 6H7.5075V6.0075H7.5V6Z" />
-      <path :custom="0.2" d="M9.75 6H9.7575V6.0075H9.75V6Z" />
+      <Motion is="path" ref="b0Ref" d="M5.25 6H5.2575V6.0075H5.25V6Z" />
+      <Motion is="path" ref="b1Ref" d="M7.5 6H7.5075V6.0075H7.5V6Z" />
+      <Motion is="path" ref="b2Ref" d="M9.75 6H9.7575V6.0075H9.75V6Z" />
     </svg>
   </div>
 </template>
@@ -46,58 +44,54 @@ const props = withDefaults(defineProps<Props>(), {
   size: 28,
 });
 
-const variants = {
-  normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
-  },
+const createButtonVariants = (delay: number) => ({
+  normal: { scale: 1, opacity: 1, transition: { duration: 0.2 } },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    scale: [0, 1.3, 1],
+    opacity: [0, 1, 1],
+    transition: { delay, duration: 0.3, ease: "easeOut" },
   },
-};
+});
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
-  initial: variants.normal,
-  enter: variants.normal,
+const b0Ref = ref();
+const b1Ref = ref();
+const b2Ref = ref();
+const m0 = useMotion(b0Ref, {
+  initial: createButtonVariants(0).normal,
+  enter: createButtonVariants(0).normal,
+});
+const m1 = useMotion(b1Ref, {
+  initial: createButtonVariants(0.1).normal,
+  enter: createButtonVariants(0.1).normal,
+});
+const m2 = useMotion(b2Ref, {
+  initial: createButtonVariants(0.2).normal,
+  enter: createButtonVariants(0.2).normal,
 });
 
 let isControlled = false;
 
 const startAnimation = () => {
-  motionInstance.apply(variants.animate);
+  m0.apply(createButtonVariants(0).animate);
+  m1.apply(createButtonVariants(0.1).animate);
+  m2.apply(createButtonVariants(0.2).animate);
 };
 
 const stopAnimation = () => {
-  motionInstance.apply(variants.normal);
+  m0.apply(createButtonVariants(0).normal);
+  m1.apply(createButtonVariants(0.1).normal);
+  m2.apply(createButtonVariants(0.2).normal);
 };
 
 const handleMouseEnter = () => {
-  if (!isControlled) {
-    startAnimation();
-  }
+  if (!isControlled) startAnimation();
 };
-
 const handleMouseLeave = () => {
-  if (!isControlled) {
-    stopAnimation();
-  }
+  if (!isControlled) stopAnimation();
 };
-
 const setControlled = (value: boolean) => {
   isControlled = value;
 };
 
-defineExpose({
-  startAnimation,
-  stopAnimation,
-  setControlled,
-});
+defineExpose({ startAnimation, stopAnimation, setControlled });
 </script>

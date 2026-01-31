@@ -15,12 +15,10 @@
       stroke-linecap="round"
       stroke-linejoin="round"
     >
-      <Motion
-        is="path"
-        ref="pathRef"
+      <path
         d="M13.75 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM4 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 10.374 21c-2.331 0-4.512-.645-6.374-1.766Z"
       />
-      <path d="M22 10.5h-6" />
+      <Motion is="path" ref="lineRef" d="M22 10.5h-6" />
     </svg>
   </div>
 </template>
@@ -46,23 +44,21 @@ const props = withDefaults(defineProps<Props>(), {
 
 const variants = {
   normal: {
-    scale: 1,
-    transition: {
-      duration: 0.2,
-      ease: "easeOut",
-    },
+    pathLength: 1,
+    pathOffset: 0,
+    opacity: 1,
+    transition: { duration: 0.2, ease: "easeOut" },
   },
   animate: {
-    scale: [1, 1.08, 1],
-    transition: {
-      duration: 0.45,
-      ease: "easeInOut",
-    },
+    pathLength: [0, 1],
+    pathOffset: [1, 0],
+    opacity: [0, 1],
+    transition: { duration: 0.4, ease: "easeInOut" },
   },
 };
 
-const pathRef = ref();
-const motionInstance = useMotion(pathRef, {
+const lineRef = ref();
+const motionInstance = useMotion(lineRef, {
   initial: variants.normal,
   enter: variants.normal,
 });

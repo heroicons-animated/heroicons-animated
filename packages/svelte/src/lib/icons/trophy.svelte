@@ -73,15 +73,18 @@ div {
 }
 
 .icon-svg.trophy-animate {
-  animation: trophy-animate 0.6s ease-in-out;
+  animation: trophy-animate 0.6s ease-in-out forwards;
 }
 
 @keyframes trophy-animate {
   0% {
     transform: scale(1);
   }
-  50% {
-    transform: scale(1.1);
+  33% {
+    transform: scale(0.9);
+  }
+  66% {
+    transform: scale(1.2);
   }
   100% {
     transform: scale(1);
