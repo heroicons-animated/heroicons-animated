@@ -1,7 +1,5 @@
 <script lang="ts">
-export let size = 28;
-export let className = "";
-export { className as class };
+let { size = 28, class: className = "", ...restProps } = $props();
 
 const DOTS = [
   { d: "M12 12.75h.008v.008H12v-.008Z", index: 0 },
@@ -18,8 +16,8 @@ const DOTS = [
   { d: "M14.25 17.25h.008v.008h-.008v-.008Z", index: 11 },
 ];
 
-let isAnimating = false;
-let isControlled = false;
+let isAnimating = $state(false);
+let isControlled = $state(false);
 
 export function startAnimation() {
   if (!isControlled) {
@@ -52,10 +50,10 @@ function handleMouseLeave() {
 </script>
 
 <div
-  ...$$restProps
+  {...restProps}
   class={className}
-  on:mouseenter={handleMouseEnter}
-  on:mouseleave={handleMouseLeave}
+  onmouseenter={handleMouseEnter}
+  onmouseleave={handleMouseLeave}
   role="img"
 >
   <svg

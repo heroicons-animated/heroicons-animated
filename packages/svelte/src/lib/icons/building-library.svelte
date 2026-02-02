@@ -1,7 +1,5 @@
 <script lang="ts">
-export let size = 28;
-const className = "";
-export { className as class };
+let { size = 28, class: className = "" } = $props();
 
 let dotPath: SVGPathElement;
 let pillarPath1: SVGPathElement;
@@ -9,8 +7,8 @@ let pillarPath2: SVGPathElement;
 let pillarPath3: SVGPathElement;
 let dotAnimation: Animation | null = null;
 let pillarAnimations: (Animation | null)[] = [null, null, null];
-let isAnimating = false;
-let isControlled = false;
+let isAnimating = $state(false);
+let isControlled = $state(false);
 
 const PILLARS = [
   { d: "M8.25 12.75v8.25", index: 0 },
@@ -107,8 +105,8 @@ function handleMouseLeave() {
 
 <div
   class={className}
-  on:mouseenter={handleMouseEnter}
-  on:mouseleave={handleMouseLeave}
+  onmouseenter={handleMouseEnter}
+  onmouseleave={handleMouseLeave}
   role="img"
 >
   <svg

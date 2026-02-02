@@ -1,12 +1,10 @@
 <script lang="ts">
-export let size = 28;
-const className = "";
-export { className as class };
+let { size = 28, class: className = "" } = $props();
 
 let pathElement: SVGPathElement;
 let pathAnimation: Animation | null = null;
-let isAnimating = false;
-let isControlled = false;
+let isAnimating = $state(false);
+let isControlled = $state(false);
 
 // Must match React PATH_VARIANTS exactly: pathLength [0,1], opacity [0,1], scale [0.5,1], duration 0.4s
 export function startAnimation() {
@@ -83,8 +81,8 @@ function handleMouseLeave() {
 
 <div
   class={className}
-  on:mouseenter={handleMouseEnter}
-  on:mouseleave={handleMouseLeave}
+  onmouseenter={handleMouseEnter}
+  onmouseleave={handleMouseLeave}
   role="img"
 >
   <svg

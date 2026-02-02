@@ -1,14 +1,12 @@
 <script lang="ts">
-export let size = 28;
-const className = "";
-export { className as class };
+let { size = 28, class: className = "" } = $props();
 
 let topBarPath: SVGPathElement;
 let centerBarPath: SVGPathElement;
 let bottomBarPath: SVGPathElement;
 let centerBarAnimation: Animation | null = null;
-let isAnimating = false;
-let isControlled = false;
+let isAnimating = $state(false);
+let isControlled = $state(false);
 
 export function startAnimation() {
   if (!isControlled) {
@@ -74,8 +72,8 @@ function handleMouseLeave() {
 
 <div
   class={className}
-  on:mouseenter={handleMouseEnter}
-  on:mouseleave={handleMouseLeave}
+  onmouseenter={handleMouseEnter}
+  onmouseleave={handleMouseLeave}
   role="img"
 >
   <svg

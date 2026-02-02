@@ -1,7 +1,5 @@
 <script lang="ts">
-export let size = 28;
-const className = "";
-export { className as class };
+let { size = 28, class: className = "" } = $props();
 
 const FLOOR_LINES = [
   { path: "M9 12.75h1.5", y: 12.75, index: 0 },
@@ -26,8 +24,8 @@ let floorAnimations: (Animation | null)[] = [
   null,
   null,
 ];
-let isAnimating = false;
-let isControlled = false;
+let isAnimating = $state(false);
+let isControlled = $state(false);
 
 export function startAnimation() {
   if (!isControlled) {
@@ -100,8 +98,8 @@ function handleMouseLeave() {
 
 <div
   class={className}
-  on:mouseenter={handleMouseEnter}
-  on:mouseleave={handleMouseLeave}
+  onmouseenter={handleMouseEnter}
+  onmouseleave={handleMouseLeave}
   role="img"
 >
   <svg
