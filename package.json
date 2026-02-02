@@ -31,7 +31,7 @@
     "type-check": "turbo run type-check --continue",
     "changeset": "changeset",
     "version": "changeset version",
-    "release": "pnpm build && changeset publish"
+    "publish": "changeset publish"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
