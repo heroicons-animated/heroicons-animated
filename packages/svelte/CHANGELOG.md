@@ -1,5 +1,11 @@
 # @heroicons-animated/svelte
 
+## 1.1.2
+
+### Patch Changes
+
+- [`8984bb5`](https://github.com/Aniket-508/heroicons-animated/commit/8984bb5f2f5bab827cb9294e39e5340449f0de75) - Updated tree-shaking path from /icons/<icon> to /<icon>
+
 ## 1.1.1
 
 ### Patch Changes
