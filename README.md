@@ -15,8 +15,7 @@ heroicons-animated/
 ├── packages/
 │   ├── react/            # React package (@heroicons-animated/react)
 │   ├── vue/              # Vue package (@heroicons-animated/vue)
-│   ├── svelte/           # Svelte package (@heroicons-animated/svelte)
-│   └── shared/           # Shared utilities and types
+│   └── svelte/           # Svelte package (@heroicons-animated/svelte)
 └── tooling/
     └── typescript/       # Shared TypeScript configuration
 ```
