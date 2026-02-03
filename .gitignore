@@ -43,7 +43,6 @@ dist/
 
 # generated icon proxies
 packages/react/*.js
-packages/react/*.mjs
 packages/react/*.d.ts
 packages/vue/*.js
 packages/vue/*.d.ts

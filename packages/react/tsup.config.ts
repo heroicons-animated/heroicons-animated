@@ -39,20 +39,15 @@ function addUseClientDirective() {
 function createIconProxies() {
   const proxyDir = __dirname;
   for (const name of iconNames) {
-    // CJS proxy
-    writeFileSync(
-      join(proxyDir, `${name}.js`),
-      `module.exports = require("../dist/icons/${name}.js");\n`
-    );
     // ESM proxy
     writeFileSync(
-      join(proxyDir, `${name}.mjs`),
-      `export * from "../dist/icons/${name}.mjs";\n`
+      join(proxyDir, `${name}.js`),
+      `export * from "./dist/icons/${name}.js";\n`
     );
     // TypeScript declarations proxy
     writeFileSync(
       join(proxyDir, `${name}.d.ts`),
-      `export * from "../dist/icons/${name}";\n`
+      `export * from "./dist/icons/${name}";\n`
     );
   }
 }
@@ -60,11 +55,11 @@ function createIconProxies() {
 export default defineConfig([
   {
     entry: ["src/index.ts"],
-    format: ["cjs", "esm"],
+    format: ["esm"],
     dts: true,
     splitting: true,
     treeshake: true,
-    sourcemap: true,
+    sourcemap: false,
     clean: true,
     external: ["react", "motion", "react-dom"],
     esbuildOptions(options) {
@@ -78,11 +73,11 @@ export default defineConfig([
   {
     entry: iconFiles,
     outDir: "dist/icons",
-    format: ["cjs", "esm"],
+    format: ["esm"],
     dts: true,
     splitting: false,
     treeshake: true,
-    sourcemap: true,
+    sourcemap: false,
     external: ["react", "motion", "react-dom"],
     esbuildOptions(options) {
       options.alias = { "@": resolve(__dirname, "src") };
