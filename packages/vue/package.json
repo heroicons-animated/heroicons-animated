@@ -22,6 +22,7 @@
     "vueuse",
     "motion"
   ],
+  "sideEffects": false,
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",

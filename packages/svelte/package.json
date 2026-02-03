@@ -21,6 +21,7 @@
     "animated",
     "css-animations"
   ],
+  "sideEffects": false,
   "type": "module",
   "svelte": "./dist/index.js",
   "types": "./dist/index.d.ts",

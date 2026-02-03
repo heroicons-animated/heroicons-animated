@@ -1,16 +1,73 @@
+import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
+import { join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 import { defineConfig } from "tsup";
+
+const __dirname = fileURLToPath(new URL(".", import.meta.url));
+
+const iconsDir = join(__dirname, "src/icons");
+const iconFiles = readdirSync(iconsDir)
+  .filter((file) => file.endsWith(".tsx") && file !== "index.ts")
+  .map((file) => `src/icons/${file}`);
+
+function getAllJsFiles(dir: string): string[] {
+  const files: string[] = [];
+  if (!existsSync(dir)) return files;
+
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    const fullPath = join(dir, entry.name);
+    if (entry.isDirectory()) {
+      files.push(...getAllJsFiles(fullPath));
+    } else if (entry.name.endsWith(".js") || entry.name.endsWith(".mjs")) {
+      files.push(fullPath);
+    }
+  }
+  return files;
+}
+
+function addUseClientDirective() {
+  const distDir = join(__dirname, "dist");
+  for (const filePath of getAllJsFiles(distDir)) {
+    const content = readFileSync(filePath, "utf-8");
+    if (!content.startsWith('"use client"')) {
+      writeFileSync(filePath, `"use client";\n${content}`);
+    }
+  }
+}
 
 export default defineConfig([
   {
     entry: ["src/index.ts"],
     format: ["cjs", "esm"],
     dts: true,
-    splitting: false,
+    splitting: true,
+    treeshake: true,
     sourcemap: true,
     clean: true,
-    banner: {
-      js: '"use client";',
-    },
     external: ["react", "motion", "react-dom"],
+    esbuildOptions(options) {
+      options.alias = { "@": resolve(__dirname, "src") };
+    },
+    onSuccess: async () => {
+      await Promise.resolve();
+      addUseClientDirective();
+    },
+  },
+  {
+    entry: iconFiles,
+    outDir: "dist/icons",
+    format: ["cjs", "esm"],
+    dts: true,
+    splitting: false,
+    treeshake: true,
+    sourcemap: true,
+    external: ["react", "motion", "react-dom"],
+    esbuildOptions(options) {
+      options.alias = { "@": resolve(__dirname, "src") };
+    },
+    onSuccess: async () => {
+      await Promise.resolve();
+      addUseClientDirective();
+    },
   },
 ]);

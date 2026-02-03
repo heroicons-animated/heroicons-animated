@@ -163,6 +163,9 @@ importers:
       '@repo/typescript-config':
         specifier: workspace:*
         version: link:../../tooling/typescript
+      '@types/node':
+        specifier: ^24.10.4
+        version: 24.10.4
       '@types/react':
         specifier: 'catalog:'
         version: 19.2.7
