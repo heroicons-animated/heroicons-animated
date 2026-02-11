@@ -55,7 +55,7 @@
   "license": "../LICENSE",
   "scripts": {
     "build": "vite build",
-    "type-check": "vue-tsc --noEmit"
+    "type-check": "tsc --noEmit"
   },
   "peerDependencies": {
     "motion": "^11.0.0",

@@ -7,7 +7,7 @@ We welcome contributions to our project! Please follow these steps to contribute
 2. Clone your forked repository to your local machine:
 
    ```bash
-   git clone https://github.com/Aniket-508/heroicons-animated.git
+   git clone https://github.com/heroicons-animated/heroicons-animated.git
    ```
 
 3. Navigate to the project directory:
