@@ -2,38 +2,22 @@
 
 import Link from "next/link";
 import { useMemo, useRef } from "react";
-import type { Icon } from "@/actions/get-icons";
 import { Card, CardTitle } from "@/components/card";
-import { getIconList } from "@/lib/icons";
+import { getIconList, ICON_MAP } from "@/lib/icons";
+import type {
+  AnimatedIconHandle,
+  IconListItem,
+  IconManifestItem,
+} from "@/types/icon";
 
 type Props = {
-  currentIcon: Icon;
+  currentIcon: IconManifestItem;
 };
 
-const ICON_MAP = new Map(getIconList().map((item) => [item.name, item]));
+const SimilarIconItem = ({ icon }: { icon: IconListItem }) => {
+  const animationRef = useRef<AnimatedIconHandle | null>(null);
 
-const SimilarIconItem = ({
-  icon,
-}: {
-  icon: {
-    name: string;
-    icon: React.ComponentType<
-      React.HTMLAttributes<HTMLDivElement> & {
-        size?: number;
-        ref?: React.Ref<{
-          startAnimation: () => void;
-          stopAnimation: () => void;
-        }>;
-      }
-    >;
-  };
-}) => {
-  const animationRef = useRef<{
-    startAnimation: () => void;
-    stopAnimation: () => void;
-  }>(null);
-
-  const Icon = ICON_MAP.get(icon.name)?.icon;
+  const Icon = ICON_MAP.get(icon.name);
 
   if (!Icon) {
     return null;

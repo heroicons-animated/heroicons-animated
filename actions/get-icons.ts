@@ -1,11 +1,7 @@
 import { ICON_MANIFEST } from "@/lib/manifest";
+import type { IconManifestItem } from "@/types/icon";
 
-type Icon = {
-  name: string;
-  keywords: string[];
-};
-
-const getIcons = (): Icon[] => {
+const getIcons = (): IconManifestItem[] => {
   return ICON_MANIFEST.map(({ name, keywords }) => ({
     name,
     keywords,
@@ -13,4 +9,3 @@ const getIcons = (): Icon[] => {
 };
 
 export { getIcons };
-export type { Icon };

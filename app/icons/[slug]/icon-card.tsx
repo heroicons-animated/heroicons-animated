@@ -1,22 +1,26 @@
 "use client";
 
+import type { ComponentType } from "react";
 import { useMemo, useRef } from "react";
-import type { Icon } from "@/actions/get-icons";
 import { Card, CardActions } from "@/components/card";
 import { getIconList } from "@/lib/icons";
+import type {
+  AnimatedIconHandle,
+  AnimatedIconProps,
+  IconManifestItem,
+} from "@/types/icon";
 
 type Props = {
-  icon: Icon;
+  icon: IconManifestItem;
 };
 
 const IconCard = ({ icon }: Props) => {
-  const animationRef = useRef<{
-    startAnimation: () => void;
-    stopAnimation: () => void;
-  }>(null);
+  const animationRef = useRef<AnimatedIconHandle | null>(null);
 
   const IconComponent = useMemo(() => {
-    return getIconList().find((item) => item.name === icon.name)?.icon;
+    return getIconList().find((item) => item.name === icon.name)?.icon as
+      | ComponentType<AnimatedIconProps>
+      | undefined;
   }, [icon.name]);
 
   if (!IconComponent) {

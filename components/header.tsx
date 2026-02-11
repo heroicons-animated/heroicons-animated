@@ -9,11 +9,7 @@ import { Logo } from "@/components/logo";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { LINK } from "@/constants";
 import { cn } from "@/lib/utils";
-
-interface FilledHeartIconHandle {
-  startAnimation: () => void;
-  stopAnimation: () => void;
-}
+import type { AnimatedIconHandle } from "@/types/icon";
 
 interface FilledHeartIconProps {
   size?: number;
@@ -25,7 +21,7 @@ const HEART_VARIANTS: Variants = {
   animate: { scale: [1, 1.08, 1] },
 };
 
-const FilledHeartIcon = forwardRef<FilledHeartIconHandle, FilledHeartIconProps>(
+const FilledHeartIcon = forwardRef<AnimatedIconHandle, FilledHeartIconProps>(
   ({ className, size = 16 }, ref) => {
     const controls = useAnimation();
 
@@ -59,7 +55,7 @@ const FilledHeartIcon = forwardRef<FilledHeartIconHandle, FilledHeartIconProps>(
 FilledHeartIcon.displayName = "FilledHeartIcon";
 
 const Header = () => {
-  const heartRef = useRef<FilledHeartIconHandle>(null);
+  const heartRef = useRef<AnimatedIconHandle>(null);
 
   const handleMouseEnter = useCallback(() => {
     heartRef.current?.startAnimation();

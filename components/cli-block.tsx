@@ -4,7 +4,6 @@ import { ScrollArea as BaseScrollArea } from "@base-ui/react/scroll-area";
 import { ClipboardDocumentIcon } from "@heroicons/react/24/outline";
 import { useRef, useState, useTransition } from "react";
 import { toast } from "sonner";
-import type { Icon } from "@/actions/get-icons";
 import type { IconStatus } from "@/components/ui/icon-state";
 import { IconState } from "@/components/ui/icon-state";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -14,9 +13,10 @@ import { getCLICommand, getRegistryPathPrefix, getShadcnCLI } from "@/lib/cli";
 import { getPackageManagerPrefix } from "@/lib/get-package-manager-prefix";
 import { cn } from "@/lib/utils";
 import { usePackageNameContext } from "@/providers/package-name";
+import type { IconManifestItem } from "@/types/icon";
 
 type CliBlockProps = {
-  icons?: Icon[];
+  icons?: IconManifestItem[];
   staticIconName?: string;
   className?: string;
 };

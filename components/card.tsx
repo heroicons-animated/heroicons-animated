@@ -10,7 +10,6 @@ import type { RefObject } from "react";
 import { useEffect, useRef, useState } from "react";
 import { toast } from "sonner";
 import { getIconContent } from "@/actions/get-icon-content";
-import type { Icon } from "@/actions/get-icons";
 import { openInV0Action } from "@/actions/open-in-v0";
 import { ANALYTIC_EVENT } from "@/components/analytics";
 import type { IconStatus } from "@/components/ui/icon-state";
@@ -25,6 +24,7 @@ import { useTouchDevice } from "@/hooks/use-touch-device";
 import { getCLICommand, getFileExtension } from "@/lib/cli";
 import { cn } from "@/lib/utils";
 import { usePackageNameContext } from "@/providers/package-name";
+import type { AnimatedIconHandle, IconManifestItem } from "@/types/icon";
 
 const V0Icon = ({ className }: { className?: string }) => {
   return (
@@ -42,10 +42,7 @@ const V0Icon = ({ className }: { className?: string }) => {
 
 interface CardProps extends React.ComponentPropsWithoutRef<"div"> {
   children: React.ReactNode;
-  animationRef?: RefObject<{
-    startAnimation: () => void;
-    stopAnimation: () => void;
-  } | null>;
+  animationRef?: RefObject<AnimatedIconHandle | null>;
 }
 
 const Card = ({ children, animationRef, className, ...props }: CardProps) => {
@@ -130,7 +127,7 @@ const Title = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-const CopyCLIAction = ({ name }: Pick<Icon, "name">) => {
+const CopyCLIAction = ({ name }: Pick<IconManifestItem, "name">) => {
   const { packageName } = usePackageNameContext();
 
   const [state, setState] = useState<IconStatus>("idle");
@@ -187,7 +184,7 @@ const CopyCLIAction = ({ name }: Pick<Icon, "name">) => {
   );
 };
 
-const CopyCodeAction = ({ name }: Pick<Icon, "name">) => {
+const CopyCodeAction = ({ name }: Pick<IconManifestItem, "name">) => {
   const [state, setState] = useState<IconStatus>("idle");
   const ext = "tsx";
 
@@ -247,7 +244,7 @@ const CopyCodeAction = ({ name }: Pick<Icon, "name">) => {
   );
 };
 
-const OpenInV0Action = ({ name }: Pick<Icon, "name">) => {
+const OpenInV0Action = ({ name }: Pick<IconManifestItem, "name">) => {
   const [state, setState] = useState<IconStatus>("idle");
 
   const handleOpenInV0 = async (e: React.MouseEvent) => {
@@ -320,7 +317,7 @@ const OpenInV0Action = ({ name }: Pick<Icon, "name">) => {
   );
 };
 
-type ActionsProps = Pick<Icon, "name"> & {
+type ActionsProps = Pick<IconManifestItem, "name"> & {
   alwaysVisible?: boolean;
 };
 

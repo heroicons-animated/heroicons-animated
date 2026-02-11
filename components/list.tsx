@@ -4,28 +4,23 @@ import Fuse from "fuse.js";
 import Link from "next/link";
 import { useQueryState } from "nuqs";
 import { useDeferredValue, useMemo, useRef } from "react";
-import type { Icon } from "@/actions/get-icons";
 import { Card, CardActions, CardTitle } from "@/components/card";
-import { getIconList } from "@/lib/icons";
+import { ICON_MAP } from "@/lib/icons";
+import type { AnimatedIconHandle, IconManifestItem } from "@/types/icon";
 import { SearchInput } from "./search-input";
 
 type Props = {
-  icons: Icon[];
+  icons: IconManifestItem[];
 };
-
-const ICON_MAP = new Map(getIconList().map((item) => [item.name, item.icon]));
 
 const IconItem = ({
   icon,
   Icon,
 }: {
-  icon: Icon;
+  icon: IconManifestItem;
   Icon: React.ElementType | undefined;
 }) => {
-  const animationRef = useRef<{
-    startAnimation: () => void;
-    stopAnimation: () => void;
-  }>(null);
+  const animationRef = useRef<AnimatedIconHandle | null>(null);
 
   if (!Icon) {
     return null;
