@@ -4,21 +4,20 @@ on:
   workflow_dispatch:
     inputs:
       dry-run:
-        description: 'Run in dry-run mode (no actual publishing)'
+        description: "Run in dry-run mode (no actual publishing)"
         required: false
-        default: 'false'
+        default: "false"
         type: boolean
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
-    name: Release
+    name: Publish React Package
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       id-token: write
-      pull-requests: write
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -29,7 +28,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: "https://registry.npmjs.org"
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
@@ -39,28 +38,17 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build Packages
-        run: pnpm build
+      - name: Build React Package
+        run: pnpm run build:lib
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: Publish React Package
         if: ${{ !inputs.dry-run }}
-        uses: changesets/action@v1
-        with:
-          version: pnpm run version
-          publish: pnpm run publish
-          title: 'chore(release): version packages'
-          commit: 'chore(release): version packages'
-          createGithubReleases: true
+        run: cd src && pnpm publish --access public --no-git-checks
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Dry Run - Version
-        if: ${{ inputs.dry-run }}
-        run: pnpm changeset status
 
       - name: Dry Run - Publish
         if: ${{ inputs.dry-run }}
-        run: pnpm publish --dry-run
+        run: cd src && pnpm publish --dry-run --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -1,6 +1,6 @@
-## `heroicons-animated` is beautifully animated heroicons.
+## `heroicons-animated` is beautifully animated Heroicons for React.
 
-![preview](./apps/www/public/og.png)
+![preview](./public/og.png)
 
 **Demo** → [heroicons-animated](https://www.heroicons-animated.com)
 
@@ -8,46 +8,25 @@
 
 ## Project Structure
 
-```
+```text
 heroicons-animated/
-├── apps/
-│   └── www/              # Website
-├── packages/
-│   ├── react/            # React package (@heroicons-animated/react)
-│   ├── vue/              # Vue package (@heroicons-animated/vue)
-│   └── svelte/           # Svelte package (@heroicons-animated/svelte)
-└── tooling/
-    └── typescript/       # Shared TypeScript configuration
+├── app/                  # Next.js app router
+├── components/           # Website UI components
+├── public/               # Static assets + shadcn registry output
+├── scripts/              # Validation + registry scripts
+└── react/                # React package (@heroicons-animated/react)
 ```
 
 ## Installation
 
 ### Using shadcn CLI
 
-#### React
-
 ```bash
 pnpm dlx shadcn add @heroicons-animated/heart
 pnpm dlx shadcn add @heroicons-animated/wifi
 ```
 
-#### Vue
-
-```bash
-pnpm dlx shadcn-vue add @heroicons-animated/vue/heart
-pnpm dlx shadcn-vue add @heroicons-animated/vue/wifi
-```
-
-#### Svelte
-
-```bash
-pnpm dlx shadcn-svelte add @heroicons-animated/svelte/heart
-pnpm dlx shadcn-svelte add @heroicons-animated/svelte/wifi
-```
-
-### Using npm packages
-
-#### React
+### Using npm package
 
 ```bash
 pnpm add @heroicons-animated/react motion
@@ -67,57 +46,31 @@ export default function App() {
 }
 ```
 
-#### Vue
+## Development
 
 ```bash
-pnpm add @heroicons-animated/vue @vueuse/motion
+pnpm install
+pnpm run dev
 ```
 
-```vue
-<script setup>
-import { BeakerIcon } from "@heroicons-animated/vue";
-import HeartIcon from "@heroicons-animated/vue/heart";
-</script>
-
-<template>
-  <BeakerIcon class="size-6" />
-  <HeartIcon class="size-6" />
-</template>
-```
-
-#### Svelte
+Useful commands:
 
 ```bash
-pnpm add @heroicons-animated/svelte
+pnpm run check-imports
+pnpm run check-duplicates
+pnpm run type-check
+pnpm run build
 ```
-
-```svelte
-<script>
-  import { BeakerIcon } from '@heroicons-animated/svelte'
-  import HeartIcon from '@heroicons-animated/svelte/heart'
-</script>
-
-<BeakerIcon class="size-6" />
-<HeartIcon class="size-6" />
-```
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Aniket-508/heroicons-animated&type=date&legend=top-left)](https://www.star-history.com/#Aniket-508/heroicons-animated&type=date&legend=top-left)
 
 ## Contributing
 
-We welcome contributions to `heroicons-animated`! Please read our [contributing guidelines](CONTRIBUTING.md) on how to submit improvements and new icons.
+We welcome contributions to `heroicons-animated`. Please read the [contributing guidelines](CONTRIBUTING.md) before submitting changes.
 
 ## Credits
 
-- Original project: [lucide-animated](https://lucide-animated.com/) by [@pqoqubbw](https://x.com/pqoqubbw)
+- Original project inspiration: [lucide-animated](https://lucide-animated.com/) by [@pqoqubbw](https://x.com/pqoqubbw)
 - Heroicons: [heroicons.com](https://heroicons.com)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-If you have any questions or just want to say hi, feel free to reach out to me on X 👉 [@alaymanguy](https://x.com/alaymanguy).
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
