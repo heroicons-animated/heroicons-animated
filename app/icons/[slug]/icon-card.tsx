@@ -1,14 +1,9 @@
 "use client";
 
-import type { ComponentType } from "react";
-import { useMemo, useRef } from "react";
+import { useRef } from "react";
 import { Card, CardActions } from "@/components/card";
-import { getIconList } from "@/lib/icons";
-import type {
-  AnimatedIconHandle,
-  AnimatedIconProps,
-  IconManifestItem,
-} from "@/types/icon";
+import { ICON_MAP } from "@/lib/icons";
+import type { AnimatedIconHandle, IconManifestItem } from "@/types/icon";
 
 type Props = {
   icon: IconManifestItem;
@@ -17,13 +12,9 @@ type Props = {
 const IconCard = ({ icon }: Props) => {
   const animationRef = useRef<AnimatedIconHandle | null>(null);
 
-  const IconComponent = useMemo(() => {
-    return getIconList().find((item) => item.name === icon.name)?.icon as
-      | ComponentType<AnimatedIconProps>
-      | undefined;
-  }, [icon.name]);
+  const Icon = ICON_MAP.get(icon.name);
 
-  if (!IconComponent) {
+  if (!Icon) {
     return null;
   }
 
@@ -34,7 +25,7 @@ const IconCard = ({ icon }: Props) => {
       onMouseEnter={() => animationRef.current?.startAnimation()}
       onMouseLeave={() => animationRef.current?.stopAnimation()}
     >
-      <IconComponent
+      <Icon
         className="flex items-center justify-center [&>svg]:size-12 [&>svg]:text-neutral-800 dark:[&>svg]:text-neutral-100"
         ref={animationRef}
       />
