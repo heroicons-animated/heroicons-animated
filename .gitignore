@@ -13,9 +13,6 @@ coverage
 out/
 next-env.d.ts
 
-# svelte
-.svelte-kit/
-
 # production
 /build
 
@@ -42,12 +39,8 @@ dist/
 .cache
 
 # generated icon proxies
-packages/react/*.js
-packages/react/*.d.ts
-packages/vue/*.js
-packages/vue/*.d.ts
-packages/svelte/*.js
-packages/svelte/*.d.ts
+react/*.js
+react/*.d.ts
 
 # turbo
 .turbo
