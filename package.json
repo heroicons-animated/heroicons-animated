@@ -1,18 +1,16 @@
 {
   "name": "heroicons-animated",
   "version": "0.1.0",
-  "private": true,
   "description": "Beautifully animated Heroicons for React",
   "author": "Aniket-508",
   "license": "MIT",
   "homepage": "https://heroicons-animated.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aniket-508/heroicons-animated",
-    "directory": "heroicons-animated"
+    "url": "git+https://github.com/heroicons-animated/heroicons-animated.git"
   },
   "bugs": {
-    "url": "https://github.com/Aniket-508/heroicons-animated/issues"
+    "url": "https://github.com/heroicons-animated/heroicons-animated/issues"
   },
   "keywords": [
     "heroicons",
