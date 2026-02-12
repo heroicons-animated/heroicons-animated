@@ -1,6 +1,8 @@
 name: Release
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       dry-run:
@@ -9,46 +11,60 @@ on:
         default: "false"
         type: boolean
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   release:
-    name: Publish React Package
+    name: Release
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     permissions:
-      contents: read
+      contents: write
       id-token: write
+      pull-requests: write
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           registry-url: "https://registry.npmjs.org"
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 10.28.0
+          cache: "pnpm"
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build React Package
+      - name: Build Library
         run: pnpm run build:lib
 
-      - name: Publish React Package
-        if: ${{ !inputs.dry-run }}
-        run: cd src && pnpm publish --access public --no-git-checks
+      - name: Create Release Pull Request or Publish to npm
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs['dry-run'] }}
+        uses: changesets/action@v1
+        with:
+          version: pnpm run version
+          publish: pnpm run release
+          title: "chore(release): version packages"
+          commit: "chore(release): version packages"
+          createGithubReleases: true
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
+      - name: Dry Run - Changeset Status
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs['dry-run'] }}
+        run: pnpm changeset status
+
       - name: Dry Run - Publish
-        if: ${{ inputs.dry-run }}
-        run: cd src && pnpm publish --dry-run --access public --no-git-checks
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs['dry-run'] }}
+        run: pnpm run release --dry-run
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
