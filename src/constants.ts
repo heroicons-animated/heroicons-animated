@@ -42,6 +42,8 @@ const LINK = {
   MOTION: "https://motion.dev",
   LICENSE: "https://github.com/Aniket-508/heroicons-animated/blob/main/LICENSE",
   SPONSOR: "https://github.com/sponsors/Aniket-508",
+  VERCEL_OSS:
+    "https://vercel.com/blog/vercel-open-source-program-winter-2026-cohort#heroicons-animated",
 } as const;
 
 const PACKAGE_MANAGER = {
