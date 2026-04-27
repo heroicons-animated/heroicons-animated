@@ -77,5 +77,5 @@ const IconState = ({ children, status = "idle" }: IconStateProps) => {
   );
 };
 
+export type { IconStateProps, IconStatus };
 export { IconState };
-export type { IconStatus, IconStateProps };

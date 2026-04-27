@@ -32,4 +32,4 @@ const Radio = {
 Radio.Root.displayName = "Radio.Root";
 Radio.Indicator.displayName = "Radio.Indicator";
 
-export { RadioGroup, Radio };
+export { Radio, RadioGroup };

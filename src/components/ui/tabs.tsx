@@ -54,4 +54,4 @@ const TabsContent = (props: React.ComponentProps<typeof BaseTabs.Panel>) => {
   return <BaseTabs.Panel data-slot="tabs-content" {...props} />;
 };
 
-export { Tabs, TabsList, TabsTrigger, TabsContent };
+export { Tabs, TabsContent, TabsList, TabsTrigger };

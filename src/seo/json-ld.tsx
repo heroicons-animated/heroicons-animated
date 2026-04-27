@@ -175,10 +175,10 @@ const JsonLdScripts = () => {
 };
 
 export {
-  JsonLdScripts,
-  WebsiteJsonLd,
-  SoftwareSourceCodeJsonLd,
-  OrganizationJsonLd,
   BreadcrumbJsonLd,
   FAQJsonLd,
+  JsonLdScripts,
+  OrganizationJsonLd,
+  SoftwareSourceCodeJsonLd,
+  WebsiteJsonLd,
 };

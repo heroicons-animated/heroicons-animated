@@ -23,4 +23,4 @@ const Analytics = () => {
   );
 };
 
-export { Analytics, ANALYTIC_EVENT };
+export { ANALYTIC_EVENT, Analytics };

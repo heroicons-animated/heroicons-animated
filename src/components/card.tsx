@@ -162,7 +162,7 @@ const CopyCLIAction = ({ name }: Pick<IconManifestItem, "name">) => {
         aria-disabled={state !== "idle"}
         aria-label="Copy shadcn/cli command"
         className="supports-[corner-shape:squircle]:corner-squircle flex size-10 cursor-pointer items-center justify-center rounded-[14px] bg-neutral-200/20 transition-[background-color] duration-100 focus-within:-outline-offset-1 hover:bg-neutral-200 focus-visible:outline-1 focus-visible:outline-primary supports-[corner-shape:squircle]:rounded-[20px] dark:bg-neutral-800/20 dark:hover:bg-neutral-700"
-        data-busy={state !== "idle" ? "" : undefined}
+        data-busy={state === "idle" ? undefined : ""}
         onClick={handleCopy}
         tabIndex={0}
       >
@@ -222,7 +222,7 @@ const CopyCodeAction = ({ name }: Pick<IconManifestItem, "name">) => {
         aria-disabled={state !== "idle"}
         aria-label="Copy .tsx code"
         className="supports-[corner-shape:squircle]:corner-squircle flex size-10 cursor-pointer items-center justify-center rounded-[14px] bg-neutral-200/20 transition-[background-color] duration-100 focus-within:-outline-offset-1 hover:bg-neutral-200 focus-visible:outline-1 focus-visible:outline-primary supports-[corner-shape:squircle]:rounded-[20px] dark:bg-neutral-800/20 dark:hover:bg-neutral-700"
-        data-busy={state !== "idle" ? "" : undefined}
+        data-busy={state === "idle" ? undefined : ""}
         onClick={handleCopy}
         tabIndex={0}
       >
@@ -296,7 +296,7 @@ const OpenInV0Action = ({ name }: Pick<IconManifestItem, "name">) => {
         aria-disabled={state !== "idle"}
         aria-label="Open in v0"
         className="supports-[corner-shape:squircle]:corner-squircle flex size-10 cursor-pointer items-center justify-center rounded-[14px] bg-neutral-200/20 transition-[background-color] duration-100 focus-within:-outline-offset-1 hover:bg-neutral-200 focus-visible:outline-1 focus-visible:outline-primary supports-[corner-shape:squircle]:rounded-[20px] dark:bg-neutral-800/20 dark:hover:bg-neutral-700"
-        data-busy={state !== "idle" ? "" : undefined}
+        data-busy={state === "idle" ? undefined : ""}
         onClick={handleOpenInV0}
         tabIndex={0}
       >
@@ -343,4 +343,4 @@ const Actions = ({ name, alwaysVisible = false }: ActionsProps) => {
 const CardTitle = Title;
 const CardActions = Actions;
 
-export { Card, CardTitle, CardActions };
+export { Card, CardActions, CardTitle };

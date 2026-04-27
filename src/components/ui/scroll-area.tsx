@@ -73,8 +73,8 @@ ScrollAreaCorner.displayName = "ScrollAreaCorner";
 
 export {
   ScrollArea,
-  ScrollAreaViewport,
   ScrollAreaContent,
-  ScrollAreaScrollbar,
   ScrollAreaCorner,
+  ScrollAreaScrollbar,
+  ScrollAreaViewport,
 };

@@ -89,8 +89,8 @@ const CommentButtonClient = () => {
 };
 
 export {
-  CommentAuthorLinkClient,
-  CommentLucideAnimatedLinkClient,
   CommentAnimationsDevLinkClient,
+  CommentAuthorLinkClient,
   CommentButtonClient,
+  CommentLucideAnimatedLinkClient,
 };
