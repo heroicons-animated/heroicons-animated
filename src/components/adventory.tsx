@@ -31,6 +31,8 @@ export const Adventory = ({ className }: AdventoryProps) => {
       script.dataset.theme = "dark";
     }
 
+    container.append(script);
+
     return () => {
       container.innerHTML = "";
     };
