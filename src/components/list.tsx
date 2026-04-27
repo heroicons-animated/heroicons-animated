@@ -4,10 +4,11 @@ import Fuse from "fuse.js";
 import Link from "next/link";
 import { useQueryState } from "nuqs";
 import { useDeferredValue, useMemo, useRef } from "react";
+import { Adventory } from "@/components/adventory";
 import { Card, CardActions, CardTitle } from "@/components/card";
+import { SearchInput } from "@/components/search-input";
 import { ICON_MAP } from "@/lib/icons";
 import type { AnimatedIconHandle, IconManifestItem } from "@/types/icon";
-import { SearchInput } from "./search-input";
 
 type Props = {
   icons: IconManifestItem[];
@@ -86,6 +87,7 @@ const IconsList = ({ icons }: Props) => {
         totalCount={icons.length}
       />
       <div className="view-container grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-2 border-neutral-200 pt-2 pb-[60px] xl:border-x dark:border-neutral-800">
+        <Adventory />
         {filteredIcons.length === 0 && (
           <div className="col-span-full pt-10 text-center text-neutral-500 text-sm">
             No icons found

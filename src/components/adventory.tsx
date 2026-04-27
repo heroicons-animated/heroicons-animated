@@ -23,7 +23,7 @@ export const Adventory = ({ className }: AdventoryProps) => {
     container.innerHTML = "";
 
     const script = document.createElement("script");
-    script.src = `https://adventory.to/ad.card.js`;
+    script.src = "https://adventory.to/ad.card.js";
     script.async = true;
     script.dataset.placement = "82615054-d74e-4302-8ceb-935792ee5d33";
 
